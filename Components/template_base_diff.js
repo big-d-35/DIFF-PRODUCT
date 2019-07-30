@@ -242,14 +242,14 @@
 	    {
 	    	name_hotel: "TUI DAY&NIGHT Connected Club Hydros 5*", 
 	    	href_tui_ru: "https://goo.gl/Se4pYa", 
-	    	href_tui_ua: "https://goo.gl/bskKfA", 
+	    	href_tui_ua: "https://www.tui.ua/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/", 
 	    	href_agent_ru: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros", 
 	    	href_agent_ua: "https://goo.gl/HibgLw", 
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	name_hotel: "TUI DAY&NIGHT Connected Club Life Belek 5*", 
 	    	href_tui_ru: "https://goo.gl/rbeZwe", 
-	    	href_tui_ua: "https://goo.gl/NzBFzQ", 
+	    	href_tui_ua: "https://www.tui.ua/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/", 
 	    	href_agent_ru: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek", 
 	    	href_agent_ua: "https://goo.gl/8BWYSG", 
 	    	data_hotel: "15.10.2019"}
