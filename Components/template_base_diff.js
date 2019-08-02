@@ -199,7 +199,7 @@
     //RUSSIAN
     var table_tc = {
 		title_page_origin: "Отдых в отелях с детскими клубами TUI Мини Тукан",
-		description_page_origin: "<p>Отели с детскими клубами TUI Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, и весело и познавательно для детей.</p><p><b>Что такое клуб TUI Мини Тукан?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Концепция «Тукан-путешественник» ―увлекательные приключения в разных странах</li> <li>Программа на русском языке для детей двух возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет</li> <li>Клуб работает 6 дней в неделю, с 10-00 до 16-30 с перерывом на обед</li> <li>Часы работы: 10-12.30, 14.30 - 17.30</li> <li>Вечером ― мини-диско</li> </ul>",
+		description_page_origin: "<p>Отели с детскими клубами TUI Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, и весело и познавательно для детей.</p><p><b>Что такое клуб TUI Мини Тукан?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Концепция «Тукан-путешественник» ―увлекательные приключения в разных странах</li> <li>Программа на русском языке для детей двух возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет</li> <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li> <li>Вечером ― мини-диско</li> </ul>",
 		h_1: "Отдых с детьми TUI Мини Тукан на море",
 		title: "Отели с Клубами TUI Мини Тукан",
 		description: "Дата закрытия клубов Тукан в отелях",
@@ -211,7 +211,8 @@
 	    	href_tui_ru: "https://goo.gl/F81mLY", 
 	    	href_tui_ua: "https://goo.gl/3b9uCg", 
 	    	href_agent_ru: "https://goo.gl/jWEXsd", 
-	    	href_agent_ua: "https://goo.gl/WEFrka", 
+	    	href_agent_ua: "https://goo.gl/WEFrka",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
 	    	data_hotel: "15.10.2019"
 	    },
 	    {
@@ -220,7 +221,8 @@
 	    	href_tui_ru: "https://goo.gl/h53t3W", 
 	    	href_tui_ua: "https://goo.gl/AMSTwf", 
 	    	href_agent_ru: "https://goo.gl/V1gwj3", 
-	    	href_agent_ua: "https://goo.gl/jaZCqH", 
+	    	href_agent_ua: "https://goo.gl/jaZCqH",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
 	    	data_hotel: "15.10.2019"},
 	    	{
 	    	country_Turkey: "TUR",
@@ -228,7 +230,8 @@
 	    	href_tui_ru: "https://goo.gl/ZahdwC", 
 	    	href_tui_ua: "https://goo.gl/DojMnk", 
 	    	href_agent_ru: "https://goo.gl/Z97F66", 
-	    	href_agent_ua: "https://goo.gl/b8rW3z", 
+	    	href_agent_ua: "https://goo.gl/b8rW3z",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
@@ -236,7 +239,8 @@
 	    	href_tui_ru: "https://www.tui.ru/hotel/europe-turkey-alanya-incekum-pegasos__royal/?HotelAttribute=1000720&adults=2&children=0&dateDelta=3&dateFrom=1562900400000&directionCountryTo=18803&directionFrom=235144&newbies=0&nightsFrom=7&nightsTo=14&selected=departure-date&page=0&hotelId=29622&TourType=4", 
 	    	href_tui_ua: "https://goo.gl/PdCJgF", 
 	    	href_agent_ru: "https://goo.gl/t8bT1n", 
-	    	href_agent_ua: "https://goo.gl/SNzyQc", 
+	    	href_agent_ua: "https://goo.gl/SNzyQc",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_hotel: "Кипр",
@@ -244,14 +248,16 @@
 	    	href_tui_ru: "https://goo.gl/83AYbh", 
 	    	href_tui_ua: "https://goo.gl/HTJLGt", 
 	    	href_agent_ru: "https://goo.gl/bnny7P", 
-	    	href_agent_ua: "https://goo.gl/f8qx4N", 
+	    	href_agent_ua: "https://goo.gl/f8qx4N",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia",
 	    	data_hotel: "30.09.2019"},
 	    {
 	    	name_hotel: "St Raphael Resort 5*", 
 	    	href_tui_ru: "https://goo.gl/8X8cZZ", 
 	    	href_tui_ua: "https://goo.gl/vW3oMJ", 
 	    	href_agent_ru: "https://goo.gl/5he8Nd", 
-	    	href_agent_ua: "https://goo.gl/vgZFsx", 
+	    	href_agent_ua: "https://goo.gl/vgZFsx",
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Cyprus/Limasol-Resort/Limasol-City/St-Raphael-Resort",
 	    	data_hotel: "30.09.2019"},
 	    	{
 	    	country_hotel: "Черногория",
@@ -260,6 +266,7 @@
 	    	href_tui_ua: "https://goo.gl/z9zgxG", 
 	    	href_agent_ru: "https://goo.gl/s7Srpa", 
 	    	href_agent_ua: "https://goo.gl/mgTkmA", 
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Montenegro/Budvanska-Rivijera/Budva/Aleksandar",
 	    	data_hotel: "30.09.2019"},
 	    	{
 	    	name_hotel: "Castellastva 4*", 
@@ -267,6 +274,7 @@
 	    	href_tui_ua: "https://goo.gl/FMCnYq", 
 	    	href_agent_ru: "https://goo.gl/Pw4dsE", 
 	    	href_agent_ua: "https://goo.gl/NRXq2K", 
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Montenegro/Budvanska-Rivijera/Petrovac/Castellastva",    
 	    	data_hotel: "30.09.2019"},
 	    	{
 	    	country_hotel: "Италия",
@@ -275,6 +283,7 @@
 	    	href_tui_ua: "https://www.tui.ua/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/?adults=2&children=0&dateDelta=3&dateFrom=1564628400000&directionCountryTo=18770&directionFrom=235144&hotelNameQuery=Garden%20Resort%20Calabria&maxCost=175537&minCost=25631&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=departure-date&sortType=5&hotelId=272329&TourType=36", 
 	    	href_agent_ru: "https://goo.gl/Po5FoP", 
 	    	href_agent_ua: "https://goo.gl/CVthjf", 
+            href_agent_by: "",    
 	    	data_hotel: "30.09.2019"},
 	    	/*{
 	    	country_hotel: "ОАЭ",
@@ -298,6 +307,7 @@
 	    	href_tui_ua: "https://goo.gl/UWUXph", 
 	    	href_agent_ru: "https://goo.gl/SEsLHd", 
 	    	href_agent_ua: "https://goo.gl/xchnkR", 
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort",    
 	    	data_hotel: "30.09.2019"},
 	    	{
 	    	name_hotel: "Don Juan Tossa 4*", 
@@ -305,6 +315,7 @@
 	    	href_tui_ua: "https://www.tui.ua/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/?adults=2&children=0&dateDelta=3&dateFrom=1567198800000&directionCountryTo=18747&directionFrom=235144&hotelNameQuery=Don%20Juan%20Tossa&maxCost=172434&minCost=22093&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=34652&TourType=36", 
 	    	href_agent_ru: "http://agent.tui.ru/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa", 
 	    	href_agent_ua: "https://goo.gl/wAUnYa", 
+            href_agent_by: "",    
 	    	data_hotel: "30.09.2019"},
             {
 	    	country_hotel: "Россия",
@@ -313,6 +324,7 @@
 	    	href_tui_ua: "", 
 	    	href_agent_ru: "http://agent.tui.ru/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom", 
 	    	href_agent_ua: "", 
+            href_agent_by: "http://agent.tui.by/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom",    
 	    	data_hotel: "20.09.2019"}
 	    	
 	  ]
