@@ -188,9 +188,9 @@
             <div class="col-md-3 col-12 button-slider " id="tb" onclick="window.open('/concepts/tui-day-night/')">
                 <p>Это DAY&amp;NIGHT Connected</p>
             </div>
-            <!--<div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
-<p>Отели</p>
-</div>-->
+            <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#banner')">
+                <p>Отели</p>
+            </div>
 
             <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-day-night/entertainment-program/')">
                 <p>Развлечения и спорт</p>
@@ -219,7 +219,7 @@
         </div>
     </div>
 
-    <div class="banner">
+    <div class="banner" id="banner">
         <div class="container">
             <div class="row">
                 <div class="col-12"><img alt="" src="https://agent.tui.ru/getmedia/0d7d9d47-356b-4b04-b97d-a777123fe996/banner_DN" /></div>
@@ -376,6 +376,14 @@
                 newScript.src = "https://agent.tui.ru/getmedia/fea1c06b-59c8-4874-8611-dac12c1a73f1/all";
                 document.head.appendChild(newScript);
             }
+        }
+    </script>
+    <script type="text/javascript">
+        function smoothScrolling(element) {
+            document.querySelector(element).scrollIntoView({
+                block: "start",
+                behavior: "smooth"
+            });
         }
     </script>
 </div>
