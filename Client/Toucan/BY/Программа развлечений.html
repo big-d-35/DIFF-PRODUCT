@@ -28,7 +28,9 @@
         box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
         background-color: #C3E8FB !important;
     }
-
+    .slider-content ul li {
+        color: #0c2c5c !important;
+    }
     .sliders-hotels {
         min-height: 10px !important;
         margin-top: 1em;
@@ -190,7 +192,7 @@
     <div class="container">
         <div class="row">
             <div class="buttons-slider button-slider-mobile col-md-12">
-                <div class="col-md-2 col-12 button-slider" id="tb" onclick="window.open('https://www.tui.ru/concepts/tui-toucan/')">
+                <div class="col-md-2 col-12 button-slider" id="tb" onclick="window.open('https://www.tui.by/concepts/tui-toucan/')">
                     <p>Это Мини Тукан</p>
                 </div>
 
@@ -236,7 +238,7 @@
             <div style="background:#e1f4fb;padding: 10px 7px;">
                 <div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/8aeeceef-4d31-433b-ae92-1e6b24a5ec2a/Mini-toucan-ru-2019__" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Турции</a></div>
                 <!--<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/e20a2c16-d84d-4b8d-917a-2ecab6bbb8a7/Toucan-Mini-Eu-RU" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Европе</a></div>-->
-                <div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://tui.ru/getmedia/365fd0ca-2219-4a7c-9d65-6337bc68f6b8/Sochi-Mini-Toucan-upd" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Сочи</a></div>
+                <!--<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://tui.ru/getmedia/365fd0ca-2219-4a7c-9d65-6337bc68f6b8/Sochi-Mini-Toucan-upd" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Сочи</a></div>-->
             </div>
         </div>
 
@@ -540,12 +542,17 @@
 
         <div class="row">
             <div class="container sl" id="miniTucoun">
-                <div class="buttons-navigations"><a class="button-navigatin active-link" data-block=".slider_2" href="#s2b1">ОАЭ</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ --> <a class="button-navigatin" data-block=".slider_2" href="#s2b2">Турция</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
-                    <!--<a class="button-navigatin" data-block=".slider_2" href="#s2b3">Андорра &ndash; ТОЛЬКО ТУКАН SKI</a>  ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра --> <a class="button-navigatin" data-block=".slider_2" href="#s2b4">Кипр</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> <a class="button-navigatin" data-block=".slider_2" href="#s2b5">Черногория</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> <a class="button-navigatin" data-block=".slider_2" href="#s2b6">Италия</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                <div class="buttons-navigations">
+                   <!--<a class="button-navigatin " data-block=".slider_2" href="#s2b1">ОАЭ</a>  ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ --> 
+                   <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">Турция</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                    <!--<a class="button-navigatin" data-block=".slider_2" href="#s2b3">Андорра &ndash; ТОЛЬКО ТУКАН SKI</a>  ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">Кипр</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">Черногория</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">Италия</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
                 </div>
                 <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
 
-                <div class="slider slider_2" id="s2b1">
+                <!--<div class="slider slider_2" id="s2b1">
                     <div class="row-slider" data-col="3">
                         <div class="col-md-4 myslide col-slider-3">
                             <div class="sliders-hotels">
@@ -613,10 +620,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div>-->
                 <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
 
-                <div class="slider slider_2 n" id="s2b2">
+                <div class="slider slider_2 " id="s2b2">
                     <div class="row-slider" data-col="3">
                         <div class="col-md-4 myslide col-slider-3">
                             <div class="sliders-hotels">
