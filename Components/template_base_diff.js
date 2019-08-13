@@ -17,7 +17,7 @@
 	    {
 	    	country_hotel: "Турция",
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Saphire 5*", 
+	    	name_hotel: "TUI FUN&SUN Club Saphire 5*", 
 	    	href_tui_ru: "https://goo.gl/gHmUBe", 
 	    	href_tui_ua: "https://goo.gl/TZssFy", 
             href_tui_by: "http://tui.by/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=264165&TourType=36", 
@@ -27,7 +27,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*", 
+	    	name_hotel: "TUI FUN&SUN Miarosa Ghazal Resort 5*", 
 	    	href_tui_ru: "https://goo.gl/xr197P", 
 	    	href_tui_ua: "https://goo.gl/KKddfS", 
             href_tui_by: "http://tui.by/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=88038&TourType=36",
@@ -37,7 +37,7 @@
 	    	data_hotel: "15.10.2019"},
 	    	{
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN River Resort Belek 5*",  
+	    	name_hotel: "TUI FUN&SUN River Resort Belek 5*",  
 	    	href_tui_ru: "https://goo.gl/eMbBU1", 
 	    	href_tui_ua: "https://goo.gl/YjFyXK", 
             href_tui_by: "http://tui.by/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=364712&TourType=36",
@@ -47,7 +47,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Belek 5*",  
+	    	name_hotel: "TUI FUN&SUN Club Belek 5*",  
 	    	href_tui_ru: "https://goo.gl/apDxbv", 
 	    	href_tui_ua: "https://goo.gl/h5tt1E",
             href_tui_by: "http://tui.by/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=29813&TourType=36",
@@ -57,7 +57,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Serra Palace 5*",  
+	    	name_hotel: "TUI FUN&SUN Club Serra Palace 5*",  
 	    	href_tui_ru: "https://goo.gl/ydFwbD", 
 	    	href_tui_ua: "https://goo.gl/741vMh",
             href_tui_by: "http://tui.by/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=30715&TourType=36",
@@ -67,7 +67,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Comfort Beach Resort 5*",  
+	    	name_hotel: "TUI FUN&SUN Comfort Beach Resort 5*",  
 	    	href_tui_ru: "https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1559876400000&directionCountryTo=18803&directionFrom=274286&maxCost=1615062&minCost=34049&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=departure-date&sortType=5&hotelId=537388&TourType=36", 
 	    	href_tui_ua: "https://goo.gl/7u3YXK",
             href_tui_by: "http://tui.by/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=537388&TourType=36",
@@ -77,7 +77,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Di Finica 5*",  
+	    	name_hotel: "TUI FUN&SUN Club Di Finica 5*",  
 	    	href_tui_ru: "https://www.tui.ru/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1562727600000&directionCountryTo=18803&directionFrom=274286&maxCost=1574748&minCost=36408&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=departure-date&sortType=5&hotelId=540291&TourType=36", 
 	    	href_tui_ua: "https://goo.gl/zzvkEr",
             href_tui_by: "http://tui.by/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=540291&TourType=36",
@@ -87,7 +87,7 @@
 	    	data_hotel: "15.10.2019"},
 	    	{
 	    		country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Miarosa Incekum Beach 5*",  
+	    	name_hotel: "TUI FUN&SUN Miarosa Incekum Beach 5*",  
 	    	href_tui_ru: "https://www.tui.ru/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/?adults=2&children=0&dateDelta=3&dateFrom=1560805200000&directionCountryTo=18803&directionFrom=274286&hotelNameQuery=miaro&maxCost=2266003&minCost=50150&newbies=0&nightsFrom=9&nightsTo=9&page=0&selected=arrival&sortType=5&hotelId=505937&TourType=36", 
 	    	href_tui_ua: "http://www.tui.ua/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/?adults=2&children=0&dateDelta=3&dateFrom=1563332400000&directionCountryTo=18803&directionFrom=235144&hotelNameQuery=miar&maxCost=838961&minCost=17527&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=departure-date&sortType=5&hotelId=505937&TourType=36",
             href_tui_by: "http://tui.by/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18803&directionFrom=381686&maxCost=87489&minCost=2080&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=505937&TourType=36",
@@ -97,7 +97,7 @@
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_hotel: "Кипр",
-	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
+	    	name_hotel: "TUI FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_ru: "https://goo.gl/ZnXgom", 
 	    	href_tui_ua: "https://goo.gl/yDjuoS",
             href_tui_by: "http://tui.by/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18772&directionFrom=381686&maxCost=9076&minCost=2361&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=344842&TourType=36",
@@ -106,7 +106,7 @@
             href_agent_by: "http://agent.tui.by/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
 	    	data_hotel: "31.10.2019"},
 	    {
-	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
+	    	name_hotel: "TUI FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_ru: "https://goo.gl/L9PpYJ", 
 	    	href_tui_ua: "https://goo.gl/4Lzukq",
             href_tui_by: "http://tui.by/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1566594000000&directionCountryTo=18772&directionFrom=381686&maxCost=9076&minCost=2361&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=arrival&sortType=5&hotelId=28016&TourType=36",
@@ -139,31 +139,31 @@
 	    	data_hotel: "15.10.2019"},*/
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*", 
+	    	name_hotel: "TUI FUN&SUN Miarosa Ghazal Resort 5*", 
 	    	href_tui_lv: "https://goo.gl/xr197P", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort", 
 	    	data_hotel: "15.10.2019"},
 	    	{
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN River Resort Belek 5*",  
+	    	name_hotel: "TUI FUN&SUN River Resort Belek 5*",  
 	    	href_tui_lv: "https://goo.gl/eMbBU1", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek", 
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Belek 5*",  
+	    	name_hotel: "TUI FUN&SUN Club Belek 5*",  
 	    	href_tui_lv: "https://goo.gl/apDxbv", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek", 
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Club Serra Palace 5*",  
+	    	name_hotel: "TUI FUN&SUN Club Serra Palace 5*",  
 	    	href_tui_lv: "https://goo.gl/ydFwbD",  
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace", 
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Comfort Beach Resort 5*",  
+	    	name_hotel: "TUI FUN&SUN Comfort Beach Resort 5*",  
 	    	href_tui_lv: "https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1559876400000&directionCountryTo=18803&directionFrom=274286&maxCost=1615062&minCost=34049&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=departure-date&sortType=5&hotelId=537388&TourType=36", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort", 
 	    	data_hotel: "15.10.2019"},
@@ -175,18 +175,18 @@
 	    	data_hotel: "15.10.2019"},*/
 	    	{
 	    		country_Turkey: "TUR",
-	    	name_hotel: "FUN&SUN Miarosa Incekum Beach 5*",  
+	    	name_hotel: "TUI FUN&SUN Miarosa Incekum Beach 5*",  
 	    	href_tui_lv: "https://www.tui.ru/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/?adults=2&children=0&dateDelta=3&dateFrom=1560805200000&directionCountryTo=18803&directionFrom=274286&hotelNameQuery=miaro&maxCost=2266003&minCost=50150&newbies=0&nightsFrom=9&nightsTo=9&page=0&selected=arrival&sortType=5&hotelId=505937&TourType=36", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",  
 	    	data_hotel: "15.10.2019"},
 	    {
 	    	country_hotel: "Kipra",
-	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
+	    	name_hotel: "TUI FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_lv: "https://goo.gl/ZnXgom",  
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
 	    	data_hotel: "31.10.2019"},
 	    {
-	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
+	    	name_hotel: "TUI FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_lv: "https://goo.gl/L9PpYJ", 
 	    	href_agent_lv: "http://agent.tui.ua/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark", 
 	    	data_hotel: "31.10.2019"}
@@ -442,14 +442,14 @@
 		description: "Дата закрытия концепции в отелях",
 	  hotel: [
 	    {
-	    	name_hotel: "DAY&NIGHT Connected Club Hydros 5*", 
+	    	name_hotel: "TUI DAY&NIGHT Connected Club Hydros 5*", 
 	    	href_tui_ru: "https://goo.gl/Se4pYa", 
 	    	href_tui_ua: "https://www.tui.ua/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/", 
 	    	href_agent_ru: "/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros", 
 	    	href_agent_ua: "https://goo.gl/HibgLw", 
 	    	data_hotel: "15.10.2019"},
 	    {
-	    	name_hotel: "DAY&NIGHT Connected Club Life Belek 5*", 
+	    	name_hotel: "TUI DAY&NIGHT Connected Club Life Belek 5*", 
 	    	href_tui_ru: "https://goo.gl/rbeZwe", 
 	    	href_tui_ua: "https://www.tui.ua/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/", 
 	    	href_agent_ru: "/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek", 
@@ -543,7 +543,7 @@
 		description: "Koncepcijas slēgšanas datums viesnīcās",
 	  hotel: [
 	    {
-	    	name_hotel: "DAY&NIGHT Connected Club Hydros 5*", 
+	    	name_hotel: "TUI DAY&NIGHT Connected Club Hydros 5*", 
 	    	href_tui_lv: "https://goo.gl/Se4pYa", 
 	    	href_agent_lv: "https://goo.gl/HibgLw", 
 	    	data_hotel: "15.10.2019"},
