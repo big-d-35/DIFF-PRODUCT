@@ -137,10 +137,12 @@
 
 <body>
     <div class="row-all">
-        <div class="menu-top">
+        <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+       
+        <div class="menu-top" id="home-page-diff-menu-top">
             <div class="container">
                 <div class="row">
-                    <a class="col-md-2 col-6 logo-img" href="/"><img src="http://agent.tui.ru/Images/logo.png"></a>
+                    <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
                     <div class="col-5 but-menu-mobile">
                         &nbsp;
                     </div>
@@ -152,39 +154,43 @@
                             X
                         </div>
                         <div class="row menu-label">
-                            <a class="label-menu" href="/Franchaizing" target="_blank">Frantsiis</a> <a class="label-menu" href="/Partnership" target="_blank">Koostöö</a> <a class="label-menu" href="/About/About-company" target="_blank">Meist</a> <a class="label-menu" href="/Branded-Shop" target="_blank">TUI Shop</a>
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a> 
+                            <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
                             <div class="label-menu" style="position: relative;cursor: pointer">
-                                <a href="/concepts/home/" style="color:#092a5e">TUI puhkuse kontseptsioonid</a>
+                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
                                 <div class="label-menu-2">
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN"></a>
+                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-fun-sun"><b>TUI FUN&amp;SUN</b><br>
-                                                Perepuhkus</a>
+                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameEE}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web"></a>
+                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-day-night"><b>TUI DAY&amp;NIGHT</b><br>
-                                                Puhkus noortele</a>
+                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameEE}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical"></a>
+                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-toucan"><b>TUI MINI TOUCAN</b><br>
-                                                Puhkus lastega</a>
+                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameEE}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/home"><img alt="Home_logo" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100" /></a>
+                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
 
-                                        <div><a href="/concepts/home"><b>TUI puhkuse<br />
-                                                    kontseptsioonidest</b></a></div>
+                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                    {{menuItemConceptsAboutNameEE2}}</b></a></div>
                                     </div>
                                 </div>
-                            </div><a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="http://b2b.tui.ee/default.php?page=cl_refer&amp;" target="_blank">Logi sisse</a>
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
+                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
                         </div>
                     </div>
 
@@ -193,14 +199,21 @@
                     <div class="col-md-10">
                         <div class="row menu-telephone">
                             <div class="col-md-8 col-7">
-                                <p class="telephone-title">Agentidele:</p>
-                                <p class="telephone-number">+372 4455006</p>
-                            </div><a href="http://www.tui.ee" style="color: black">Klientidele</a>
+                                <p class="telephone-title">{{menuPhoneTitleEE}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneEE}}</p>
+                            </div>
+                            <a :href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+        
+       
+      
+   
         <style type="text/css">
             .content-block div,
             .head div,
@@ -687,21 +700,23 @@
                 });
             }
         </script>
-        <div class="head">
+        <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+       <div class="head" id="home-page-first-block">
             <div class="center-block">
                 <div class="white-box">
-                    <p class="header">PUHKUSE KONTSEPTSIOONID,<br>
-                        TUI</p>
-                    <p class="comment"><span>Teame, millist puhkust te vajate,</span> <span>sest olete ise meile sellest rääkinud!</span></p>
+                    <p class="header">{{firstBlockHeadNameEE1}}<br>
+                        {{firstBlockHeadNameEE2}}</p>
+                    <p class="comment"><span>{{firstBlockHeadCommentEE1}}</span> <span>{{firstBlockHeadCommentEE2}}</span></p>
                     <div class="button-choice">
-                        <a href="https://admin.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/TUI-Concept-Presentation_B2B_18-06" target="_blank">Vali konsept</a>
+                        <a :href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionEE}}</a>
                     </div>
                     <div class="details">
-                        * TUI puhkuse konseptsioon &ndash; uue formaadi puhkus, kus on võetud arvesse igas vanuses puhkajate huvid.
+                        {{firstBlockHeadDeatilsEE}}
                     </div>
                 </div>
             </div>
         </div>
+      <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
         <div class="content-block">
             <div class="text">
                 <strong>TUI puhkuse konseptsioonid</strong> &ndash; uue formaadi puhkus, kus on võetud arvesse igas vanuses puhkajate huvid.
@@ -901,18 +916,17 @@
 
         <!-- FOOTER START =================================================== -->
 
-        <div class="footer-not-main">
+        <div class="footer-not-main" id="home-page-diff-footer">
             <div class="centered">
                 <div class="left">
-                    <h3 style="">Kontseptsiooni veebilehed</h3>
-                    <a href="https://www.tui.ee/concepts/home/">Kõik TUI kontseptsioonid</a><br />
-                    <a href="https://agent.tui.ee/">Agentidele</a><br />
-                    <a href="https://b2b.tuibaltics.eu/">B2B veebileht</a>
+                    <h3 style="">{{agentFooterItemTitleEE}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameEE}}</a><br>
+                    <a :href=" agentFooterItemAgentLinkEE ">{{agentFooterItemAgentLinkNameEE}}</a><br>
+                    <a :href=" agentFooterItemB2bLinkEE ">{{agentFooterItemB2bLinkNameEE}}</a>
                 </div>
-
                 <div class="right">
-                    <h3>Kontakt</h3>+372 3350005<br />
-                    <a href="mailto:tallinn@tuibaltics.eu">tallinn@tuibaltics.eu</a>
+                    <h3>{{agentFooterItemTitle2EE}}</h3>
+                    <a :href=" agentFooterItemPhoneEE ">{{agentFooterItemPhoneNameEE}}</a><br>
+                    <a :href=" agentFooterItemMailEE ">{{agentFooterItemMailNameEE}}</a>
                 </div>
             </div>
         </div>
@@ -921,6 +935,9 @@
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>
+    <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
 
     <script src="https://www.youtube.com/iframe_api" type="text/javascript">
     </script>

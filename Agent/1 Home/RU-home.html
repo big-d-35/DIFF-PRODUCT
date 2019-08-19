@@ -117,10 +117,13 @@
 
 <body>
     <div class="row-all">
-        <div class="menu-top">
+       
+        <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
+       
+        <div class="menu-top" id="home-page-diff-menu-top">
             <div class="container">
                 <div class="row">
-                    <a class="col-md-2 col-6 logo-img" href="/"><img src="http://agent.tui.ru/Images/logo.png"></a>
+                    <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
                     <div class="col-5 but-menu-mobile">
                         &nbsp;
                     </div>
@@ -132,39 +135,43 @@
                             X
                         </div>
                         <div class="row menu-label">
-                            <a class="label-menu" href="/Franchaizing" target="_blank">Франчайзинг</a> <a class="label-menu" href="/Partnership" target="_blank">Сотрудничество</a> <a class="label-menu" href="/About/About-company" target="_blank">О компании</a> <a class="label-menu" href="/Branded-Shop" target="_blank">TUI Shop</a>
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a> 
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a> 
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a> 
+                            <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
                             <div class="label-menu" style="position: relative;cursor: pointer">
-                                <a href="/concepts/home/" style="color:#092a5e">Концепции отдыха TUI</a>
+                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
                                 <div class="label-menu-2">
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN"></a>
+                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-fun-sun"><b>TUI FUN&amp;SUN</b><br>
-                                                Семейный отдых</a>
+                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameRU}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web"></a>
+                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-day-night"><b>TUI DAY&amp;NIGHT</b><br>
-                                                Молодежный отдых</a>
+                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameRU}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/tui-toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical"></a>
+                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
                                         <div>
-                                            <a href="/concepts/tui-toucan"><b>TUI MINI TOUCAN</b><br>
-                                                Отдых с детьми</a>
+                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameRU}}</a>
                                         </div>
                                     </div>
                                     <div class="concept-link">
-                                        <a href="/concepts/home"><img alt="Home_logo" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100" /></a>
+                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
 
-                                        <div><a href="/concepts/home"><b>О концепциях<br />
-                                                    отдыха TUI</b></a></div>
+                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
+                                                    {{menuItemConceptsAboutNameRU2}}</b></a></div>
                                     </div>
                                 </div>
-                            </div><a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="http://b2b.tui.ru/default.php?page=cl_refer&amp;" target="_blank">Личный кабинет</a>
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
+                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
                         </div>
                     </div>
 
@@ -173,14 +180,23 @@
                     <div class="col-md-10">
                         <div class="row menu-telephone">
                             <div class="col-md-8 col-7">
-                                <p class="telephone-title">Агентствам:</p>
-                                <p class="telephone-number">+7 495&shy; 660-5-660</p>
-                            </div><a href="http://www.tui.ru" style="color: black">Сайт для туристов</a>
+                                <p class="telephone-title">{{menuPhoneTitleRU}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                            </div>
+                            <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+        
+       
+      
+     
+    
+       
         <style type="text/css">
             .content-block div,
             .head div,
@@ -667,21 +683,25 @@
                 });
             }
         </script>
-        <div class="head">
+        
+        <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+       <div class="head" id="home-page-first-block">
             <div class="center-block">
                 <div class="white-box">
-                    <p class="header">KОНЦЕПЦИИ ОТДЫХА,<br>
-                        СОЗДАННЫЕ TUI</p>
-                    <p class="comment"><span>Мы знаем, какой отдых вам нужен,</span> <span>потому что вы нам сами об этом рассказали!</span></p>
+                    <p class="header">{{firstBlockHeadNameRU1}}<br>
+                        {{firstBlockHeadNameRU2}}</p>
+                    <p class="comment"><span>{{firstBlockHeadCommentRU1}}</span> <span>{{firstBlockHeadCommentRU2}}</span></p>
                     <div class="button-choice">
-                        <a href="https://agent.tui.ru/getmedia/244095d3-62f8-4aff-81ea-162043e96d27/NEW-Concept-Presentation_B2B_11-07" target="_blank">Презентация Дифф продукта</a>
+                        <a :href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionRU}}</a>
                     </div>
                     <div class="details">
-                        * Концепции отдыха TUI &ndash; это отдых в новом формате, где учтены интересы всех поколений.
+                        {{firstBlockHeadDeatilsRU}}
                     </div>
                 </div>
             </div>
         </div>
+      <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+       
         <div class="content-block">
             <div class="text">
                 <strong>Концепции отдыха TUI</strong> &ndash; это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.<br>
@@ -880,22 +900,27 @@
 
         <!-- FOOTER START =================================================== -->
 
-        <div class="footer-not-main">
+        <div class="footer-not-main" id="home-page-diff-footer">
             <div class="centered">
                 <div class="left">
-                    <h3 style="">Сайты о концепциях</h3><a href="/concepts/home/">Все концепции TUI</a><br>
-                    <a href="https://agent.tui.ru/">Сайт для агентств</a><br>
-                    <a href="http://b2b.tui.ru/">Сайт B2b</a>
+                    <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
+                    <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
+                    <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
                 </div>
                 <div class="right">
-                    <h3>Контакты</h3><a href="tel:84951043450">8 (495) 104-34-50</a><br>
-                    <a href="mailto:diffproduct@tui.ru">diffproduct@tui.ru</a>
+                    <h3>{{agentFooterItemTitle2RU}}</h3>
+                    <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
+                    <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
                 </div>
             </div>
         </div>
 
         <!-- FOOTER END =================================================== -->
 
+       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>
+    <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
+       
         <script src="https://www.youtube.com/iframe_api" type="text/javascript">
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript">
