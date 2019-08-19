@@ -117,9 +117,9 @@
 
 <body>
     <div class="row-all">
-       
+
         <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
-       
+
         <div class="menu-top" id="home-page-diff-menu-top">
             <div class="container">
                 <div class="row">
@@ -135,9 +135,9 @@
                             X
                         </div>
                         <div class="row menu-label">
-                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a> 
-                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a> 
-                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a> 
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
                             <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
                             <div class="label-menu" style="position: relative;cursor: pointer">
                                 <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
@@ -170,7 +170,7 @@
                                                     {{menuItemConceptsAboutNameRU2}}</b></a></div>
                                     </div>
                                 </div>
-                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
                             <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
                         </div>
                     </div>
@@ -189,14 +189,14 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
-        
-       
-      
-     
-    
-       
+
+
+
+
+
+
         <style type="text/css">
             .content-block div,
             .head div,
@@ -683,9 +683,9 @@
                 });
             }
         </script>
-        
+
         <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
-       <div class="head" id="home-page-first-block">
+        <div class="head" id="home-page-first-block">
             <div class="center-block">
                 <div class="white-box">
                     <p class="header">{{firstBlockHeadNameRU1}}<br>
@@ -700,14 +700,16 @@
                 </div>
             </div>
         </div>
-      <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
-       
+        <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+
         <div class="content-block">
-            <div class="text">
-                <strong>Концепции отдыха TUI</strong> &ndash; это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.<br>
+            <!-- TEXT START =========================================================== -->
+            <div class="text" id="home-page-text-block">
+                <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockRU2}}<br>
                 <br>
-                Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!
+                {{homePageTextBlockRU3}}
             </div>
+            <!-- TEXT END =========================================================== -->
             <div class="block-head">
                 <div class="logo"><img src="https://www.tui.ru/getmedia/d154b64a-2315-40e0-94f5-53137a734367/logo-FS"></div>
                 <div class="about">
@@ -917,10 +919,10 @@
 
         <!-- FOOTER END =================================================== -->
 
-       <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
         <script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>
-    <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
-       
+        <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
+
         <script src="https://www.youtube.com/iframe_api" type="text/javascript">
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript">

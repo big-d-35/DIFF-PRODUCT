@@ -1,118 +1,126 @@
 <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
-       
-        <div class="menu-top" id="home-page-diff-menu-top">
-            <div class="container">
-                <div class="row">
-                    <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
-                    <div class="col-5 but-menu-mobile">
-                        &nbsp;
-                    </div>
 
-                    <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+<div class="menu-top" id="home-page-diff-menu-top">
+    <div class="container">
+        <div class="row">
+            <a class="col-md-2 col-6 logo-img" href="/"><img :src=" logoLink "></a>
+            <div class="col-5 but-menu-mobile">
+                &nbsp;
+            </div>
 
-                    <div class="col-md-10 col-10 mobile_agent">
-                        <div id="exit_menu">
-                            X
-                        </div>
-                        <div class="row menu-label">
-                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a> 
-                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a> 
-                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a> 
-                            <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
-                            <div class="label-menu" style="position: relative;cursor: pointer">
-                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
-                                <div class="label-menu-2">
-                                    <div class="concept-link">
-                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
-                                        <div>
-                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
-                                                {{menuItemFunSunNameRU}}</a>
-                                        </div>
-                                    </div>
-                                    <div class="concept-link">
-                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
-                                        <div>
-                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
-                                                {{menuItemDayNightNameRU}}</a>
-                                        </div>
-                                    </div>
-                                    <div class="concept-link">
-                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
-                                        <div>
-                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
-                                                {{menuItemToucanNameRU}}</a>
-                                        </div>
-                                    </div>
-                                    <div class="concept-link">
-                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+            <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
-                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
-                                                    {{menuItemConceptsAboutNameRU2}}</b></a></div>
-                                    </div>
+            <div class="col-md-10 col-10 mobile_agent">
+                <div id="exit_menu">
+                    X
+                </div>
+                <div class="row menu-label">
+                    <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
+                    <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
+                    <div class="label-menu" style="position: relative;cursor: pointer">
+                        <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
+                        <div class="label-menu-2">
+                            <div class="concept-link">
+                                <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                <div>
+                                    <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                        {{menuItemFunSunNameRU}}</a>
                                 </div>
-                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a> 
-                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
-                        </div>
-                    </div>
-
-                    <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
-
-                    <div class="col-md-10">
-                        <div class="row menu-telephone">
-                            <div class="col-md-8 col-7">
-                                <p class="telephone-title">{{menuPhoneTitleRU}}</p>
-                                <p class="telephone-number">{{menuPhonePhoneRU}}</p>
                             </div>
-                            <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
+                            <div class="concept-link">
+                                <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                <div>
+                                    <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                        {{menuItemDayNightNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                <div>
+                                    <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                        {{menuItemToucanNameRU}}</a>
+                                </div>
+                            </div>
+                            <div class="concept-link">
+                                <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
+                                            {{menuItemConceptsAboutNameRU2}}</b></a></div>
+                            </div>
                         </div>
-                    </div>
+                    </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                    <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
                 </div>
             </div>
-        </div>
-        
-        <!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
-        
-        
-        <!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
-       <div class="head" id="home-page-first-block">
-            <div class="center-block">
-                <div class="white-box">
-                    <p class="header">{{firstBlockHeadNameRU1}}<br>
-                        {{firstBlockHeadNameRU2}}</p>
-                    <p class="comment"><span>{{firstBlockHeadCommentRU1}}</span> <span>{{firstBlockHeadCommentRU2}}</span></p>
-                    <div class="button-choice">
-                        <a :href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionRU}}</a>
-                    </div>
-                    <div class="details">
-                        {{firstBlockHeadDeatilsRU}}
-                    </div>
-                </div>
-            </div>
-        </div>
-      <!-- ПЕРВЫЙ БЛОК END =========================================================== -->
-     
-     <!-- FOOTER START =================================================== -->
 
-        <div class="footer-not-main" id="home-page-diff-footer">
-            <div class="centered">
-                <div class="left">
-                    <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
-                    <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
-                    <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
-                </div>
-                <div class="right">
-                    <h3>{{agentFooterItemTitle2RU}}</h3>
-                    <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
-                    <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
+            <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+            <div class="col-md-10">
+                <div class="row menu-telephone">
+                    <div class="col-md-8 col-7">
+                        <p class="telephone-title">{{menuPhoneTitleRU}}</p>
+                        <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                    </div>
+                    <a :href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
                 </div>
             </div>
         </div>
+    </div>
+</div>
 
-        <!-- FOOTER END =================================================== -->
-     
-     
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-    <!--<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>-->
-    <script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>
-    <script src="VUE-diff-agent-header-footer.js"></script>
-  
+<!-- ВЕРХНЕЕ МЕНЮ TOP END =========================================================== -->
+
+
+<!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+<div class="head" id="home-page-first-block">
+    <div class="center-block">
+        <div class="white-box">
+            <p class="header">{{firstBlockHeadNameRU1}}<br>
+                {{firstBlockHeadNameRU2}}</p>
+            <p class="comment"><span>{{firstBlockHeadCommentRU1}}</span> <span>{{firstBlockHeadCommentRU2}}</span></p>
+            <div class="button-choice">
+                <a :href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionRU}}</a>
+            </div>
+            <div class="details">
+                {{firstBlockHeadDeatilsRU}}
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ПЕРВЫЙ БЛОК END =========================================================== -->
+
+<!-- TEXT START =========================================================== -->
+<div class="text" id="home-page-text-block">
+    <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockRU2}}<br>
+    <br>
+    {{homePageTextBlockRU3}}
+</div>
+<!-- TEXT END =========================================================== -->
+
+<!-- FOOTER START =================================================== -->
+
+<div class="footer-not-main" id="home-page-diff-footer">
+    <div class="centered">
+        <div class="left">
+            <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
+        </div>
+        <div class="right">
+            <h3>{{agentFooterItemTitle2RU}}</h3>
+            <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
+            <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER END =================================================== -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<!--<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>-->
+<!--<script src="https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page"></script>-->
+<script src="VUE-diff-agent-header-footer.js"></script>
+<script src="VUE-diff-product-home-page.js"></script>

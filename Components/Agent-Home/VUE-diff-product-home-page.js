@@ -46,4 +46,29 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadDeatilsLT: '* TUI poilsio koncepcijos - tai naujas poilsio formatas, kur atsižvelgiama į visų kartų interesus.',
         firstBlockHeadDeatilsLV: '* TUI atpūtas koncepcijas - atpūta jaunā formātā, kas ņem vērā visu paaudžu intereses.',
     }
-})
+});
+
+const homePageTextBlock = new Vue ({
+    el: '#home-page-text-block',
+    data: {
+        homePageTextBlockRU1: 'Концепции отдыха TUI',
+        homePageTextBlockRU2: '- это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.',
+        homePageTextBlockRU3: 'Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!',
+        homePageTextBlockBY1: 'Концепции отдыха TUI',
+        homePageTextBlockBY2: '- это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.',
+        homePageTextBlockBY3: 'Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!',
+        homePageTextBlockUA1: 'Концепции отдыха TUI',
+        homePageTextBlockUA2: '- это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.',
+        homePageTextBlockUA3: 'Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!',
+        homePageTextBlockEE1: 'TUI puhkuse konseptsioonid',
+        homePageTextBlockEE2: '- uue formaadi puhkus, kus on võetud arvesse igas vanuses puhkajate huvid. Juba 42 600 inimest on valinud puhkuse meie hotellides.',
+        homePageTextBlockEE3: 'Nüüd on teilgi aeg teha valik! Valige sihtkoht ja broneerige just teile sobiva puhkuse kontseptsiooni!',
+        homePageTextBlockLT1: 'TUI poilsio koncepcijos',
+        homePageTextBlockLT2: '- tai naujas poilsio formatas, kur atsižvelgiama į visų kartų interesus ir šiuolaikines tendencijas. 100 000 turistų jau pasirinko ir išbandė tokio tipo poilsį mūsų viešbučiuose.',
+        homePageTextBlockLT3: 'Laikas rinktis! Išsirinkite šalį ir užsisakykite Jums tinkamiausią atostogų tipą!',
+        homePageTextBlockLV1: 'TUI atpūtas koncepcijas',
+        homePageTextBlockLV2: '- jauna formāta atpūta, kur tiek ņemtas vērā visu paaudžu intereses un mūsdienīgas tendences. Jau 100 000 viesu ir izvēlējušies atpūtu mūsu viesnīcas. ',
+        homePageTextBlockLV3: 'Ir pienācis laiks izdarīt izvēli! Izvēlēties valsti un rezervējiet atpūtas koncepciju, kas ir piemērota tieši jums!',
+    }
+});
+
