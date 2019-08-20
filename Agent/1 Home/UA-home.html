@@ -694,7 +694,7 @@
                         {{firstBlockHeadNameUA2}}</p>
                     <p class="comment"><span>{{firstBlockHeadCommentUA1}}</span> <span>{{firstBlockHeadCommentUA2}}</span></p>
                     <div class="button-choice">
-                        <a :href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionUA}}</a>
+                        <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank">{{firstBlockHeadPresentaionUA}}</a>
                     </div>
                     <div class="details">
                         {{firstBlockHeadDeatilsUA}}
@@ -713,157 +713,200 @@
         </div>
         <!-- TEXT END =========================================================== -->
 
-        <div class="block-head">
-            <div class="logo"><img src="https://www.tui.ru/getmedia/d154b64a-2315-40e0-94f5-53137a734367/logo-FS" /></div>
-
+        <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+        <div class="block-head" id="home-page-fun-sun-block-text">
+            <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
             <div class="about">
-                <div class="name" style="text-transform:uppercase;margin-bottom:20px">Концепция семейного отдыха TUI FUN&amp;SUN</div>
-
-                <div class="name">Семейный отдых, продуманный в деталях</div>
-
-                <p class="text">Во время отдыха для гостя TUI FUN&amp;SUN отель становится своеобразным миром в миниатюре, где номер &ndash; это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан &ndash;кухней мечты с бесконечным питанием, а рестораны a la carte &ndash; рестораны для выхода в &laquo;свет&raquo; всей семьей в выходной.</p>
-
-                <p class="text">Мы долго готовились к вашему приезду. К летнему сезону-2019, мы выбрали 10 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.</p>
+                <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                    {{homePageFunSunBlockTitleUA1}}
+                </div>
+                <div class="name">
+                    {{homePageFunSunBlockTitleUA2}}
+                </div>
+                <p class="text">{{homePageFunSunBlockTextUA1}}</p>
+                <p class="text">{{homePageFunSunBlockTextUA2}}</p>
             </div>
         </div>
-
-        <div class="block">
-            <div class="video"><a class="more" href="http://agent.tui.ua/concepts/tui-fun-sun/" target="_blank">Подробнее</a>
-
-                <div id="player">&nbsp;</div>
-
-                <div class="play video-fs picture1"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
+        <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+        <!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-fun-sun-block-video-hotels">
+                <div class="video">
+                    <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextUA}}</a>
+                    <div id="player"></div>
+                    <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
+                </div>
+                <div class="list">
+                    <div class="header">
+                        {{homeFunSunBlockPageTitleUA}}
+                    </div>
+                    <div class="header country">
+                        {{homeFunSunBlockPageTurkeyUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink3 " target="_blank">{{homeFunSunHotelName3}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink4 " target="_blank">{{homeFunSunHotelName4}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink5 " target="_blank">{{homeFunSunHotelName5}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink6 " target="_blank">{{homeFunSunHotelName6}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink7 " target="_blank">{{homeFunSunHotelName7}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink8 " target="_blank">{{homeFunSunHotelName8}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeFunSunBlockPageCyprysUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink9 " target="_blank">{{homeFunSunHotelName9}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink10 " target="_blank">{{homeFunSunHotelName10}}</a>
+                    </div>
+                </div>
             </div>
-
-            <div class="list">
-                <div class="header">Отдых всей семьей в отелях TUI FUN&amp;SUN</div>
-
-                <div class="header country">Турция</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort" target="_blank">TUI FUN&amp;SUN Miarosa Ghazal Resort 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek" target="_blank">TUI FUN&amp;SUN Club Belek 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire" target="_blank">TUI FUN&amp;SUN Club Saphire 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace" target="_blank">TUI FUN&amp;SUN Club Serra Palace 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek" target="_blank">TUI FUN&amp;SUN River Resort Belek 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort">TUI FUN&amp;SUN Comfort Beach Resort 5*</a></div>
-
-                <div class="link"><a href="/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica">TUI FUN&amp;SUN Club Di Finica 5*</a></div>
-
-                <div class="link"><a href="/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach">TUI FUN&amp;SUN Miarosa Incekum Beach 5*</a></div>
-
-                <div class="header country">Кипр</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark" target="_blank">TUI FUN&amp;SUN Panthea Waterpark 4*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites" target="_blank">TUI FUN&amp;SUN Vangelis Hotel &amp; Suite 4*</a></div>
+            <!-- FUN SUN BLOCK VIDEO AND HOTELS END =========================================================== -->
+            
+         <!-- DAY NIGHT BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-day-night-block-text">
+                <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{homePageDayNightBlockTitleUA1}}
+                    </div>
+                    <div class="name">
+                        {{homePageDayNightBlockTitleUA2}}
+                    </div>
+                    <p class="text">{{homePageDayNightBlockTextUA1}}</p>
+                    <p class="text">{{homePageDayNightBlockTextUA2}}</p>
+                    <p class="text">{{homePageDayNightBlockTextUA3}}</p>
+                </div>
             </div>
-        </div>
-
-        <div class="block-head">
-            <div class="logo"><img src="https://www.tui.ru/getmedia/82b48419-a310-45c9-a9d0-4b4fe86c85de/logo-FN" /></div>
-
-            <div class="about">
-                <div class="name" style="text-transform:uppercase;margin-bottom:20px">Концепция молодежного отдыха TUI DAY&amp;NIGHT Connected</div>
-
-                <div class="name">Отдых, заряжающий энергией!</div>
-
-                <p class="text">TUI DAY&amp;NIGHT Connected &ndash; это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!</p>
-
-                <p class="text">Вселенная, которая состоит из Солнечной системы &laquo;Ultra All Inclusive&raquo; с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями &laquo;Wellness &amp; Fitness&raquo;, где для вас проводят мастер-классы именитые инструкторы, и &laquo;Night Life&raquo; с бесплатным входом в популярные ночные клубы; и бесконечного <span style="white-space:nowrap">Wi-Fi</span>.</p>
-
-                <p class="text">Отдохнуть в передвижениях можно на станции &laquo;Номер&raquo; в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.</p>
+            <!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
+        
+        
+        <!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-day-night-block-video-hotels">
+                <div class="video2">
+                    <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextUA}}</a>
+                    <div id="player2"></div>
+                    <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
+                </div>
+                <div class="list">
+                    <!--<div class="header"></div>-->
+                    <div class="header country">
+                        {{homeDayNightBlockPageTurkeyUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink1 " target="_blank">{{homeFunSunHotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeFunSunHotelLink2 " target="_blank">{{homeFunSunHotelName2}}</a>
+                    </div>
+                </div>
             </div>
-        </div>
+            <!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
 
-        <div class="block">
-            <div class="video2"><a class="more" href="http://agent.tui.ua/concepts/tui-day-night/" target="_blank">Подробнее</a>
-
-                <div id="player2">&nbsp;</div>
-
-                <div class="play2 video-fs picture2"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
+        <!-- TOUCAN BLOCK TEXT START =========================================================== -->
+            <div class="block-head" id="home-page-toucan-block-text">
+                <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
+                <div class="about">
+                    <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                        {{homePageToucanBlockTitleUA1}}
+                    </div>
+                    <div class="name">
+                        {{homePageToucanBlockTitleUA2}}
+                    </div>
+                    <p class="text">{{homePageToucanBlockTextUA1}}<br>
+                        <br>
+                        {{homePageToucanBlockTextUA2}}</p>
+                    <ul class="text" style="list-style-type:disc">
+                        <li>{{homePageToucanBlockSpisokItemUA1}}</li>
+                        <li>{{homePageToucanBlockSpisokItemUA2}}</li>
+                        <li>{{homePageToucanBlockSpisokItemUA3}}</li>
+                    </ul>
+                </div>
             </div>
+            <!-- TOUCAN BLOCK TEXT END =========================================================== -->
 
-            <div class="list">
-                <!--<div class="header"></div>-->
-                <div class="header country">Турция</div>
+        <!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
+            <div class="block" id="home-page-toucan-block-video-hotels">
+                <div class="video3">
+                    <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeToucanBlockPageLinkTextUA}}</a>
+                    <div id="player3"></div>
+                    <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
+                </div>
+                <div class="list" style="min-height:476px">
 
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros" target="_blank">TUI DAY&amp;NIGHT Connected Club Hydros 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek" target="_blank">TUI DAY&amp;NIGHT Connected Club Life Belek 5*</a></div>
+                    <div class="header country">
+                        {{homeToucanBlockPageTurkeyUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink1 " target="_blank">{{homeToucanHotelName1}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink2 " target="_blank">{{homeToucanHotelName2}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink3 " target="_blank">{{homeToucanHotelName3}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink4 " target="_blank">{{homeToucanHotelName4}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageCyprusUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink5 " target="_blank">{{homeToucanHotelName5}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink6 " target="_blank">{{homeToucanHotelName6}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageMontenegroUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink7 " target="_blank">{{homeToucanHotelName7}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink8 " target="_blank">{{homeToucanHotelName8}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageItalyUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink9 " target="_blank">{{homeToucanHotelName9}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageSpainUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink10 " target="_blank">{{homeToucanHotelName10}}</a>
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink11 " target="_blank">{{homeToucanHotelName11}}</a>
+                    </div>
+                    <div class="header country">
+                        {{homeToucanBlockPageRussiaUA}}
+                    </div>
+                    <div class="link">
+                        <a v-bind:href=" homeToucanHotelLink12 " target="_blank">{{homeToucanHotelName12}}</a>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="block-head">
-            <div class="logo"><img src="https://www.tui.ru/getmedia/a388ed46-64bc-4a03-a888-ae08a95cf843/logo-mini-toucan" /></div>
-
-            <div class="about">
-                <div class="name" style="text-transform:uppercase;margin-bottom:20px">Детские клубы TUI МИНИ ТУКАН</div>
-
-                <div class="name">Главный секрет отличного отдыха с детьми</div>
-
-                <p class="text">Детский клуб TUI Мини Тукан &ndash; территория отдыха с развивающей и игровой программой для детей от 4 до 12 лет, созданной профессионалами, с учетом пожеланий родителей. Отели с детскими клубами TUI Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, весело и познавательно для детей.<br />
-                    <br />
-                    Что такое клуб TUI Мини Тукан?</p>
-
-                <ul class="text" style="list-style-type:disc">
-                    <li>Программа для детей 2 возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет.</li>
-                    <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li>
-                    <li>Вечером &ndash; мини-диско.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="block">
-            <div class="video3"><a class="more" href="http://agent.tui.ua/concepts/tui-toucan/" target="_blank">Подробнее</a>
-
-                <div id="player3">&nbsp;</div>
-
-                <div class="play3 video-fs picture3"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
-            </div>
-
-            <div class="list" style="min-height:476px">
-                <!--<div class="header"></div>-->
-                <!--<div class="header country">ОАЭ</div>-->
-                <!--<div class="link"><a href="http://agent.tui.ua/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence" target="_blank">Al Hamra Residence 5*</a></div>-->
-                <!--<div class="link"><a href="http://agent.tui.ua/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-Beach-Hotels/al-hamra-village-golf-beach-resort" target="_blank">Al Hamra Village Golf &amp; Beach Resort 4*</a></div>-->
-                <div class="header country">Турция</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club" target="_blank">Pegasos Club 4*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort" target="_blank">Pegasos Resort 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal" target="_blank">Pegasos Royal 5*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva" target="_blank">Kilikya Resort Camyuva 5*</a></div>
-
-                <div class="header country">Кипр</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia" target="_blank">Christofinia 4*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Cyprus/Limasol-Resort/Limasol-City/St-Raphael-Resort" target="_blank">St Raphael 5*</a></div>
-
-                <div class="header country">Черногория</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Montenegro/Budvanska-Rivijera/Budva/Aleksandar" target="_blank">Aleksandar 4*</a></div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Montenegro/Budvanska-Rivijera/Petrovac/Castellastva" target="_blank">Castellastva 4*</a></div>
-
-                <div class="header country">Италия, Калабрия</div>
-
-                <div class="link"><a href="http://agent.tui.ua/Tours/Europe/Italy/Calabria/Pizzo/garden-resort-calabria-(ex-valtur-garden)" target="_blank">Garden Resort Calabria (ex. Valtur Garden) 4*</a></div>
-
-                <div class="header country">Испания</div>
-
-                <div class="link"><a href="https://goo.gl/xchnkR" target="_blank">Estival Park Hotel Resort 4*</a></div>
-
-                <div class="link"><a href="https://goo.gl/wAUnYa" target="_blank">Don Juan Tossa 4*</a></div>
-            </div>
-        </div>
+            <!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
         <!--<h3 style="text-align:center;font-size:22px;">ПОДПИШИТЕСЬ НА НАС</h3>-->
         <!--<div class="soc-icons-big-block" style="margin:30px auto;width:118px"><a style="margin: 5px;" href="#"><img src="/getmedia/0bf951d7-5db7-48b0-b6ab-898f6f97cf39/logo-instagram-white-copy" /></a><a style="margin: 5px;" href="#"><img src="/getmedia/d2ca2e94-b7ee-4572-a925-2b0f72ac847b/logo-fb-white" /></a></div>-->
     </div>
