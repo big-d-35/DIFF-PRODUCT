@@ -1,3 +1,5 @@
+
+
 const homePageFirstBlock = new Vue ({
     el: '#home-page-first-block',
     data:{
@@ -153,25 +155,43 @@ const homePageFunSunBlockVideoHotels = new Vue ({
         homeFunSunBlockPageCyprysLV: 'Kipra',
         
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
+        homeFunSunHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
         homeFunSunHotelName1: 'FUN&SUN Miarosa Ghazal Resort 5*',
+        
         homeFunSunHotelLink2: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
-        homeFunSunHotelName2: 'FUN&SUN Miarosa Ghazal Resort 5*',
+        homeFunSunHotelLinkClient2: '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+        homeFunSunHotelName2: 'FUN&SUN Club Belek 5*',
+        
         homeFunSunHotelLink3: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire',
+        homeFunSunHotelLinkClient3: '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
         homeFunSunHotelName3: 'FUN&SUN Club Saphire 5*',
+        
         homeFunSunHotelLink4: '/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace',
+        homeFunSunHotelLinkClient4: '/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/',
         homeFunSunHotelName4: 'FUN&SUN Club Serra Palace 5*',
+        
         homeFunSunHotelLink5: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek',
+        homeFunSunHotelLinkClient5: '/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/',
         homeFunSunHotelName5: 'FUN&SUN River Resort Belek 5*',
+        
         homeFunSunHotelLink6: '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort',
+        homeFunSunHotelLinkClient6: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/',
         homeFunSunHotelName6: 'FUN&SUN Comfort Beach Resort 5*',
+        
         homeFunSunHotelLink7: '/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica',
+        homeFunSunHotelLinkClient7: '/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/',
         homeFunSunHotelName7: 'FUN&SUN Club Di Finica 5*',
+        
         homeFunSunHotelLink8: '/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach',
+        homeFunSunHotelLinkClient8: '/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/',
         homeFunSunHotelName8: 'FUN&SUN Miarosa Incekum Beach 5*',
         
         homeFunSunHotelLink9: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark',
+        homeFunSunHotelLinkClient9: '/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/',
         homeFunSunHotelName9: 'FUN&SUN Panthea Waterpark 4*',
+        
         homeFunSunHotelLink10: '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
+        homeFunSunHotelLinkClient10: '/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites/',
         homeFunSunHotelName10: 'FUN&SUN Vangelis Hotel & Suite 4*',
         
     }
@@ -248,8 +268,11 @@ const homePageDayNightBlockVideoHotels = new Vue ({
         homeDayNightBlockPageTurkeyLV: 'Turcija',
                
         homeFunSunHotelLink1: '/Tours/Europe/Turkey/kemer/Kemer-Center/TUI-DAY-NIGHT-Connected-Club-Hydros',
+        homeFunSunHotelLinkClient1: '/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/',
         homeFunSunHotelName1: 'DAY&NIGHT Connected Club Hydros 5*',
+        
         homeFunSunHotelLink2: '/Tours/Europe/Turkey/belek/Bogazkent/TUI-DAY-NIGHT-Connected-Club-Life-Belek',
+        homeFunSunHotelLinkClient2: '/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/',
         homeFunSunHotelName2: 'DAY&NIGHT Connected Club Life Belek 5*',
         
         
@@ -369,28 +392,51 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageRussiaLV: 'Krievija',
                
         homeToucanHotelLink1: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
+        homeToucanHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
         homeToucanHotelName1: 'Pegasos Club 4*',
+        
         homeToucanHotelLink2: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort',
+        homeToucanHotelLinkClient2: '/hotel/europe-turkey-alanya-incekum-pegasos__resort/',
         homeToucanHotelName2: 'Pegasos Resort 5*',
+        
         homeToucanHotelLink3: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal',
+        homeToucanHotelLinkClient3: '/hotel/europe-turkey-alanya-incekum-pegasos__royal/',
         homeToucanHotelName3: 'Pegasos Royal 5*',
+        
         homeToucanHotelLink4: '/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva',
+        homeToucanHotelLinkClient4: '/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/',
         homeToucanHotelName4: 'Kilikya Resort Camyuva 5*',
+        
         homeToucanHotelLink5: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
+        homeToucanHotelLinkClient5: '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
         homeToucanHotelName5: 'Christofinia 4*',
+        
         homeToucanHotelLink6: '/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/',
+        homeToucanHotelLinkClient6: '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
         homeToucanHotelName6: 'St Raphael 5*',
+        
         homeToucanHotelLink7: '/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/',
+        homeToucanHotelLinkClient7: '/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/',
         homeToucanHotelName7: 'Aleksandar 4*',
+        
         homeToucanHotelLink8: '/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/',
+        homeToucanHotelLinkClient8: '/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/',
         homeToucanHotelName8: 'Castellastva 4*',
+        
         homeToucanHotelLink9: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
+        homeToucanHotelLinkClient9: '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
         homeToucanHotelName9: 'Garden Resort Calabria (ex. Valtur Garden) 4*',
+        
         homeToucanHotelLink10: '/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort',
+        homeToucanHotelLinkClient10: '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
         homeToucanHotelName10: 'Estival Park Hotel Resort 4*',
+        
         homeToucanHotelLink11: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
+        homeToucanHotelLinkClient11: '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
         homeToucanHotelName11: 'Don Juan Tossa 4*',
+        
         homeToucanHotelLink12: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
+        homeToucanHotelLink12: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
         homeToucanHotelName12: 'Бархатные сезоны 3*',
         
     }

@@ -450,7 +450,7 @@
         }
     }
 </style>
-<!-- PELOADER TUI -->
+<!-- PELOADER TUI ======================= -->
 <link href="https://www.tui.ru/getmedia/539394c4-9001-4639-a8d5-1b935ae77906/style-loader-dev" rel="stylesheet" type="text/css" />
 <title></title>
 <!--<div class="loader-row c">
@@ -550,7 +550,7 @@
         </div>
     </div>
 </div>-->
-<!-- END PRELOADER -->
+<!-- END PRELOADER ====================== -->
 <script type="text/javascript">
     var pageRow = document.querySelector(".ActionPage-container");
     (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
@@ -558,6 +558,7 @@
     var new_script = document.createElement('script');
     new_script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
     document.head.appendChild(new_script);
+
     new_script.onload = function() {
         var new_script = document.createElement('script');
         new_script.src = "https://www.tui.ru/getmedia/c143421f-5690-411c-bfed-cae16d3cd916/all-script/";
@@ -566,202 +567,292 @@
             var new_script = document.createElement('script');
             new_script.src = "https://www.youtube.com/iframe_api";
             document.head.appendChild(new_script);
+
+
+
         }
     }
 </script>
 
-<div class="head">
+<head></head>
+<!-- ПЕРВЫЙ БЛОК СТАРТ =========================================================== -->
+<div class="head" id="home-page-first-block">
     <div class="center-block">
         <div class="white-box">
-            <p class="header">KОНЦЕПЦИИ ОТДЫХА,<br />
-                СОЗДАННЫЕ TUI</p>
-
-            <p class="comment"><span>Мы знаем, какой отдых вам нужен,</span> <span>потому что вы нам сами об этом рассказали!</span></p>
-
-            <div class="button">Выбрать концепцию</div>
-
-            <div class="details">* Концепции отдыха TUI &ndash; это отдых в новом формате, где учтены интересы всех поколений.</div>
+            <p class="header">{{firstBlockHeadNameRU1}}<br>
+                {{firstBlockHeadNameRU2}}</p>
+            <p class="comment"><span>{{firstBlockHeadCommentRU1}}</span> <span>{{firstBlockHeadCommentRU2}}</span></p>
+            <div class="button">
+                <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank" style="color: white">{{firstBlockHeadPresentaionRU}}</a>
+            </div>
+            <div class="details">
+                {{firstBlockHeadDeatilsRU}}
+            </div>
         </div>
     </div>
 </div>
+<!-- ПЕРВЫЙ БЛОК END =========================================================== -->
 
 <div class="content-block">
-    <div class="text"><strong>Концепции отдыха TUI</strong> &ndash; это новый формат отдыха, где учтены интересы всех поколений и современные тренды. 100 000 человек уже сделали свой выбор в пользу отдыха в наших отелях.<br />
-        <br />
-        Время и вам сделать выбор! Выберите страну и забронируйте формат отдыха, который подходит именно вам!</div>
+    <!-- TEXT START =========================================================== -->
+    <div class="text" id="home-page-text-block">
+        <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockRU2}}<br>
+        <br>
+        {{homePageTextBlockRU3}}
+    </div>
+    <!-- TEXT END =========================================================== -->
 
-    <div class="block-head">
-        <div class="logo"><img src="https://www.tui.ru/getmedia/d154b64a-2315-40e0-94f5-53137a734367/logo-FS" /></div>
-
+    <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-fun-sun-block-text">
+        <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
         <div class="about">
-            <div class="name" style="text-transform:uppercase;margin-bottom:20px">Концепция семейного отдыха TUI FUN&amp;SUN</div>
-
-            <div class="name">Семейный отдых, продуманный в деталях</div>
-
-            <p class="text">Во время отдыха для гостя TUI FUN&amp;SUN отель становится своеобразным миром в миниатюре, где номер &ndash; это квартира, Детский Клуб Тукан - детский сад и школа, море и разнообразные бассейны становятся самой приятной ванной на свете, главный ресторан &ndash;кухней мечты с бесконечным питанием, а рестораны a la carte &ndash; рестораны для выхода в &laquo;свет&raquo; всей семьей в выходной.</p>
-
-            <p class="text">Мы долго готовились к вашему приезду. К летнему сезону-2019, мы выбрали 10 прекрасных отелей, навели в них порядок и чистоту, разработали специальное меню, подготовили развлекательную и спортивную программы и, конечно же, обучили каждого сотрудника.</p>
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageFunSunBlockTitleRU1}}
+            </div>
+            <div class="name">
+                {{homePageFunSunBlockTitleRU2}}
+            </div>
+            <p class="text">{{homePageFunSunBlockTextRU1}}</p>
+            <p class="text">{{homePageFunSunBlockTextRU2}}</p>
         </div>
     </div>
-
-    <div class="block">
-        <div class="video"><a class="more" href="https://www.tui.ru/concepts/tui-fun-sun/" target="_blank">Подробнее</a>
+    <!-- FUN SUN BLOCK TEXT START =========================================================== -->
+    <!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-fun-sun-block-video-hotels">
+        <div class="video">
+            <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextRU}}</a>
             <div id="player"></div>
-
-            <div class="play video-fs picture1"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
+            <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
         </div>
-
         <div class="list">
-            <div class="header">Отдых всей семьей в отелях TUI FUN&amp;SUN</div>
-
-            <div class="header country">Турция</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/" target="_blank">TUI FUN&amp;SUN Miarosa Ghazal Resort 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/" target="_blank">TUI FUN&amp;SUN Club Belek 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/" target="_blank">TUI FUN&amp;SUN Club Saphire 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace__(ex__club__calimera__s/" target="_blank">TUI FUN&amp;SUN Club Serra Palace 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/" target="_blank">TUI FUN&amp;SUN River Resort Belek 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/">TUI FUN&amp;SUN Comfort Beach Resort 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/">TUI FUN&amp;SUN Club Di Finica 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/">TUI FUN&amp;SUN Miarosa Incekum Beach 5*</a></div>
-
-            <div class="header country">Кипр</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-cyprus-ayia__napa-ayia__napa-tui__fun__sun__panthea__waterpark/" target="_blank">TUI FUN&amp;SUN Panthea Waterpark 4*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-cyprus-protaras-protaras__city-vangelis__hotel__suites" target="_blank">TUI FUN&amp;SUN Vangelis Hotel &amp; Suite 4*</a></div>
+            <div class="header">
+                {{homeFunSunBlockPageTitleRU}}
+            </div>
+            <div class="header country">
+                {{homeFunSunBlockPageTurkeyRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient3 " target="_blank">{{homeFunSunHotelName3}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient4 " target="_blank">{{homeFunSunHotelName4}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient5 " target="_blank">{{homeFunSunHotelName5}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient6 " target="_blank">{{homeFunSunHotelName6}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient7 " target="_blank">{{homeFunSunHotelName7}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient8 " target="_blank">{{homeFunSunHotelName8}}</a>
+            </div>
+            <div class="header country">
+                {{homeFunSunBlockPageCyprysRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient9 " target="_blank">{{homeFunSunHotelName9}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient10 " target="_blank">{{homeFunSunHotelName10}}</a>
+            </div>
         </div>
     </div>
+    <!-- FUN SUN BLOCK VIDEO AND HOTELS END =========================================================== -->
 
-    <div class="block-head">
-        <div class="logo"><img src="https://www.tui.ru/getmedia/82b48419-a310-45c9-a9d0-4b4fe86c85de/logo-FN" /></div>
-
+    <!-- DAY NIGHT BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-day-night-block-text">
+        <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
         <div class="about">
-            <div class="name" style="text-transform:uppercase;margin-bottom:20px">Концепция молодежного отдыха TUI DAY&amp;NIGHT Connected</div>
-
-            <div class="name">Отдых, заряжающий энергией!</div>
-
-            <p class="text">TUI DAY&amp;NIGHT Connected &ndash; это целая Вселенная приключений, веселья и ярких положительных эмоций, которые запомнятся на всю жизнь!</p>
-
-            <p class="text">Вселенная, которая состоит из Солнечной системы &laquo;Ultra All Inclusive&raquo; с планетами свежевыжатого апельсинового сока, национальных блюд, европейской кухни, ресторанов a la carte, и бесплатного импортного алкоголя; Галактики развлечений с созвездиями &laquo;Wellness &amp; Fitness&raquo;, где для вас проводят мастер-классы именитые инструкторы, и &laquo;Night Life&raquo; с бесплатным входом в популярные ночные клубы; и бесконечного <span style="white-space:nowrap">Wi-Fi</span>.</p>
-
-            <p class="text">Отдохнуть в передвижениях можно на станции &laquo;Номер&raquo; в уютной форме из фирменных халатов и тапочек за чашкой горячего чая.</p>
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageDayNightBlockTitleRU1}}
+            </div>
+            <div class="name">
+                {{homePageDayNightBlockTitleRU2}}
+            </div>
+            <p class="text">{{homePageDayNightBlockTextRU1}}</p>
+            <p class="text">{{homePageDayNightBlockTextRU2}}</p>
+            <p class="text">{{homePageDayNightBlockTextRU3}}</p>
         </div>
     </div>
+    <!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
 
-    <div class="block">
-        <div class="video2"><a class="more" href="https://www.tui.ru/concepts/tui-day-night/" target="_blank">Подробнее</a>
+    <!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-day-night-block-video-hotels">
+        <div class="video2">
+            <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextRU}}</a>
             <div id="player2"></div>
-
-            <div class="play2 video-fs picture2"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
+            <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
         </div>
-
         <div class="list">
             <!--<div class="header"></div>-->
-            <div class="header country">Турция</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-kemer__center-tui__day__night__connected__club__hydros/" target="_blank">TUI DAY&amp;NIGHT Connected Club Hydros 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-belek-bogazkent-tui__day__night__connected__club__life__belek/" target="_blank">TUI DAY&amp;NIGHT Connected Club Life Belek 5*</a></div>
+            <div class="header country">
+                {{homeDayNightBlockPageTurkeyRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
+            </div>
         </div>
     </div>
-
-    <div class="block-head">
-        <div class="logo"><img src="https://www.tui.ru/getmedia/a388ed46-64bc-4a03-a888-ae08a95cf843/logo-mini-toucan" /></div>
-
+    <!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
+    <!-- TOUCAN BLOCK TEXT START =========================================================== -->
+    <div class="block-head" id="home-page-toucan-block-text">
+        <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
         <div class="about">
-            <div class="name" style="text-transform:uppercase;margin-bottom:20px">Детские клубы TUI МИНИ ТУКАН</div>
-
-            <div class="name">Главный секрет отличного отдыха с детьми</div>
-
-            <p class="text">Детский клуб TUI Мини Тукан &ndash; территория отдыха с развивающей и игровой программой для детей от 4 до 12 лет, созданной профессионалами, с учетом пожеланий родителей. Отели с детскими клубами TUI Мини Тукан позволяют провести долгожданный отпуск в спокойствии за безопасность и развлечения ребенка для родителей, весело и познавательно для детей.<br />
-                <br />
-                Что такое клуб TUI Мини Тукан?</p>
-
-            <ul class="text">
-                <li>Программа для детей 2 возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет.</li>
-                <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li>
-                <li>Вечером &ndash; мини-диско.</li>
+            <div class="name" style="text-transform:uppercase;margin-bottom:20px">
+                {{homePageToucanBlockTitleRU1}}
+            </div>
+            <div class="name">
+                {{homePageToucanBlockTitleRU2}}
+            </div>
+            <p class="text">{{homePageToucanBlockTextRU1}}<br>
+                <br>
+                {{homePageToucanBlockTextRU2}}</p>
+            <ul class="text" style="list-style-type:disc">
+                <li>{{homePageToucanBlockSpisokItemRU1}}</li>
+                <li>{{homePageToucanBlockSpisokItemRU2}}</li>
+                <li>{{homePageToucanBlockSpisokItemRU3}}</li>
             </ul>
         </div>
     </div>
+    <!-- TOUCAN BLOCK TEXT END =========================================================== -->
 
-    <div class="block">
-        <div class="video3"><a class="more" href="https://www.tui.ru/concepts/tui-toucan/" target="_blank">Подробнее</a>
+    <!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
+    <div class="block" id="home-page-toucan-block-video-hotels">
+        <div class="video3">
+            <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeDToucanBlockPageLinkTextRU}}</a>
             <div id="player3"></div>
-
-            <div class="play3 video-fs picture3"><img src="https://www.tui.ru/getmedia/c91a3a4a-bded-4e06-99c3-a6befd390d32/play" /></div>
+            <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
         </div>
+        <div class="list" style="min-height:476px">
 
-        <div class="list">
-            <!--<div class="header"></div>-->
-            <!--<div class="header country">ОАЭ</div>-->
-
-            <!--<div class="link"><a href="https://www.tui.ru/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/?adults=2&amp;children=0&amp;dateDelta=0&amp;dateFrom=1544842800000&amp;directionCountryTo=20613&amp;directionFrom=274286&amp;hotelNameQuery=Al%20Hamra%20Residence&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=315346" target="_blank">Al Hamra Residence 5*</a></div>-->
-
-            <!--<div class="link"><a href="https://www.tui.ru/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/?adults=2&amp;children=0&amp;dateDelta=0&amp;dateFrom=1544842800000&amp;directionCountryTo=20613&amp;directionFrom=274286&amp;hotelNameQuery=Al%20Hamra%20Village%20Golf%20&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=215136" target="_blank">Al Hamra Village Golf &amp; Beach Resort 4*</a></div>-->
-
-            <div class="header country">Турция</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-alanya-incekum-pegasos__club/" target="_blank">Pegasos Club 4*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-alanya-incekum-pegasos__resort/" target="_blank">Pegasos Resort 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-alanya-incekum-pegasos__royal/" target="_blank">Pegasos Royal 5*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/" target="_blank">Kilikya Resort Camyuva 5*</a></div>
-
-            <div class="header country">Кипр</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/" target="_blank">Christofinia 4*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/" target="_blank">St Raphael 5*</a></div>
-
-            <div class="header country">Черногория</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/" target="_blank">Aleksandar 4*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/" target="_blank">Castellastva 4*</a></div>
-
-            <div class="header country">Италия, Калабрия</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-italy-calabria-pizzo-valtur__garden__calabria/" target="_blank">Garden Resort Calabria (ex. Valtur Garden) 4*</a></div>
-
-            <div class="header country">Испания</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/" target="_blank">Estival Park Hotel Resort 4*</a></div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/" target="_blank">Don Juan Tossa 4*</a></div>
-
-            <div class="header country">Россия, Сочи</div>
-
-            <div class="link"><a href="https://www.tui.ru/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/" target="_blank">Бархатные сезоны 3*</a></div>
+            <div class="header country">
+                {{homeToucanBlockPageTurkeyRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient1 " target="_blank">{{homeToucanHotelName1}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient2 " target="_blank">{{homeToucanHotelName2}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient3 " target="_blank">{{homeToucanHotelName3}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient4 " target="_blank">{{homeToucanHotelName4}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageCyprusRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient5 " target="_blank">{{homeToucanHotelName5}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient6 " target="_blank">{{homeToucanHotelName6}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageMontenegroRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient7 " target="_blank">{{homeToucanHotelName7}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient8 " target="_blank">{{homeToucanHotelName8}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageItalyRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient9 " target="_blank">{{homeToucanHotelName9}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageSpainRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient10 " target="_blank">{{homeToucanHotelName10}}</a>
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient11 " target="_blank">{{homeToucanHotelName11}}</a>
+            </div>
+            <div class="header country">
+                {{homeToucanBlockPageRussiaRU}}
+            </div>
+            <div class="link">
+                <a v-bind:href=" homeToucanHotelLinkClient12 " target="_blank">{{homeToucanHotelName12}}</a>
+            </div>
         </div>
     </div>
+    <!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
     <!--<h3 style="text-align:center;font-size:22px;">ПОДПИШИТЕСЬ НА НАС</h3>-->
     <!--<div class="soc-icons-big-block" style="margin:30px auto;width:118px"><a style="margin: 5px;" href="#"><img src="/getmedia/0bf951d7-5db7-48b0-b6ab-898f6f97cf39/logo-instagram-white-copy" /></a><a style="margin: 5px;" href="#"><img src="/getmedia/d2ca2e94-b7ee-4572-a925-2b0f72ac847b/logo-fb-white" /></a></div>-->
 </div>
 
-<div class="footer-not-main">
+<!-- FOOTER START =================================================== -->
+
+<div class="footer-not-main" id="home-page-diff-footer">
     <div class="centered">
         <div class="left">
-            <h3 style="">Сайты о концепциях</h3>
-            <a href="https://www.tui.ru/concepts/home/">Все концепции TUI</a><br />
-            <a href="http://agent.tui.ru/">Сайт для агентств</a><br />
-            <a href="http://b2b.tui.ru/">Сайт B2b</a>
+            <h3 style="">{{agentFooterItemTitleRU}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemAgentLinkRU ">{{agentFooterItemAgentLinkNameRU}}</a><br>
+            <a :href=" agentFooterItemB2bLinkRU ">{{agentFooterItemB2bLinkNameRU}}</a>
         </div>
-
         <div class="right">
-            <h3>Контакты</h3>
-            <a href="tel:84951043450">8 (495) 104-34-50</a><br />
-            <a href="mailto:diffproduct@tui.ru">diffproduct@tui.ru</a>
+            <h3>{{agentFooterItemTitle2RU}}</h3>
+            <a :href=" agentFooterItemPhoneRU ">{{agentFooterItemPhoneNameRU}}</a><br>
+            <a :href=" agentFooterItemMailRU ">{{agentFooterItemMailNameRU}}</a>
         </div>
     </div>
 </div>
+
+<!-- FOOTER END =================================================== -->
+
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/a89a3517-3f15-4580-ad2f-504f09fafad9/VUE-diff-product-home-page',
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer'
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>

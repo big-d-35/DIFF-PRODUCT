@@ -1,4 +1,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport" />
+<script type="text/javascript">
+    var st = document.createElement("style");
+    st.innerHTML = ".ActionPage-container .static{min-width:100%!important;}";
+    document.head.appendChild(st);
+</script>
 <!-- ШРИФТ =============================================== -->
 <style>
     @font-face {
@@ -458,10 +463,10 @@
         }
     }
 </style>
-<!-- PELOADER TUI ======================= -->
+<!-- PELOADER TUI -->
 <link href="https://www.tui.ru/getmedia/539394c4-9001-4639-a8d5-1b935ae77906/style-loader-dev" rel="stylesheet" type="text/css" />
 <title></title>
-<!--<div class="loader-row c">
+<div class="loader-row c">
     <div class="back-plain c">
         <div class="touch_1"><img src="data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='42'%20height='39'%3E%3Cg%20fill='none'%20fill-rule='evenodd'%3E%3Cpath%20fill='%23E6F4FA'%20d='M13.03%2026.9c-.5.066-1.01.1-1.529.1C5.15%2027%200%2021.854%200%2015.502%200%209.149%205.15%204%2011.501%204c1.728%200%203.366.381%204.837%201.064C18.998%201.97%2023.01%200%2027.5%200%2035.508%200%2042%206.268%2042%2014c0%203.408-1.261%206.531-3.357%208.959.233.975.357%201.993.357%203.04C39%2033.18%2033.181%2039%2026%2039c-6.879%200-12.507-5.34-12.97-12.1z'/%3E%3Cpath%20fill='%23FFF'%20d='M16.287%2024.057a8.066%208.066%200%200%201-3.786.943C7.814%2025%204%2020.963%204%2016s3.814-9%208.501-9c2.2%200%204.208.89%205.719%202.348C20.113%205.586%2024.01%203%2028.5%203%2034.841%203%2040%208.158%2040%2014.5a11.47%2011.47%200%200%201-3.64%208.388A10.45%2010.45%200%200%201%2037%2026.5C37%2032.29%2032.29%2037%2026.5%2037S16%2032.29%2016%2026.5c0-.84.1-1.659.287-2.443z'/%3E%3C/g%3E%3C/svg%3E" /></div>
 
@@ -557,27 +562,27 @@
             <div class="c10"></div>
         </div>
     </div>
-</div>-->
-<!-- END PRELOADER ====================== -->
+</div>
+<!-- END PRELOADER -->
 <script type="text/javascript">
     var pageRow = document.querySelector(".ActionPage-container");
     (pageRow) ? pageRow.setAttribute("style", "width: 100%!important; max-width: 100%!important"): console.log("ActionPage-container = NULL");
     //подключение loader_jquery
+
     var new_script = document.createElement('script');
     new_script.src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js";
+    console.log(new_script)
     document.head.appendChild(new_script);
-
     new_script.onload = function() {
         var new_script = document.createElement('script');
-        new_script.src = "https://www.tui.ru/getmedia/c143421f-5690-411c-bfed-cae16d3cd916/all-script/";
+        new_script.src = "https://www.tui.ru/getmedia/6fb141c1-dfcf-45db-9843-02dedf79738b/all-script/";
         document.head.appendChild(new_script);
+        console.log(new_script)
         new_script.onload = function() {
             var new_script = document.createElement('script');
             new_script.src = "https://www.youtube.com/iframe_api";
             document.head.appendChild(new_script);
-
-
-
+            console.log(new_script)
         }
     }
 </script>
@@ -587,14 +592,14 @@
 <div class="head" id="home-page-first-block">
     <div class="center-block">
         <div class="white-box">
-            <p class="header">{{firstBlockHeadNameBY1}}<br>
-                {{firstBlockHeadNameBY2}}</p>
-            <p class="comment"><span>{{firstBlockHeadCommentBY1}}</span> <span>{{firstBlockHeadCommentBY2}}</span></p>
+            <p class="header">{{firstBlockHeadNameLT1}}<br>
+                {{firstBlockHeadNameLT2}}</p>
+            <p class="comment"><span>{{firstBlockHeadCommentLT1}}</span> <span>{{firstBlockHeadCommentLT2}}</span></p>
             <div class="button">
-                <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank" style="color: white">{{firstBlockHeadPresentaionBY}}</a>
+                <a v-bind:href=" firstBlockHeadPresentaionLink " target="_blank" style="color: white">{{firstBlockHeadPresentaionLT}}</a>
             </div>
             <div class="details">
-                {{firstBlockHeadDeatilsBY}}
+                {{firstBlockHeadDeatilsLT}}
             </div>
         </div>
     </div>
@@ -604,9 +609,9 @@
 <div class="content-block">
     <!-- TEXT START =========================================================== -->
     <div class="text" id="home-page-text-block">
-        <strong>{{homePageTextBlockRU1}}</strong>{{homePageTextBlockBY2}}<br>
+        <strong>{{homePageTextBlockLT1}}</strong>{{homePageTextBlockLT2}}<br>
         <br>
-        {{homePageTextBlockBY3}}
+        {{homePageTextBlockLT3}}
     </div>
     <!-- TEXT END =========================================================== -->
 
@@ -615,29 +620,29 @@
         <div class="logo"><img v-bind:src=" homePageFunSunBlockLogo "></div>
         <div class="about">
             <div class="name" style="text-transform:uppercase;margin-bottom:20px">
-                {{homePageFunSunBlockTitleBY1}}
+                {{homePageFunSunBlockTitleLT1}}
             </div>
             <div class="name">
-                {{homePageFunSunBlockTitleBY2}}
+                {{homePageFunSunBlockTitleLT2}}
             </div>
-            <p class="text">{{homePageFunSunBlockTextBY1}}</p>
-            <p class="text">{{homePageFunSunBlockTextBY2}}</p>
+            <p class="text">{{homePageFunSunBlockTextLT1}}</p>
+            <p class="text">{{homePageFunSunBlockTextLT2}}</p>
         </div>
     </div>
     <!-- FUN SUN BLOCK TEXT START =========================================================== -->
     <!-- FUN SUN BLOCK VIDEO AND HOTELS START =========================================================== -->
     <div class="block" id="home-page-fun-sun-block-video-hotels">
         <div class="video">
-            <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextBY}}</a>
+            <a class="more" v-bind:href=" homeFunSunBlockPageLink " target="_blank">{{homeFunSunBlockPageLinkTextLT}}</a>
             <div id="player"></div>
             <div class="play video-fs picture1"><img v-bind:src=" homeFunSunBlockPageImage "></div>
         </div>
         <div class="list">
             <div class="header">
-                {{homeFunSunBlockPageTitleBY}}
+                {{homeFunSunBlockPageTitleLT}}
             </div>
             <div class="header country">
-                {{homeFunSunBlockPageTurkeyBY}}
+                {{homeFunSunBlockPageTurkeyLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
@@ -645,9 +650,9 @@
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
             </div>
-            <div class="link">
+            <!--<div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient3 " target="_blank">{{homeFunSunHotelName3}}</a>
-            </div>
+            </div>-->
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient4 " target="_blank">{{homeFunSunHotelName4}}</a>
             </div>
@@ -657,14 +662,14 @@
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient6 " target="_blank">{{homeFunSunHotelName6}}</a>
             </div>
-            <div class="link">
+            <!--<div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient7 " target="_blank">{{homeFunSunHotelName7}}</a>
-            </div>
+            </div>-->
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient8 " target="_blank">{{homeFunSunHotelName8}}</a>
             </div>
             <div class="header country">
-                {{homeFunSunBlockPageCyprysBY}}
+                {{homeFunSunBlockPageCyprysLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient9 " target="_blank">{{homeFunSunHotelName9}}</a>
@@ -681,14 +686,14 @@
         <div class="logo"><img v-bind:src=" homePageDayNightBlockLogo "></div>
         <div class="about">
             <div class="name" style="text-transform:uppercase;margin-bottom:20px">
-                {{homePageDayNightBlockTitleBY1}}
+                {{homePageDayNightBlockTitleLT1}}
             </div>
             <div class="name">
-                {{homePageDayNightBlockTitleBY2}}
+                {{homePageDayNightBlockTitleLT2}}
             </div>
-            <p class="text">{{homePageDayNightBlockTextBY1}}</p>
-            <p class="text">{{homePageDayNightBlockTextBY2}}</p>
-            <p class="text">{{homePageDayNightBlockTextBY3}}</p>
+            <p class="text">{{homePageDayNightBlockTextLT1}}</p>
+            <p class="text">{{homePageDayNightBlockTextLT2}}</p>
+            <p class="text">{{homePageDayNightBlockTextLT3}}</p>
         </div>
     </div>
     <!-- DAY NIGHT BLOCK TEXT END =========================================================== -->
@@ -696,21 +701,21 @@
     <!-- DAY NIGHT BLOCK VIDEO AND HOTELS START =========================================================== -->
     <div class="block" id="home-page-day-night-block-video-hotels">
         <div class="video2">
-            <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextBY}}</a>
+            <a class="more" v-bind:href=" homeDayNightBlockPageLink " target="_blank">{{homeDayNightBlockPageLinkTextLT}}</a>
             <div id="player2"></div>
             <div class="play2 video-fs picture2"><img v-bind:src=" homeDayNightBlockPageImage "></div>
         </div>
         <div class="list">
             <!--<div class="header"></div>-->
             <div class="header country">
-                {{homeDayNightBlockPageTurkeyBY}}
+                {{homeDayNightBlockPageTurkeyLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient1 " target="_blank">{{homeFunSunHotelName1}}</a>
             </div>
-            <div class="link">
+            <!--<div class="link">
                 <a v-bind:href=" homeFunSunHotelLinkClient2 " target="_blank">{{homeFunSunHotelName2}}</a>
-            </div>
+            </div>-->
         </div>
     </div>
     <!-- DAY NIGHT BLOCK VIDEO AND HOTELS END =========================================================== -->
@@ -719,18 +724,18 @@
         <div class="logo"><img v-bind:src=" homePageToucanBlockLogo "></div>
         <div class="about">
             <div class="name" style="text-transform:uppercase;margin-bottom:20px">
-                {{homePageToucanBlockTitleBY1}}
+                {{homePageToucanBlockTitleLT1}}
             </div>
             <div class="name">
-                {{homePageToucanBlockTitleBY2}}
+                {{homePageToucanBlockTitleLT2}}
             </div>
-            <p class="text">{{homePageToucanBlockTextBY1}}<br>
+            <p class="text">{{homePageToucanBlockTextLT1}}<br>
                 <br>
-                {{homePageToucanBlockTextBY2}}</p>
+                {{homePageToucanBlockTextLT2}}</p>
             <ul class="text" style="list-style-type:disc">
-                <li>{{homePageToucanBlockSpisokItemBY1}}</li>
-                <li>{{homePageToucanBlockSpisokItemBY2}}</li>
-                <li>{{homePageToucanBlockSpisokItemBY3}}</li>
+                <li>{{homePageToucanBlockSpisokItemLT1}}</li>
+                <li>{{homePageToucanBlockSpisokItemLT2}}</li>
+                <li>{{homePageToucanBlockSpisokItemLT3}}</li>
             </ul>
         </div>
     </div>
@@ -739,14 +744,14 @@
     <!-- TOUCAN BLOCK VIDEO AND HOTELS START =========================================================== -->
     <div class="block" id="home-page-toucan-block-video-hotels">
         <div class="video3">
-            <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeDToucanBlockPageLinkTextBY}}</a>
+            <a class="more" v-bind:href=" homeToucanBlockPageLink " target="_blank">{{homeToucanBlockPageLinkTextLT}}</a>
             <div id="player3"></div>
             <div class="play3 video-fs picture3"><img v-bind:src=" homeToucanBlockPageImage "></div>
         </div>
         <div class="list" style="min-height:476px">
 
             <div class="header country">
-                {{homeToucanBlockPageTurkeyBY}}
+                {{homeToucanBlockPageTurkeyLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient1 " target="_blank">{{homeToucanHotelName1}}</a>
@@ -761,7 +766,7 @@
                 <a v-bind:href=" homeToucanHotelLinkClient4 " target="_blank">{{homeToucanHotelName4}}</a>
             </div>
             <div class="header country">
-                {{homeToucanBlockPageCyprusBY}}
+                {{homeToucanBlockPageCyprusLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient5 " target="_blank">{{homeToucanHotelName5}}</a>
@@ -769,8 +774,8 @@
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient6 " target="_blank">{{homeToucanHotelName6}}</a>
             </div>
-            <div class="header country">
-                {{homeToucanBlockPageMontenegroBY}}
+            <!--<div class="header country">
+                {{homeToucanBlockPageMontenegroLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient7 " target="_blank">{{homeToucanHotelName7}}</a>
@@ -779,26 +784,26 @@
                 <a v-bind:href=" homeToucanHotelLinkClient8 " target="_blank">{{homeToucanHotelName8}}</a>
             </div>
             <div class="header country">
-                {{homeToucanBlockPageItalyBY}}
+                {{homeToucanBlockPageItalyLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient9 " target="_blank">{{homeToucanHotelName9}}</a>
-            </div>
+            </div>-->
             <div class="header country">
-                {{homeToucanBlockPageSpainBY}}
+                {{homeToucanBlockPageSpainLT}}
             </div>
-            <div class="link">
+            <!--<div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient10 " target="_blank">{{homeToucanHotelName10}}</a>
-            </div>
+            </div>-->
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient11 " target="_blank">{{homeToucanHotelName11}}</a>
             </div>
-            <div class="header country">
-                {{homeToucanBlockPageRussiaBY}}
+            <!--<div class="header country">
+                {{homeToucanBlockPageRussiaLT}}
             </div>
             <div class="link">
                 <a v-bind:href=" homeToucanHotelLinkClient12 " target="_blank">{{homeToucanHotelName12}}</a>
-            </div>
+            </div>-->
         </div>
     </div>
     <!-- TOUCAN BLOCK VIDEO AND HOTELS END =========================================================== -->
@@ -811,14 +816,14 @@
 <div class="footer-not-main" id="home-page-diff-footer">
     <div class="centered">
         <div class="left">
-            <h3 style="">{{agentFooterItemTitleBY}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameBY}}</a><br>
-            <a v-bind:href=" agentFooterItemAgentLinkBY ">{{agentFooterItemAgentLinkNameBY}}</a><br>
-            <a v-bind:href=" agentFooterItemB2bLinkBY ">{{agentFooterItemB2bLinkNameBY}}</a>
+            <h3 style="">{{agentFooterItemTitleLT}}</h3><a :href=" agentFooterItemHomeLink ">{{agentFooterItemHomeLinkNameLT}}</a><br>
+            <a v-bind:href=" agentFooterItemAgentLinkLT ">{{agentFooterItemAgentLinkNameLT}}</a><br>
+            <a v-bind:href=" agentFooterItemB2bLinkLT ">{{agentFooterItemB2bLinkNameLT}}</a>
         </div>
         <div class="right">
-            <h3>{{agentFooterItemTitle2BY}}</h3>
-            <a v-bind:href=" agentFooterItemPhoneBY ">{{agentFooterItemPhoneNameBY}}</a><br>
-            <a v-bind:href=" agentFooterItemMailBY ">{{agentFooterItemMailNameBY}}</a>
+            <h3>{{agentFooterItemTitle2LT}}</h3>
+            <a v-bind:href=" agentFooterItemPhoneLT ">{{agentFooterItemPhoneNameLT}}</a><br>
+            <a v-bind:href=" agentFooterItemMailLT ">{{agentFooterItemMailNameLT}}</a>
         </div>
     </div>
 </div>
