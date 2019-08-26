@@ -1,0 +1,257 @@
+<!-- FUN SUN HEADER MENU START ===================================-->
+
+<div class="container-fluid top-slider top-fs" id="fun-sun-page-header-menu" v-bind:style=" funSunPageHeaderMenuBackground ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left-row">
+                <div class="col-md-12">
+                    <div class="topLeft row">
+                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src=" funSunPageHeaderMenuLogo " /></div>
+                    </div>
+
+                    <h2 style="margin-top:0!important">{{funSunPageHeaderMenuTitleRU}}</h2>
+
+                    <div class="col-12 die-all">
+                        <div class="die row">
+                            <div class="circle-logo"><img v-bind:src=" funSunPageHeaderMenuItemLogo1 " /></div>
+
+                            <div class="circle-text col-md-11 d1">{{funSunPageHeaderMenuItemNameRU1}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #2fd4ce"><img v-bind:src=" funSunPageHeaderMenuItemLogo2 " /></div>
+
+                            <div class="circle-text col-md-11 d2">{{funSunPageHeaderMenuItemNameRU2}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fde900"><img v-bind:src=" funSunPageHeaderMenuItemLogo3 " /></div>
+
+                            <div class="circle-text col-md-11 d3">{{funSunPageHeaderMenuItemNameRU3}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fdbc00"><img v-bind:src=" funSunPageHeaderMenuItemLogo4 " /></div>
+
+                            <div class="circle-text col-md-11 d4">{{funSunPageHeaderMenuItemNameRU4}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fd18a9"><img v-bind:src=" funSunPageHeaderMenuItemLogo5 " /></div>
+
+                            <div class="circle-text col-md-11 d5">{{funSunPageHeaderMenuItemNameRU5}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b954af"><img v-bind:src=" funSunPageHeaderMenuItemLogo6 " /></div>
+
+                            <div class="circle-text col-md-11 d6">funSunPageHeaderMenuItemNameRU6</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b19fd3"><img v-bind:src=" funSunPageHeaderMenuItemLogo7 " /></div>
+
+                            <div class="circle-text col-md-11 d7">{{funSunPageHeaderMenuItemNameRU7}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #afdf00"><img v-bind:src=" funSunPageHeaderMenuItemLogo8 " /></div>
+
+                            <div class="circle-text col-md-11 d8">{{funSunPageHeaderMenuItemNameRU8}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 top-right row">
+                <div class="col-6 video">
+                    <div id="player">&nbsp;</div>
+
+                    <div class="play video-fs"><img v-bind:src=" funSunPageHeaderMenuVideoPlay " /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- FUN SUN HEADER MENU END ===================================-->
+
+<!-- FUN SUN PAGE MENU START ===================================-->
+<div class="container" id="fun-sun-page-menu">
+    <div class="row">
+        <div class="buttons-slider button-slider-mobile col-md-12">
+            <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
+                <p>{{funSunPageMenuItemRU1}}</p>
+            </div>
+
+            <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                <p>{{funSunPageMenuItemRU2}}</p>
+            </div>
+
+            <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
+                <p>{{funSunPageMenuItemRU3}}</p>
+            </div>
+
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+                <p>{{funSunPageMenuItemRU4}}</p>
+            </div>
+
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+                <p>{{funSunPageMenuItemRU5}}</p>
+            </div>
+
+            <div class="button-slider col-md-3 col-12" onclick="window.open('http://b2b.tui.ru/default.php?page=search_tour&amp;')">
+                <p>{{funSunPageMenuItemRU6}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FUN SUN PAGE MENU END ===================================-->
+
+
+<!-- FUN SUN ADVENTAGIES HOTELS BLOCK START ======================= -->
+<div class="container" id="advantagesHotels">
+    <h2 style="text-transform: uppercase;">{{funSunPageMenuAdvantagiesTitleRU}}</h2>
+</div>
+
+<div class="container hotels-club-country sl" >
+            <div class="buttons-navigations" id="fun-sun-page-hotels-adventagies-hotels-menu">
+            <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{funSunPageMenuAdventagiesHotelsMenuItemRU1}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома --> 
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b2">{{funSunPageMenuAdventagiesHotelsMenuItemRU2}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории --> 
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{funSunPageMenuAdventagiesHotelsMenuItemRU3}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей --> 
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b4">{{funSunPageMenuAdventagiesHotelsMenuItemRU4}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки --> 
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b5">{{funSunPageMenuAdventagiesHotelsMenuItemRU5}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом --> 
+            <a class="button-navigatin" data-block=".slider_1" href="#s1b6">{{funSunPageMenuAdventagiesHotelsMenuItemRU6}}</a> <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь -->
+            </div>
+            
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома START -->
+
+            <div class="slider slider_1" id="s1b1">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies1">
+                    <div class="col-md-4 myslide col-slider-3" v-for="funSunPageHotelsAdventagie1 in funSunPageHotelsAdventagies1">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie1.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie1.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie1.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ В номере как дома END -->
+
+ <!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории START -->
+
+            <div class="slider slider_1 n" id="s1b2">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies2">
+                    <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie2 in funSunPageHotelsAdventagies2 ">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie2.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie2.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie2.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Пройдитесь по территории END -->
+
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей START -->
+
+            <div class="slider slider_1 n" id="s1b3">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies3">
+                    <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie3 in funSunPageHotelsAdventagies3 ">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie3.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie3.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie3.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Для детей END -->
+
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки START -->
+<div class="slider slider_1 n" id="s1b4">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies4">
+                    <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie4 in funSunPageHotelsAdventagies4 ">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie4.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie4.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie4.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Попробуйте блюда и напитки END -->
+
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом START -->
+
+            <div class="slider slider_1 n" id="s1b5">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies5">
+                    <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie5 in funSunPageHotelsAdventagies5 ">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie5.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie5.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie5.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Займитесь спортом END -->
+
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь START -->
+
+            <div class="slider slider_1 n" id="s1b6">
+                <div class="row-slider" data-col="3" id="fun-sun-page-hotels-adventagies6">
+                    <div class="col-md-4 myslide col-slider-3" v-for=" funSunPageHotelsAdventagie6 in funSunPageHotelsAdventagies6 ">
+                        <div class="sliders-hotels">
+                            <div class="imgSlider" v-bind:style=" funSunPageHotelsAdventagie6.background ">&nbsp;</div>
+
+                            <div class="slider-content">
+                                <h4>{{funSunPageHotelsAdventagie6.titleRU}}</h4>
+
+                                <p class="gey_p">{{funSunPageHotelsAdventagie6.textRU}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+<!-- ПРЕИМУЩЕСТВА ОТЕЛЕЙ С КОНЦЕПЦИЕЙ Развлекитесь END -->
+</div>
+<!-- FUN SUN ADVENTAGIES HOTELS BLOCK END ======================= -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="VUE-diff-product-fun-sun-page.js"></script>

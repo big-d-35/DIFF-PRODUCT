@@ -40,12 +40,12 @@ const AgentMenuHeader = new Vue ({
         
         //Концепции отдыха
         menuItemConceptsLink: '/concepts/home/',
-        menuItemConceptsNameRU: 'Концепции отдыха TUI',
-        menuItemConceptsNameBY: 'Концепции отдыха TUI',
-        menuItemConceptsNameUA: 'Концепции отдыха TUI',
-        menuItemConceptsNameEE: 'TUI puhkuse kontseptsioonid',
-        menuItemConceptsNameLT: 'TUI poilsio koncepcijos',
-        menuItemConceptsNameLV: 'TUI atpūtas koncepcijas',
+        menuItemConceptsNameRU: 'Концепции отдыха ',
+        menuItemConceptsNameBY: 'Концепции отдыха ',
+        menuItemConceptsNameUA: 'Концепции отдыха ',
+        menuItemConceptsNameEE: 'Puhkuse kontseptsioonid',
+        menuItemConceptsNameLT: 'Poilsio koncepcijos',
+        menuItemConceptsNameLV: 'Atpūtas koncepcijas',
         
         //Fun Sun
         menuItemFunSunLink: '/concepts/tui-fun-sun',
@@ -84,16 +84,16 @@ const AgentMenuHeader = new Vue ({
         menuItemConceptsAboutLink: '/concepts/home',
         menuItemConceptsAboutLogo: 'https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100',
         menuItemConceptsAboutNameRU1: 'О концепциях',
-        menuItemConceptsAboutNameRU2: 'отдыха TUI',
+        menuItemConceptsAboutNameRU2: 'отдыха ',
         menuItemConceptsAboutNameBY1: 'О концепциях',
-        menuItemConceptsAboutNameBY2: 'отдыха TUI',
+        menuItemConceptsAboutNameBY2: 'отдыха ',
         menuItemConceptsAboutNameUA1: 'О концепциях',
-        menuItemConceptsAboutNameUA2: 'отдыха TUI',
-        menuItemConceptsAboutNameEE1: 'TUI puhkuse',
+        menuItemConceptsAboutNameUA2: 'отдыха ',
+        menuItemConceptsAboutNameEE1: 'Puhkuse',
         menuItemConceptsAboutNameEE2: 'kontseptsioonidest',
-        menuItemConceptsAboutNameLT1: 'Apie TUI',
+        menuItemConceptsAboutNameLT1: 'Apie ',
         menuItemConceptsAboutNameLT2: 'poilsio Koncepcijas',
-        menuItemConceptsAboutNameLV1: 'Par TUI',
+        menuItemConceptsAboutNameLV1: 'Par',
         menuItemConceptsAboutNameLV2: 'atpūtas koncepcijam',
         
         //Премиум
@@ -158,12 +158,12 @@ const AgentMenuFooter = new Vue ({
         
         //Home link
         agentFooterItemHomeLink: '/concepts/home/',
-        agentFooterItemHomeLinkNameRU: 'Все концепции TUI',
-        agentFooterItemHomeLinkNameBY: 'Все концепции TUI',
-        agentFooterItemHomeLinkNameUA: 'Все концепции TUI',
-        agentFooterItemHomeLinkNameEE: 'Kõik TUI kontseptsioonid',
-        agentFooterItemHomeLinkNameLT: 'Visos TUI koncepcijos',
-        agentFooterItemHomeLinkNameLV: 'Visas TUI koncepcijas',
+        agentFooterItemHomeLinkNameRU: 'Все концепции ',
+        agentFooterItemHomeLinkNameBY: 'Все концепции ',
+        agentFooterItemHomeLinkNameUA: 'Все концепции ',
+        agentFooterItemHomeLinkNameEE: 'Kõik kontseptsioonid',
+        agentFooterItemHomeLinkNameLT: 'Visos koncepcijos',
+        agentFooterItemHomeLinkNameLV: 'Visas koncepcijas',
         
         //Сайт для агентств
         agentFooterItemAgentLinkRU: 'http://agent.tui.ru/',

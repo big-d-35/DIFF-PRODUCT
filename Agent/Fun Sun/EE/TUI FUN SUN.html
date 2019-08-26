@@ -1,3 +1,4 @@
+<head></head>
 <title></title>
 <script defer src="https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine" type="text/javascript">
 </script>
@@ -60,172 +61,190 @@
     /* отключаем футер и хедер и убираем ширину шаблона на белорусском агентском сайте */
 </style>
 <div class="row-all">
-    <div class="menu-top">
-        <div class="container">
-            <div class="row"><a class="col-md-2 col-6 logo-img" href="/"><img src="//agent.tui.ru/Images/logo.png" /></a>
-                <div class="col-5 but-menu-mobile">&nbsp;</div>
+    <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
 
-                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+        <div class="menu-top" id="home-page-diff-menu-top">
+            <div class="container">
+                <div class="row">
+                    <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                    <div class="col-5 but-menu-mobile">
+                        &nbsp;
+                    </div>
 
-                <div class="col-md-10 col-10 mobile_agent">
-                    <div id="exit_menu">X</div>
+                    <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
 
-                    <div class="row menu-label"><a class="label-menu" href="/Franchaizing" target="_blank">Frantsiis</a> <a class="label-menu" href="/Partnership" target="_blank">Koostöö</a> <a class="label-menu" href="/About/About-company" target="_blank">Meist</a> <a class="label-menu" href="/Branded-Shop" target="_blank">TUI Shop</a>
-
-                        <div class="label-menu" style="position: relative;cursor: pointer"><a href="/concepts/home/" style="color:#092a5e">TUI puhkuse kontseptsioon</a>
-
-                            <div class="label-menu-2">
-                                <div class="concept-link"><a href="/concepts/tui-fun-sun"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN" /></a>
-
-                                    <div><a href="/concepts/tui-fun-sun"><b>TUI FUN&amp;SUN</b><br />
-                                            Perepuhkus</a></div>
-                                </div>
-
-                                <div class="concept-link"><a href="/concepts/tui-day-night"><img alt="FN_logo" src="https://www.tui.ru/getmedia/dfa8f32e-6221-4be8-9c2e-23d063b6b989/DN-logo_vertical_web" /></a>
-
-                                    <div><a href="/concepts/tui-day-night"><b>TUI DAY&amp;NIGHT</b><br />
-                                            Noorte puhkus</a></div>
-                                </div>
-
-                                <div class="concept-link"><a href="/concepts/tui_toucan"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical" /></a>
-
-                                    <div><a href="/concepts/tui-toucan"><b>TUI MINI TOUCAN</b><br />
-                                            Puhkus lastega</a></div>
-                                </div>
-
-                                <div class="concept-link">
-                                    <a href="/concepts/home"><img alt="Home_logo" src="https://www.tui.ru/getmedia/e7f4d372-680e-46e8-bb37-28e2ec6f2f50/toucan-main-page-100x100" /></a>
-
-                                    <div><a href="/concepts/home"><b>TUI puhkuse<br />
-                                                kontseptsioonidest</b></a></div>
-                                </div>
-
-                            </div>
+                    <div class="col-md-10 col-10 mobile_agent">
+                        <div id="exit_menu">
+                            X
                         </div>
-                        <a class="label-menu" href="/premium/premium" target="_blank">TUI PREMIUM</a> <a class="label-menu log enter" data-bind="click: LoginClick" href="https://b2b.tuibaltics.eu/" target="_blank">Kliendile</a>
+                        <div class="row menu-label">
+                            <a class="label-menu" :href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a>
+                            <a class="label-menu" :href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a>
+                            <a class="label-menu" :href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a>
+                            <a class="label-menu" :href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
+                            <div class="label-menu" style="position: relative;cursor: pointer">
+                                <a :href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
+                                <div class="label-menu-2">
+                                    <div class="concept-link">
+                                        <a :href=" menuItemFunSunLink "><img alt="FN_logo" :src=" menuItemFunSunLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                                {{menuItemFunSunNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemDayNightLink "><img alt="FN_logo" :src=" menuItemDayNightLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                                {{menuItemDayNightNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemToucanLink "><img alt="FN_logo" :src=" menuItemToucanLogo "></a>
+                                        <div>
+                                            <a :href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                                {{menuItemToucanNameEE}}</a>
+                                        </div>
+                                    </div>
+                                    <div class="concept-link">
+                                        <a :href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                        <div><a :href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
+                                                    {{menuItemConceptsAboutNameEE2}}</b></a></div>
+                                    </div>
+                                </div>
+                            </div><a class="label-menu" :href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                            <a class="label-menu log enter" data-bind="click: LoginClick" :href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
+                        </div>
+                    </div>
+
+                    <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                    <div class="col-md-10">
+                        <div class="row menu-telephone">
+                            <div class="col-md-8 col-7">
+                                <p class="telephone-title">{{menuPhoneTitleEE}}</p>
+                                <p class="telephone-number">{{menuPhonePhoneEE}}</p>
+                            </div>
+                            <a :href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
-
-                <div class="col-md-10">
-                    <div class="row menu-telephone">
-                        <div class="col-md-8 col-7">
-                            <p class="telephone-title">Agentidele:</p>
-
-                            <p class="telephone-number">+372 4455006</p>
-                        </div>
-                        <a href="//www.tui.ru" style="color: black">Veebileht turistidele</a>
+        <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
+   
+    <div class="row-all">
+   
+<!-- FUN SUN HEADER MENU START ===================================-->
+        <div class="container-fluid top-slider top-fs" id="fun-sun-page-header-menu" v-bind:style=" funSunPageHeaderMenuBackground ">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left-row">
+                <div class="col-md-12">
+                    <div class="topLeft row">
+                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src=" funSunPageHeaderMenuLogo " /></div>
                     </div>
+
+                    <h2 style="margin-top:0!important">{{funSunPageHeaderMenuTitleEE}}</h2>
+
+                    <div class="col-12 die-all">
+                        <div class="die row">
+                            <div class="circle-logo"><img v-bind:src=" funSunPageHeaderMenuItemLogo1 " /></div>
+
+                            <div class="circle-text col-md-11 d1">{{funSunPageHeaderMenuItemNameEE1}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #2fd4ce"><img v-bind:src=" funSunPageHeaderMenuItemLogo2 " /></div>
+
+                            <div class="circle-text col-md-11 d2">{{funSunPageHeaderMenuItemNameEE2}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fde900"><img v-bind:src=" funSunPageHeaderMenuItemLogo3 " /></div>
+
+                            <div class="circle-text col-md-11 d3">{{funSunPageHeaderMenuItemNameEE3}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fdbc00"><img v-bind:src=" funSunPageHeaderMenuItemLogo4 " /></div>
+
+                            <div class="circle-text col-md-11 d4">{{funSunPageHeaderMenuItemNameEE4}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #fd18a9"><img v-bind:src=" funSunPageHeaderMenuItemLogo5 " /></div>
+
+                            <div class="circle-text col-md-11 d5">{{funSunPageHeaderMenuItemNameEE5}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b954af"><img v-bind:src=" funSunPageHeaderMenuItemLogo6 " /></div>
+
+                            <div class="circle-text col-md-11 d6">funSunPageHeaderMenuItemNameEE6</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #b19fd3"><img v-bind:src=" funSunPageHeaderMenuItemLogo7 " /></div>
+
+                            <div class="circle-text col-md-11 d7">{{funSunPageHeaderMenuItemNameEE7}}</div>
+                        </div>
+
+                        <div class="die row">
+                            <div class="circle-logo" style="background: #afdf00"><img v-bind:src=" funSunPageHeaderMenuItemLogo8 " /></div>
+
+                            <div class="circle-text col-md-11 d8">{{funSunPageHeaderMenuItemNameEE8}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 top-right row">
+                <div class="col-6 video">
+                    <div id="player">&nbsp;</div>
+
+                    <div class="play video-fs"><img v-bind:src=" funSunPageHeaderMenuVideoPlay " /></div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="row-all">
-        <div class="container-fluid top-slider top-fs" style="background: url(https://www.tui.ru/getmedia/f4f3d6f3-1c20-4dab-8f55-7ee78b6dfe51/photo-2)">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 left-row">
-                        <div class="col-md-12">
-                            <div class="topLeft row">
-                                <div class="icon-top col-md-2 col-3"><img alt="FN_logo" src="https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN" /></div>
-                            </div>
 
-                            <h2 style="margin-top:0!important">FUN&amp;SUN on:</h2>
+<!-- FUN SUN HEADER MENU END ===================================-->
+<!-- FUN SUN PAGE MENU START ===================================-->
+<div class="container" id="fun-sun-page-menu">
+    <div class="row">
+        <div class="buttons-slider button-slider-mobile col-md-12">
+            <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
+                <p>{{funSunPageMenuItemEE1}}</p>
+            </div>
 
-                            <div class="col-12 die-all">
-                                <div class="die row">
-                                    <div class="circle-logo"><img src="https://www.tui.ru/getmedia/2339a301-2a1a-4026-b219-722c7336cce0/beachball" /></div>
+            <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                <p>{{funSunPageMenuItemEE2}}</p>
+            </div>
 
-                                    <div class="circle-text col-md-11 d1">Klubi TUI Toucan lastele alates 4. eluaastast</div>
-                                </div>
+            <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
+                <p>{{funSunPageMenuItemEE3}}</p>
+            </div>
 
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #2fd4ce"><img src="https://www.tui.ru/getmedia/fe91550a-2e69-4936-b82f-9550adee71b3/wifi" /></div>
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+                <p>{{funSunPageMenuItemEE4}}</p>
+            </div>
 
-                                    <div class="circle-text col-md-11 d2">Kiire Wi-Fi</div>
-                                </div>
+            <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+                <p>{{funSunPageMenuItemEE5}}</p>
+            </div>
 
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #fde900"><img src="https://www.tui.ru/getmedia/70559937-c2f6-4cce-950b-b2921e37c042/p" /></div>
-
-                                    <div class="circle-text col-md-11 d3">Chill Out Lounge täiskasvanutele</div>
-                                </div>
-
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #fdbc00"><img src="https://www.tui.ru/getmedia/b6a1ff43-84af-4cee-986e-3feecc9e05f2/orange" /></div>
-
-                                    <div class="circle-text col-md-11 d4">Hommikul värskelt pressitud apelsinimahl</div>
-                                </div>
-
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #fd18a9"><img src="https://www.tui.ru/getmedia/7b192985-2edd-4684-8df7-6d8a08d09918/ice" /></div>
-
-                                    <div class="circle-text col-md-11 d5">Jäätis meie külalistele</div>
-                                </div>
-
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #b954af"><img src="https://www.tui.ru/getmedia/c4094300-05e0-46f5-9b31-cd54cee92900/disco" /></div>
-
-                                    <div class="circle-text col-md-11 d6">Kuulsad esinejad: Propaganda, White Eagle, Rumbero&#39;s, Estradarada, ViRUS!, Korni</div>
-                                </div>
-
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #b19fd3"><img src="https://www.tui.ru/getmedia/640ea075-2c0b-4b3d-9740-832354781385/n" /></div>
-
-                                    <div class="circle-text col-md-11 d7">Foto, kulinaaria ja võõrkeele meistriklassid</div>
-                                </div>
-
-                                <div class="die row">
-                                    <div class="circle-logo" style="background: #afdf00"><img src="https://www.tui.ru/getmedia/a5cb6130-9605-4b09-99e3-b52bd2e57934/f" /></div>
-
-                                    <div class="circle-text col-md-11 d8">Fitness &amp; Wellness koos treeneritega</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 top-right row">
-                        <div class="col-6 video">
-                            <div id="player">&nbsp;</div>
-
-                            <div class="play video-fs"><img src="https://www.tui.ru/getmedia/8f5429a2-487b-4807-bec3-bec1a2088a67/play" /></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="button-slider col-md-3 col-12" onclick="window.open('https://b2b.tuibaltics.eu/')">
+                <p>{{funSunPageMenuItemEE6}}</p>
             </div>
         </div>
-
-        <div class="container">
-            <div class="row">
-                <div class="buttons-slider button-slider-mobile col-md-12">
-                    <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
-                        <p>See on FUN&amp;SUN</p>
-                    </div>
-
-                    <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
-                        <p>Hotellid</p>
-                    </div>
-
-                    <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
-                        <p>Meelelahutus ja sport</p>
-                    </div>
-
-                    <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
-                        <p>Lastele</p>
-                    </div>
-
-                    <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
-                        <p>2019 üritused</p>
-                    </div>
-
-                    <div class="button-slider col-md-3 col-12" onclick="window.open('http://b2b.tui.lt/default.php?page=search_tour&amp;')">
-                        <p>Broneeri</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
+<!-- FUN SUN PAGE MENU END ===================================-->
 
         <div class="container text-content">
             <script id="table-template" type="text/x-handlebars-template">
@@ -1709,6 +1728,45 @@
 
     </div>
 </div>
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = ['https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/8d1465da-5919-44bb-8550-8bc3ac3e0b7d/VUE-diff-product-fun-sun-page',
+        'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer'
+    ];
+
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
 <script type="text/javascript">
     function smoothScrolling(element) {
         document.querySelector(element).scrollIntoView({
