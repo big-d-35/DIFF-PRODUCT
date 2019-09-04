@@ -8,8 +8,8 @@ const AgentMenuHeader = new Vue ({
         menuItemFranchaizingNameBY: 'Франчайзинг',
         menuItemFranchaizingNameUA: 'Франчайзинг',
         menuItemFranchaizingNameEE: 'Frantsiis',
-        menuItemFranchaizingNameLT: 'Frančižė',
-        menuItemFranchaizingNameLV: 'Franšīze',
+        menuItemFranchaizingNameLT: 'Franšīze',
+        menuItemFranchaizingNameLV: 'Frančižė',
         
         //Сотрудничество
         menuItemPartnershipLink: '/Partnership',
@@ -55,7 +55,7 @@ const AgentMenuHeader = new Vue ({
         menuItemFunSunNameBY: 'Семейный отдых',
         menuItemFunSunNameUA: 'Семейный отдых',
         menuItemFunSunNameEE: 'Perepuhkus',
-        menuItemFunSunNameLT: 'Šeimų poilsis',
+        menuItemFunSunNameLT: 'Šeimos atostogos',
         menuItemFunSunNameLV: 'Šeimų poilsis',
         
         //Day Night

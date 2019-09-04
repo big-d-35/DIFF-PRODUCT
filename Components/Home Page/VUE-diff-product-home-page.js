@@ -32,7 +32,7 @@ const homePageFirstBlock = new Vue ({
         firstBlockHeadCommentLV2: 'jo jūs paši par to mums pastāstījāt!',
         
         //ПРЕЗЕНТАЦИЯ
-        firstBlockHeadPresentaionLink: 'https://agent.tui.ru/getmedia/244095d3-62f8-4aff-81ea-162043e96d27/NEW-Concept-Presentation_B2B_11-07',
+        firstBlockHeadPresentaionLink: 'https://www.tui.ru/getmedia/b448c677-abf8-40ec-8578-1a05f7268b4b/TUI-Concept-Presentation_B2B_18-06',
         firstBlockHeadPresentaionRU: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionBY: 'Презентация Дифф продукта',
         firstBlockHeadPresentaionUA: 'Презентация Дифф продукта',
