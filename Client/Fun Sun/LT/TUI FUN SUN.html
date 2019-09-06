@@ -19,6 +19,10 @@
         box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
         background-color: #C3E8FB !important;
     }
+    a {
+        text-decoration: none;
+        color:#092a5e; 
+    }
 </style>
 <script type="text/javascript">
     var script_loaded = document.createElement("script");
@@ -123,29 +127,29 @@
     <div class="container" id="fun-sun-page-menu">
         <div class="row">
             <div class="buttons-slider button-slider-mobile col-md-12">
-                <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
+                <a class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
                     <p>{{funSunPageMenuItemLT1}}</p>
-                </div>
+                </a>
 
-                <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                <a class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
                     <p>{{funSunPageMenuItemLT2}}</p>
-                </div>
+                </a>
 
-                <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
+                <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient3" target="_blank">
                     <p>{{funSunPageMenuItemLT3}}</p>
-                </div>
+                </a>
 
-                <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+                <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient4" target="_blank">
                     <p>{{funSunPageMenuItemLT4}}</p>
-                </div>
+                </a>
 
-                <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+                <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
                     <p>{{funSunPageMenuItemLT5}}</p>
-                </div>
+                </a>
 
-                <div class="button-slider col-md-3 col-12" onclick="window.open('https://www.tui.lt/search/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1567630800000&directionCountryTo=18803&directionFrom=389090&maxCost=17084&minCost=534&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5')">
+                <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6LT" target="_blank">
                     <p>{{funSunPageMenuItemLT6}}</p>
-                </div>
+                </a>
             </div>
         </div>
     </div>

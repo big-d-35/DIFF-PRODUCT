@@ -92,6 +92,9 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE1: 'See on FUN&SUN',
         funSunPageMenuItemLT1: 'Tai FUN&SUN',
         funSunPageMenuItemLV1: 'Tas ir FUN&SUN',
+        funSunPageMenuItemLinkClient1: '/concepts/tui-fun-sun',
+        funSunPageMenuItemLinkAgent1: '/concepts/tui-fun-sun',
+        
         
         funSunPageMenuItemRU2: 'Отели',
         funSunPageMenuItemBY2: 'Отели',
@@ -99,6 +102,8 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE2: 'Hotellid',
         funSunPageMenuItemLT2: 'Viešbučiai',
         funSunPageMenuItemLV2: 'Viesnīcas',
+        funSunPageMenuItemLinkClient2: '',
+        funSunPageMenuItemLinkAgent2: '',
         
         funSunPageMenuItemRU3: 'Развлечения и спорт',
         funSunPageMenuItemBY3: 'Развлечения и спорт',
@@ -106,6 +111,8 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE3: 'Meelelahutus ja sport',
         funSunPageMenuItemLT3: 'Pramogos ir sportas',
         funSunPageMenuItemLV3: 'Izklaide un sports',
+        funSunPageMenuItemLinkClient3: '/concepts/tui-fun-sun-entertainment-program-children-fs/',
+        funSunPageMenuItemLinkAgent3: '/concepts/tui-fun-sun/entertainment-program-children-fs/',
         
         funSunPageMenuItemRU4: 'Для детей',
         funSunPageMenuItemBY4: 'Для детей',
@@ -113,6 +120,8 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE4: 'Lastele',
         funSunPageMenuItemLT4: 'Vaikams',
         funSunPageMenuItemLV4: 'Bērniem',
+        funSunPageMenuItemLinkClient4: '/concepts/tui-fun-sun-for-children-fs/',
+        funSunPageMenuItemLinkAgent4: '/concepts/tui-fun-sun/for-children-fs/',
         
         funSunPageMenuItemRU5: 'Афиша 2019',
         funSunPageMenuItemBY5: 'Афиша 2019',
@@ -120,6 +129,8 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE5: '2019 üritused',
         funSunPageMenuItemLT5: '2019 metų programa',
         funSunPageMenuItemLV5: 'Afiša 2019',
+        funSunPageMenuItemLinkClient5: '/concepts/tui-fun-sun-concerts-and-master-classes',
+        funSunPageMenuItemLinkAgent5: '/concepts/tui-fun-sun/concerts-and-master-classes',
         
         funSunPageMenuItemRU6: 'Перейти к бронированию',
         funSunPageMenuItemBY6: 'Перейти к бронированию',
@@ -127,6 +138,18 @@ const funSunPageMenu = new Vue ({
         funSunPageMenuItemEE6: 'Broneeri',
         funSunPageMenuItemLT6: 'Pasirinkti',
         funSunPageMenuItemLV6: 'Pāriet pie rezervācijam',
+        funSunPageMenuItemLinkClient6RU: 'https://www.tui.ru/search/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1563483600000&directionCountryTo=18803&directionFrom=274286&maxCost=2023286&minCost=39400&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6RU: 'http://b2b.tui.ru/default.php?page=search_tour',
+        funSunPageMenuItemLinkClient6BY: 'http://www.tui.by/search/?adults=2&children=0&dateDelta=3&dateFrom=1567803600000&directionCountryTo=18803&directionFrom=381686&maxCost=10154&minCost=2343&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6BY: 'http://b2b.tui.by/default.php?page=search_tour',
+        funSunPageMenuItemLinkClient6UA: 'https://www.tui.ua/search/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1567803600000&directionCountryTo=18803&directionFrom=235144&maxCost=404865&minCost=13427&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6UA: 'http://b2b.tui.ua/default.php?page=search_tour',
+        funSunPageMenuItemLinkClient6EE: 'https://www.tui.ee/search/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1567630800000&directionCountryTo=18803&directionFrom=387442&maxCost=17019&minCost=711&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6EE: 'https://b2b.tuibaltics.eu/default.php?page=search_tour',
+        funSunPageMenuItemLinkClient6LT: 'https://www.tui.lt/search/?HotelAttribute=1000718&adults=2&children=0&dateDelta=3&dateFrom=1567630800000&directionCountryTo=18803&directionFrom=389090&maxCost=17084&minCost=534&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6LT: 'https://b2b.tuibaltics.eu/default.php?page=search_tour',
+        funSunPageMenuItemLinkClient6LV: 'https://www.tui.lv/search/?adults=2&children=0&dateDelta=3&dateFrom=1567803600000&directionCountryTo=18803&directionFrom=352203&maxCost=2098&minCost=809&newbies=0&nightsFrom=7&nightsTo=14&page=0&selected=0&sortType=5',
+        funSunPageMenuItemLinkAgent6LV: 'https://b2b.tuibaltics.eu/default.php?page=search_tour',
     }
 });
 

@@ -42,6 +42,10 @@
             width: 120px !important;
             margin: 25px 0;
         }
+    a {
+        text-decoration: none;
+        color:#092a5e; 
+    }
     </style>
 <style type="text/css">
     .info-get-round {
@@ -97,29 +101,29 @@
             <div class="container" id="fun-sun-page-menu">
                 <div class="row">
                     <div class="buttons-slider button-slider-mobile col-md-12">
-                        <div class="col-md-2 col-12 button-slider " id="tb" onclick="window.open('/concepts/tui-fun-sun')">
+                        <a class="col-md-2 col-12 button-slider " id="tb" v-bind:href="funSunPageMenuItemLinkClient1" target="_blank">
                             <p>{{funSunPageMenuItemEE1}}</p>
-                        </div>
+                        </a>
 
-                        <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
+                        <a class="button-slider col-md-1 col-12" onclick="smoothScrolling('#hotels')">
                             <p>{{funSunPageMenuItemEE2}}</p>
-                        </div>
+                        </a>
 
-                        <div class="button-slider col-md-3 col-12" onclick="window.open('/concepts/tui-fun-sun/entertainment-program-children-fs/')">
+                        <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient3" target="_blank">
                             <p>{{funSunPageMenuItemEE3}}</p>
-                        </div>
+                        </a>
 
-                        <div class="button-slider col-md-2 col-12" onclick="window.open('/concepts/tui-fun-sun/for-children-fs/')">
+                        <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient4" target="_blank">
                             <p>{{funSunPageMenuItemEE4}}</p>
-                        </div>
+                        </a>
 
-                        <div class="button-slider col-md-2 col-12 button-slider-active" onclick="window.open('/concepts/tui-fun-sun/concerts-and-master-classes')">
+                        <a class="button-slider col-md-2 col-12 button-slider-active" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
                             <p>{{funSunPageMenuItemEE5}}</p>
-                        </div>
+                        </a>
 
-                        <div class="button-slider col-md-3 col-12" onclick="window.open('https://www.tui.ee/search/?adults=2&amp%3Badults=2&amp%3Bchildren=0&amp%3BchildrenAges=1&amp%3BdateDelta=3&amp%3BdateFrom=1556679600000&amp%3BdirectionCountryTo=18803&amp%3BdirectionFrom=274286&amp%3BmaxCost=1025241&amp%3BminCost=62424&amp%3Bnewbies=1&amp%3BnightsFrom=7&amp%3BnightsTo=7&amp%3Bpage=0&amp%3Bselected=nights&amp%3BsortType=1&children=0&dateDelta=0&dateFrom=1567803600000&directionCountryTo=18803&directionFrom=387442&maxCost=17026&minCost=1437&newbies=0&nightsFrom=7&nightsTo=14&page=0&sortType=5')">
+                        <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6EE" target="_blank">
                             <p>{{funSunPageMenuItemEE6}}</p>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
