@@ -720,13 +720,1034 @@ const funSunPageFooter = new Vue ({
         funSunPageFooterMailLinkLT : 'mailto:book@tuibaltics.eu',
         
         funSunPageFooterMailTitleLV : 'book@tuibaltics.eu',
-        funSunPageFooterMailLinkLV : 'mailto:book@tuibaltics.eu',
+        funSunPageFooterMailLinkLT : 'mailto:book@tuibaltics.eu',
         
         
         funSunPageFooterInstagramLink : 'https://www.instagram.com/tui_funandsun/',
         funSunPageFooterInstagramImgLink : 'https://www.tui.ru/getmedia/2f4194da-6feb-4717-a9b0-8c58d9f77851/logo-instagram-blue',
+        funSunPageFooterInstagramImgWhiteLink : 'https://agent.tui.ru/getmedia/cd28b133-b476-4008-a1d9-b4ce712d7246/logoInstagramWhite',
+        
         funSunPageFooterFacebookLink : 'https://www.facebook.com/TUIFUNSUN/',
         funSunPageFooterFacebookImgLink : 'https://www.tui.ru/getmedia/5647804b-b88c-4e76-b3d3-6eafcf599045/logo-fb-blue',
+        funSunPageFooterFacebookImgWhiteLink : 'https://agent.tui.ru/getmedia/047e1618-6265-4712-a091-6c62e6bd8897/logoFbWhite',
         
     }
 });
+
+
+//СТРАНИЦА АФИША КОНЦЕРТЫ И МАСТЕРКЛАССЫ FUN SUN
+const funSunPageAfishaName = new Vue({
+    el: '#funSunPageAfishaName',
+    data: {
+        funSunPageAfishaNameLogo: 'https://www.tui.ru/getmedia/a43e4cf0-4244-45b4-8bd4-275b7d8ba1a9/logoTopFN',
+        
+        funSunPageAfishaNameTitleRU: 'Твое звездное лето в отелях FUN&SUN',
+        funSunPageAfishaNameTitleBY: 'Твое звездное лето в отелях FUN&SUN',
+        funSunPageAfishaNameTitleUA: 'Твое звездное лето в отелях FUN&SUN',
+        funSunPageAfishaNameTitleEE: 'Teie maagiline suvi FUN&SUN hotellides',
+        funSunPageAfishaNameTitleLT: 'Tavo nuostabi vasara FUN&SUN viešbučiuose',
+        funSunPageAfishaNameTitleLV: 'Tava neaizmirstamā vasara FUN&SUN viesnīcas',
+        
+        funSunPageAfishaNameButtonRU: 'Подобрать тур',
+        funSunPageAfishaNameButtonBY: 'Подобрать тур',
+        funSunPageAfishaNameButtonUA: 'Подобрать тур',
+        funSunPageAfishaNameButtonEE: 'Broneeri',
+        funSunPageAfishaNameButtonLT: 'Rezervuoti',
+        funSunPageAfishaNameButtonLV: 'Izvēlēties ceļojumu',
+        
+    }
+})
+
+const funSunPageAfishaMainInfo = new Vue({
+    el: '#funSunPageAfishaMainInfo',
+    data: {
+        funSunPageAfishaMainInfoTitleRU: 'Грандиозный сюрприз для гостей TUI',
+        funSunPageAfishaMainInfoTitleBY: 'Грандиозный сюрприз для гостей TUI',
+        funSunPageAfishaMainInfoTitleUA: 'Грандиозный сюрприз для гостей TUI',
+        funSunPageAfishaMainInfoTitleEE: 'Suurejooneline kingitus turistidele',
+        funSunPageAfishaMainInfoTitleLT: 'Siurprizas TUI svečiams',
+        funSunPageAfishaMainInfoTitleLV: 'Grandiozais pārsteigums viesiem',
+        
+        funSunPageAfishaMainInfoText1RU: 'Этим летом отдыхаем в лучших турецких отелях с концертами популярных исполнителей.',
+        funSunPageAfishaMainInfoText1BY: 'Этим летом отдыхаем в лучших турецких отелях с концертами популярных исполнителей.',
+        funSunPageAfishaMainInfoText1UA: 'Этим летом отдыхаем в лучших турецких отелях с концертами популярных исполнителей.',
+        funSunPageAfishaMainInfoText1EE: 'Sel suvel puhkame Türgi parimates hotellides. Lisaks populaarsete artistide esinemised.',
+        funSunPageAfishaMainInfoText1LT: 'Šią vasarą kviečiame atostogauti geriausiuose Turkijos viešbučiuose, kur koncertuoja geriausi atlikėjai.',
+        funSunPageAfishaMainInfoText1LV: 'Šajā vasarā atpūtīsimies Turcijas labākajās viesnīcas, kurās uzstāsies populārākie skatuves mākslinieki.',
+        
+        funSunPageAfishaMainInfoText2RU: 'А ещё вас ждут профессиональные мастер-классы от лучших wellness и fitness инструкторов!',
+        funSunPageAfishaMainInfoText2BY: 'А ещё вас ждут профессиональные мастер-классы от лучших wellness и fitness инструкторов!',
+        funSunPageAfishaMainInfoText2UA: 'А ещё вас ждут профессиональные мастер-классы от лучших wellness и fitness инструкторов!',
+        funSunPageAfishaMainInfoText2EE: 'Teid ootavad professionaalsed mestriklassid parimate wellness ja fitness instruktorite poolt!',
+        funSunPageAfishaMainInfoText2LT: 'Taip pat Jūsų laukia profesionalūs wellness ir fitness instruktoriai!',
+        funSunPageAfishaMainInfoText2LV: 'Jūs gaida profesionālās meistarklases no labākajiem Wellness un Fitness instruktoriem!',
+    }
+})
+
+const funSunPageAfishaBanner = new Vue ({
+    el: '#funSunPageAfishaBanner',
+    data: {
+        funSunPageAfishaBannerLinkRU: 'https://agent.tui.ru/getmedia/ee99b904-026f-448f-bad7-02bf60b02089/bannerFs-min',
+    }
+})
+
+const funSunPageAfishaHotels = new Vue ({
+    el: '#blockGetRound',
+    data: {
+        //ОТЕЛЬ 1
+        funSunPageAfishaHotelImage1: 'background: url(https://agent.tui.ru/getmedia/6d964ab6-ecc5-454f-bd8e-af8837a5bbd7/hotel1Img-min)',
+        funSunPageAfishaHotelName1 : 'FUN&SUN River Resort Belek 5*',
+        funSunPageAfishaHotelLink1: '/Tours/Europe/Turkey/belek/Belek/TUI-FUN-SUN-River-Resort-Belek',
+        funSunPageAfishaHotelLinkClient1: '/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/',
+        
+        //ОТЕЛЬ 2
+        funSunPageAfishaHotelImage2: 'background: url(https://agent.tui.ru/getmedia/e30b07ac-0d51-4c4a-a2c8-9d8873cf72b9/hotel2Img-min)',
+        funSunPageAfishaHotelName2 : 'FUN&SUN Club Serra Palace 5*',
+        funSunPageAfishaHotelLink2: '/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S',
+        funSunPageAfishaHotelLinkClient2: '/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace__(ex__club__calimera__s/',
+        
+        //ОТЕЛЬ 3
+        funSunPageAfishaHotelImage3: 'background: url(https://agent.tui.ru/getmedia/c732bef6-4c7d-46bd-85bf-d5de7e001080/hotel3Img-min)',
+        funSunPageAfishaHotelName3 : 'FUN&SUN Miarosa Ghazal Resort 5*',
+        funSunPageAfishaHotelLink3: '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
+        funSunPageAfishaHotelLinkClient3: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
+        
+        //ОТЕЛЬ 4
+        funSunPageAfishaHotelImage4: 'background: url(https://agent.tui.ru/getmedia/63df2739-c9c8-44e6-af78-cf6727660980/hotel4Img-min)',
+        funSunPageAfishaHotelName4 : 'FUN&SUN Comfort Beach Resort 5*',
+        funSunPageAfishaHotelLink4: '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort',
+        funSunPageAfishaHotelLinkClient4: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/',
+        
+        //ОТЕЛЬ 5
+        funSunPageAfishaHotelImage5: 'background: url(https://agent.tui.ru/getmedia/11138675-0288-4249-af47-af258998266e/hotel5Img-min)',
+        funSunPageAfishaHotelName5 : 'FUN&SUN Club Belek 5*',
+        funSunPageAfishaHotelLink5: '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
+        funSunPageAfishaHotelLinkClient5: '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',
+        
+        //ОТЕЛЬ 6
+        funSunPageAfishaHotelImage6: 'background: url(https://agent.tui.ru/getmedia/ec5344c2-e889-4e91-8095-6d6c72b42d09/hotel6Img-min)',
+        funSunPageAfishaHotelName6 : 'FUN&SUN Club Saphire 5*',
+        funSunPageAfishaHotelLink6: '/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire/',
+        funSunPageAfishaHotelLinkClient6: '/hotel/europe-turkey-kemer-tekirova-tui__fun__sun__club__saphire/',
+        
+        //ОТЕЛЬ 7
+        funSunPageAfishaHotelImage7: 'background: url(https://agent.tui.ru/getmedia/e0a3f2db-f85b-4c57-834a-d0c6e1ca8133/hotel7Img-min)',
+        funSunPageAfishaHotelName7 : 'FUN&SUN Club Di Finica 5*',
+        funSunPageAfishaHotelLink7: '/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica',
+        funSunPageAfishaHotelLinkClient7: '/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/',
+        
+        //КНОПКИ
+        funSunPageAfishaHotelButtonRU: 'Выбрать тур',
+        funSunPageAfishaHotelButtonBY: 'Выбрать тур',
+        funSunPageAfishaHotelButtonUA: 'Выбрать тур',
+        funSunPageAfishaHotelButtonEE: 'Broneeri',
+        funSunPageAfishaHotelButtonLT: 'Pasirinkti',
+        funSunPageAfishaHotelButtonLV: 'Izvēlēties ceļojumu',
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 1
+        //RU ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1RU: '28 апреля 2019',
+        funSunPageAfishaHotel1Artist1RU: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2RU: '1 июня 2019',
+        funSunPageAfishaHotel1Artist2RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel1Date3RU: '29 июня 2019',
+        funSunPageAfishaHotel1Artist3RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4RU: '30 июля 2019',
+        funSunPageAfishaHotel1Artist4RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel1Date5RU: '26 августа 2019',
+        funSunPageAfishaHotel1Artist5RU: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6RU: '21 сентября 2019',
+        funSunPageAfishaHotel1Artist6RU: 'Корни',
+        
+        
+        //BY ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1BY: '28 апреля 2019',
+        funSunPageAfishaHotel1Artist1BY: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2BY: '1 июня 2019',
+        funSunPageAfishaHotel1Artist2BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel1Date3BY: '29 июня 2019',
+        funSunPageAfishaHotel1Artist3BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4BY: '30 июля 2019',
+        funSunPageAfishaHotel1Artist4BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel1Date5BY: '26 августа 2019',
+        funSunPageAfishaHotel1Artist5BY: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6BY: '21 сентября 2019',
+        funSunPageAfishaHotel1Artist6BY: 'Корни',
+        
+        
+        //UA ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1UA: '28 апреля 2019',
+        funSunPageAfishaHotel1Artist1UA: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2UA: '1 июня 2019',
+        funSunPageAfishaHotel1Artist2UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel1Date3UA: '29 июня 2019',
+        funSunPageAfishaHotel1Artist3UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4UA: '30 июля 2019',
+        funSunPageAfishaHotel1Artist4UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel1Date5UA: '26 августа 2019',
+        funSunPageAfishaHotel1Artist5UA: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6UA: '21 сентября 2019',
+        funSunPageAfishaHotel1Artist6UA: 'Корни',
+        
+        
+        //EE ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1EE: '28 aprill 2019',
+        funSunPageAfishaHotel1Artist1EE: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2EE: '1 juuni 2019',
+        funSunPageAfishaHotel1Artist2EE: 'White Eagle',
+        
+        funSunPageAfishaHotel1Date3EE: '29 juuni 2019',
+        funSunPageAfishaHotel1Artist3EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4EE: '30 juuli 2019',
+        funSunPageAfishaHotel1Artist4EE: 'Propaganda',
+        
+        funSunPageAfishaHotel1Date5EE: '26 august 2019',
+        funSunPageAfishaHotel1Artist5EE: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6EE: '21 september 2019',
+        funSunPageAfishaHotel1Artist6EE: 'Korni',
+        
+        
+        //LT ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1LT: '2019 balandžio 28',
+        funSunPageAfishaHotel1Artist1LT: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2LT: '2019 birželio 1',
+        funSunPageAfishaHotel1Artist2LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel1Date3LT: '2019 birželio 29',
+        funSunPageAfishaHotel1Artist3LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4LT: '2019 birželio 30',
+        funSunPageAfishaHotel1Artist4LT: 'Propaganda',
+        
+        funSunPageAfishaHotel1Date5LT: '2019 rugpjūčio 30',
+        funSunPageAfishaHotel1Artist5LT: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6LT: '2019 rugsėjo 21',
+        funSunPageAfishaHotel1Artist6LT: 'Korni',
+        
+        
+        //LV ОТЕЛЬ 1
+        funSunPageAfishaHotel1Date1LV: '2019. gada 28. aprīlī',
+        funSunPageAfishaHotel1Artist1LV: 'Estradarada',
+        
+        funSunPageAfishaHotel1Date2LV: '2019. gada 1.jūnijā',
+        funSunPageAfishaHotel1Artist2LV: 'Belij orel',
+        
+        funSunPageAfishaHotel1Date3LV: '2019. gada 29. jūnijā',
+        funSunPageAfishaHotel1Artist3LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel1Date4LV: '2019. gada 30. jūlijā',
+        funSunPageAfishaHotel1Artist4LV: 'Propaganda',
+        
+        funSunPageAfishaHotel1Date5LV: '2019. gada 26. augustā',
+        funSunPageAfishaHotel1Artist5LV: 'Virus!',
+        
+        funSunPageAfishaHotel1Date6LV: '2019. gada 21. septembrī',
+        funSunPageAfishaHotel1Artist6LV: 'Korni',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 2
+        //RU ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1RU: '30 апреля 2019',
+        funSunPageAfishaHotel2Artist1RU: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2RU: '5 июня 2019',
+        funSunPageAfishaHotel2Artist2RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel2Date3RU: '3 июля 2019',
+        funSunPageAfishaHotel2Artist3RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4RU: '1 августа 2019',
+        funSunPageAfishaHotel2Artist4RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel2Date5RU: '30 августа 2019',
+        funSunPageAfishaHotel2Artist5RU: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6RU: '25 сентября 2019',
+        funSunPageAfishaHotel2Artist6RU: 'Корни',
+        
+        
+        //BY ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1BY: '30 апреля 2019',
+        funSunPageAfishaHotel2Artist1BY: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2BY: '5 июня 2019',
+        funSunPageAfishaHotel2Artist2BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel2Date3BY: '3 июля 2019',
+        funSunPageAfishaHotel2Artist3BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4BY: '1 августа 2019',
+        funSunPageAfishaHotel2Artist4BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel2Date5BY: '30 августа 2019',
+        funSunPageAfishaHotel2Artist5BY: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6BY: '25 сентября 2019',
+        funSunPageAfishaHotel2Artist6BY: 'Корни',
+        
+        
+        //UA ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1UA: '30 апреля 2019',
+        funSunPageAfishaHotel2Artist1UA: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2UA: '5 июня 2019',
+        funSunPageAfishaHotel2Artist2UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel2Date3UA: '3 июля 2019',
+        funSunPageAfishaHotel2Artist3UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4UA: '1 августа 2019',
+        funSunPageAfishaHotel2Artist4UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel2Date5UA: '30 августа 2019',
+        funSunPageAfishaHotel2Artist5UA: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6UA: '25 сентября 2019',
+        funSunPageAfishaHotel2Artist6UA: 'Корни',
+        
+        
+        //EE ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1EE: '30 aprill 2019',
+        funSunPageAfishaHotel2Artist1EE: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2EE: '5 juuni 2019',
+        funSunPageAfishaHotel2Artist2EE: 'White Eagle',
+        
+        funSunPageAfishaHotel2Date3EE: '3 juuli 2019',
+        funSunPageAfishaHotel2Artist3EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4EE: '1 august 2019',
+        funSunPageAfishaHotel2Artist4EE: 'Propaganda',
+        
+        funSunPageAfishaHotel2Date5EE: '30 august 2019',
+        funSunPageAfishaHotel2Artist5EE: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6EE: '25 september 2019',
+        funSunPageAfishaHotel2Artist6EE: 'Korni',
+        
+        
+        //LT ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1LT: '2019 balandžio 30',
+        funSunPageAfishaHotel2Artist1LT: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2LT: '2019 birželio 5',
+        funSunPageAfishaHotel2Artist2LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel2Date3LT: '2019 birželio 3',
+        funSunPageAfishaHotel2Artist3LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4LT: '2019 rugpjūčio 1',
+        funSunPageAfishaHotel2Artist4LT: 'Propaganda',
+        
+        funSunPageAfishaHotel2Date5LT: '2019 rugpjūčio 30',
+        funSunPageAfishaHotel2Artist5LT: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6LT: '2019 rugsėjo 25',
+        funSunPageAfishaHotel2Artist6LT: 'Korni',
+        
+        
+        //LV ОТЕЛЬ 2
+        funSunPageAfishaHotel2Date1LV: '2019.gada 30. aprīlī',
+        funSunPageAfishaHotel2Artist1LV: 'Estradarada',
+        
+        funSunPageAfishaHotel2Date2LV: '2019.gada 5. jūnijā',
+        funSunPageAfishaHotel2Artist2LV: 'Belij orel',
+        
+        funSunPageAfishaHotel2Date3LV: '2019.gada 3. jūlijā',
+        funSunPageAfishaHotel2Artist3LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel2Date4LV: '2019.gada 1. augustā',
+        funSunPageAfishaHotel2Artist4LV: 'Propaganda',
+        
+        funSunPageAfishaHotel2Date5LV: '2019.gada 30. augustā',
+        funSunPageAfishaHotel2Artist5LV: 'Virus!',
+        
+        funSunPageAfishaHotel2Date6LV: '2019.gada 25. septembrī',
+        funSunPageAfishaHotel2Artist6LV: 'Korni',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 3
+        //RU ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1RU: '7 мая 2019',
+        funSunPageAfishaHotel3Artist1RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2RU: '4 июня 2019',
+        funSunPageAfishaHotel3Artist2RU: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3RU: '1 июля 2019',
+        funSunPageAfishaHotel3Artist3RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel3Date4RU: '30 июля 2019',
+        funSunPageAfishaHotel3Artist4RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel3Date5RU: '23 августа 2019',
+        funSunPageAfishaHotel3Artist5RU: 'Корни',
+        
+        funSunPageAfishaHotel3Date6RU: '22 сентября 2019',
+        funSunPageAfishaHotel3Artist6RU: 'Estradarada',
+        
+        
+        //BY ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1BY: '7 мая 2019',
+        funSunPageAfishaHotel3Artist1BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2BY: '4 июня 2019',
+        funSunPageAfishaHotel3Artist2BY: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3BY: '1 июля 2019',
+        funSunPageAfishaHotel3Artist3BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel3Date4BY: '30 июля 2019',
+        funSunPageAfishaHotel3Artist4BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel3Date5BY: '23 августа 2019',
+        funSunPageAfishaHotel3Artist5BY: 'Корни',
+        
+        funSunPageAfishaHotel3Date6BY: '22 сентября 2019',
+        funSunPageAfishaHotel3Artist6BY: 'Estradarada',
+        
+        
+        //UA ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1UA: '7 мая 2019',
+        funSunPageAfishaHotel3Artist1UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2UA: '4 июня 2019',
+        funSunPageAfishaHotel3Artist2UA: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3UA: '1 июля 2019',
+        funSunPageAfishaHotel3Artist3UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel3Date4UA: '30 июля 2019',
+        funSunPageAfishaHotel3Artist4UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel3Date5UA: '23 августа 2019',
+        funSunPageAfishaHotel3Artist5UA: 'Корни',
+        
+        funSunPageAfishaHotel3Date6UA: '22 сентября 2019',
+        funSunPageAfishaHotel3Artist6UA: 'Estradarada',
+        
+        
+        //EE ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1EE: '7 mai 2019',
+        funSunPageAfishaHotel3Artist1EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2EE: '4 juuni 2019',
+        funSunPageAfishaHotel3Artist2EE: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3EE: '1 juuli 2019',
+        funSunPageAfishaHotel3Artist3EE: 'Propaganda',
+        
+        funSunPageAfishaHotel3Date4EE: '30 juuli 2019',
+        funSunPageAfishaHotel3Artist4EE: 'White Eagle',
+        
+        funSunPageAfishaHotel3Date5EE: '23 august 2019',
+        funSunPageAfishaHotel3Artist5EE: 'Korni',
+        
+        funSunPageAfishaHotel3Date6EE: '22 september 2019',
+        funSunPageAfishaHotel3Artist6EE: 'Estradarada',
+        
+        
+        //LT ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1LT: '2019 gegužės 7',
+        funSunPageAfishaHotel3Artist1LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2LT: '2019 birželio 4',
+        funSunPageAfishaHotel3Artist2LT: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3LT: '2019 liepos 1',
+        funSunPageAfishaHotel3Artist3LT: 'Propaganda',
+        
+        funSunPageAfishaHotel3Date4LT: '2019 liepos 30',
+        funSunPageAfishaHotel3Artist4LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel3Date5LT: '2019 rugpjūčio 23',
+        funSunPageAfishaHotel3Artist5LT: 'Korni',
+        
+        funSunPageAfishaHotel3Date6LT: '2019 rugsėjo 22',
+        funSunPageAfishaHotel3Artist6LT: 'Estradarada',
+        
+        
+        //LV ОТЕЛЬ 3
+        funSunPageAfishaHotel3Date1LV: '2019.gada 7. maijā',
+        funSunPageAfishaHotel3Artist1LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel3Date2LV: '2019.gada 4. jūnijā',
+        funSunPageAfishaHotel3Artist2LV: 'VIRUS!',
+        
+        funSunPageAfishaHotel3Date3LV: '2019.gada 1. jūlijā',
+        funSunPageAfishaHotel3Artist3LV: 'Propaganda',
+        
+        funSunPageAfishaHotel3Date4LV: '2019.gada 30. jūlijā',
+        funSunPageAfishaHotel3Artist4LV: 'Belij orel',
+        
+        funSunPageAfishaHotel3Date5LV: '2019.gada 23. augustā',
+        funSunPageAfishaHotel3Artist5LV: 'Korni',
+        
+        funSunPageAfishaHotel3Date6LV: '2019.gada 22.septembrī',
+        funSunPageAfishaHotel3Artist6LV: 'Estradarada',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 4
+        //RU ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1RU: '6 мая 2019',
+        funSunPageAfishaHotel4Artist1RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2RU: '3 июня 2019',
+        funSunPageAfishaHotel4Artist2RU: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3RU: '30 июня 2019',
+        funSunPageAfishaHotel4Artist3RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel4Date4RU: '28 июля 2019',
+        funSunPageAfishaHotel4Artist4RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel4Date5RU: '21 августа 2019',
+        funSunPageAfishaHotel4Artist5RU: 'Корни',
+        
+        funSunPageAfishaHotel4Date6RU: '20 сентября 2019',
+        funSunPageAfishaHotel4Artist6RU: 'Estradarada',
+        
+        
+        //BY ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1BY: '6 мая 2019',
+        funSunPageAfishaHotel4Artist1BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2BY: '3 июня 2019',
+        funSunPageAfishaHotel4Artist2BY: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3BY: '30 июня 2019',
+        funSunPageAfishaHotel4Artist3BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel4Date4BY: '28 июля 2019',
+        funSunPageAfishaHotel4Artist4BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel4Date5BY: '21 августа 2019',
+        funSunPageAfishaHotel4Artist5BY: 'Корни',
+        
+        funSunPageAfishaHotel4Date6BY: '20 сентября 2019',
+        funSunPageAfishaHotel4Artist6BY: 'Estradarada',
+        
+        
+        //UA ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1UA: '6 мая 2019',
+        funSunPageAfishaHotel4Artist1UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2UA: '3 июня 2019',
+        funSunPageAfishaHotel4Artist2UA: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3UA: '30 июня 2019',
+        funSunPageAfishaHotel4Artist3UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel4Date4UA: '28 июля 2019',
+        funSunPageAfishaHotel4Artist4UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel4Date5UA: '21 августа 2019',
+        funSunPageAfishaHotel4Artist5UA: 'Корни',
+        
+        funSunPageAfishaHotel4Date6UA: '20 сентября 2019',
+        funSunPageAfishaHotel4Artist6UA: 'Estradarada',
+        
+        
+        //EE ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1EE: '6 mai 2019',
+        funSunPageAfishaHotel4Artist1EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2EE: '3 juuni 2019',
+        funSunPageAfishaHotel4Artist2EE: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3EE: '30 juuni 2019',
+        funSunPageAfishaHotel4Artist3EE: 'Propaganda',
+        
+        funSunPageAfishaHotel4Date4EE: '28 juuli 2019',
+        funSunPageAfishaHotel4Artist4EE: 'White Eagle',
+        
+        funSunPageAfishaHotel4Date5EE: '21 august 2019',
+        funSunPageAfishaHotel4Artist5EE: 'Korni',
+        
+        funSunPageAfishaHotel4Date6EE: '20 september 2019',
+        funSunPageAfishaHotel4Artist6EE: 'Estradarada',
+        
+        
+        //LT ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1LT: '2019 gegužės 6',
+        funSunPageAfishaHotel4Artist1LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2LT: '2019 birželio 3',
+        funSunPageAfishaHotel4Artist2LT: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3LT: '2019 birželio 30',
+        funSunPageAfishaHotel4Artist3LT: 'Propaganda',
+        
+        funSunPageAfishaHotel4Date4LT: '2019 birželio 28',
+        funSunPageAfishaHotel4Artist4LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel4Date5LT: '2019 rugpjūčio 21',
+        funSunPageAfishaHotel4Artist5LT: 'Korni',
+        
+        funSunPageAfishaHotel4Date6LT: '2019 rugsėjo 20',
+        funSunPageAfishaHotel4Artist6LT: 'Estradarada',
+        
+        
+        //LV ОТЕЛЬ 4
+        funSunPageAfishaHotel4Date1LV: '2019.gada 6.maijā',
+        funSunPageAfishaHotel4Artist1LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel4Date2LV: '2019.gada 3. jūnijā',
+        funSunPageAfishaHotel4Artist2LV: 'VIRUS!',
+        
+        funSunPageAfishaHotel4Date3LV: '2019.gada 30. jūnijā',
+        funSunPageAfishaHotel4Artist3LV: 'Propaganda',
+        
+        funSunPageAfishaHotel4Date4LV: '2019.gada 28. jūlijā',
+        funSunPageAfishaHotel4Artist4LV: 'Belij orel',
+        
+        funSunPageAfishaHotel4Date5LV: '2019.gada 21.augustā',
+        funSunPageAfishaHotel4Artist5LV: 'Korni',
+        
+        funSunPageAfishaHotel4Date6LV: '2019.gada 20. septembrī',
+        funSunPageAfishaHotel4Artist6LV: 'Estradarada',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 5
+        //RU ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1RU: '29 апреля 2019',
+        funSunPageAfishaHotel5Artist1RU: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2RU: '3 июня 2019',
+        funSunPageAfishaHotel5Artist2RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel5Date3RU: '1 июля 2019',
+        funSunPageAfishaHotel5Artist3RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4RU: '31 июля 2019',
+        funSunPageAfishaHotel5Artist4RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel5Date5RU: '28 августа 2019',
+        funSunPageAfishaHotel5Artist5RU: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6RU: '23 сентября 2019',
+        funSunPageAfishaHotel5Artist6RU: 'Корни',
+        
+        
+        
+        //BY ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1BY: '29 апреля 2019',
+        funSunPageAfishaHotel5Artist1BY: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2BY: '3 июня 2019',
+        funSunPageAfishaHotel5Artist2BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel5Date3BY: '1 июля 2019',
+        funSunPageAfishaHotel5Artist3BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4BY: '31 июля 2019',
+        funSunPageAfishaHotel5Artist4BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel5Date5BY: '28 августа 2019',
+        funSunPageAfishaHotel5Artist5BY: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6BY: '23 сентября 2019',
+        funSunPageAfishaHotel5Artist6BY: 'Корни',
+        
+        
+        
+        //UA ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1UA: '29 апреля 2019',
+        funSunPageAfishaHotel5Artist1UA: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2UA: '3 июня 2019',
+        funSunPageAfishaHotel5Artist2UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel5Date3UA: '1 июля 2019',
+        funSunPageAfishaHotel5Artist3UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4UA: '31 июля 2019',
+        funSunPageAfishaHotel5Artist4UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel5Date5UA: '28 августа 2019',
+        funSunPageAfishaHotel5Artist5UA: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6UA: '23 сентября 2019',
+        funSunPageAfishaHotel5Artist6UA: 'Корни',
+        
+        
+        //EE ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1EE: '29 aprill 2019',
+        funSunPageAfishaHotel5Artist1EE: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2EE: '3 juuni 2019',
+        funSunPageAfishaHotel5Artist2EE: 'White Eagle',
+        
+        funSunPageAfishaHotel5Date3EE: '1 juuli 2019',
+        funSunPageAfishaHotel5Artist3EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4EE: '31 juuli 2019',
+        funSunPageAfishaHotel5Artist4EE: 'Propaganda',
+        
+        funSunPageAfishaHotel5Date5EE: '28 august 2019',
+        funSunPageAfishaHotel5Artist5EE: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6EE: '23 september 2019',
+        funSunPageAfishaHotel5Artist6EE: 'Korni',
+        
+        
+        //LT ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1LT: '2019 balandžio 29',
+        funSunPageAfishaHotel5Artist1LT: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2LT: '2019 birželio 3',
+        funSunPageAfishaHotel5Artist2LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel5Date3LT: '2019 liepos 1',
+        funSunPageAfishaHotel5Artist3LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4LT: '2019 liepos 31',
+        funSunPageAfishaHotel5Artist4LT: 'Propaganda',
+        
+        funSunPageAfishaHotel5Date5LT: '2019 rugpjūčio 28',
+        funSunPageAfishaHotel5Artist5LT: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6LT: '2019 rugsėjo 23',
+        funSunPageAfishaHotel5Artist6LT: 'Korni',
+        
+        
+        //LV ОТЕЛЬ 5
+        funSunPageAfishaHotel5Date1LV: '2019.gada 29. aprīlī',
+        funSunPageAfishaHotel5Artist1LV: 'Estradarada',
+        
+        funSunPageAfishaHotel5Date2LV: '2019. gada 3. jūnijā',
+        funSunPageAfishaHotel5Artist2LV: 'Belij orel',
+        
+        funSunPageAfishaHotel5Date3LV: '2019. gada 1. jūlijā',
+        funSunPageAfishaHotel5Artist3LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel5Date4LV: '2019.gada 31. jūlijā',
+        funSunPageAfishaHotel5Artist4LV: 'Propaganda',
+        
+        funSunPageAfishaHotel5Date5LV: '2019. gada 28. augustā',
+        funSunPageAfishaHotel5Artist5LV: 'VIRUS!',
+        
+        funSunPageAfishaHotel5Date6LV: '2019.gada 23. septembrī',
+        funSunPageAfishaHotel5Artist6LV: 'Korni',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 6
+        //RU ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1RU: '8 мая 2019',
+        funSunPageAfishaHotel6Artist1RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2RU: '6 июня 2019',
+        funSunPageAfishaHotel6Artist2RU: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3RU: '3 июля 2019',
+        funSunPageAfishaHotel6Artist3RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel6Date4RU: '1 августа 2019',
+        funSunPageAfishaHotel6Artist4RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel6Date5RU: '25 августа 2019',
+        funSunPageAfishaHotel6Artist5RU: 'Корни',
+        
+        funSunPageAfishaHotel6Date6RU: '24 сентября 2019',
+        funSunPageAfishaHotel6Artist6RU: 'Estradarada',
+        
+        
+        //BY ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1BY: '8 мая 2019',
+        funSunPageAfishaHotel6Artist1BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2BY: '6 июня 2019',
+        funSunPageAfishaHotel6Artist2BY: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3BY: '3 июля 2019',
+        funSunPageAfishaHotel6Artist3BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel6Date4BY: '1 августа 2019',
+        funSunPageAfishaHotel6Artist4BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel6Date5BY: '25 августа 2019',
+        funSunPageAfishaHotel6Artist5BY: 'Корни',
+        
+        funSunPageAfishaHotel6Date6BY: '24 сентября 2019',
+        funSunPageAfishaHotel6Artist6BY: 'Estradarada',
+        
+        
+        //UA ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1UA: '8 мая 2019',
+        funSunPageAfishaHotel6Artist1UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2UA: '6 июня 2019',
+        funSunPageAfishaHotel6Artist2UA: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3UA: '3 июля 2019',
+        funSunPageAfishaHotel6Artist3UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel6Date4UA: '1 августа 2019',
+        funSunPageAfishaHotel6Artist4UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel6Date5UA: '25 августа 2019',
+        funSunPageAfishaHotel6Artist5UA: 'Корни',
+        
+        funSunPageAfishaHotel6Date6UA: '24 сентября 2019',
+        funSunPageAfishaHotel6Artist6UA: 'Estradarada',
+        
+        
+        //EE ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1EE: '8 mai 2019',
+        funSunPageAfishaHotel6Artist1EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2EE: '6 juuni 2019',
+        funSunPageAfishaHotel6Artist2EE: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3EE: '3 juuli 2019',
+        funSunPageAfishaHotel6Artist3EE: 'Propaganda',
+        
+        funSunPageAfishaHotel6Date4EE: '1 august 2019',
+        funSunPageAfishaHotel6Artist4EE: 'White Eagle',
+        
+        funSunPageAfishaHotel6Date5EE: '25 august 2019',
+        funSunPageAfishaHotel6Artist5EE: 'Korni',
+        
+        funSunPageAfishaHotel6Date6EE: '24 september 2019',
+        funSunPageAfishaHotel6Artist6EE: 'Estradarada',
+        
+        
+        //LT ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1LT: '2019 gegužės 8',
+        funSunPageAfishaHotel6Artist1LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2LT: '2019 birželio 6',
+        funSunPageAfishaHotel6Artist2LT: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3LT: '2019 birželio 3',
+        funSunPageAfishaHotel6Artist3LT: 'Propaganda',
+        
+        funSunPageAfishaHotel6Date4LT: '2019 rugpjūčio 1',
+        funSunPageAfishaHotel6Artist4LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel6Date5LT: '2019 rugpjūčio 25',
+        funSunPageAfishaHotel6Artist5LT: 'Korni',
+        
+        funSunPageAfishaHotel6Date6LT: '2019 rugpjūčio 24',
+        funSunPageAfishaHotel6Artist6LT: 'Estradarada',
+        
+        
+        //LV ОТЕЛЬ 6
+        funSunPageAfishaHotel6Date1LV: '2019.gada 8.maijā',
+        funSunPageAfishaHotel6Artist1LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel6Date2LV: '2019.gada 6. jūnijā',
+        funSunPageAfishaHotel6Artist2LV: 'VIRUS!',
+        
+        funSunPageAfishaHotel6Date3LV: '2019.gada 3. jūlijā',
+        funSunPageAfishaHotel6Artist3LV: 'Propaganda',
+        
+        funSunPageAfishaHotel6Date4LV: '2019. gada 1. augustā',
+        funSunPageAfishaHotel6Artist4LV: 'Belij orel',
+        
+        funSunPageAfishaHotel6Date5LV: '2019. gada 25.augustā',
+        funSunPageAfishaHotel6Artist5LV: 'Korni',
+        
+        funSunPageAfishaHotel6Date6LV: '2019.gada 24. septembrī',
+        funSunPageAfishaHotel6Artist6LV: 'Estradarada',
+        
+        
+        
+        
+        
+        //ДАТЫ И АРТИСТЫ ОТЕЛЬ 7
+        //RU ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1RU: '9 мая 2019',
+        funSunPageAfishaHotel7Artist1RU: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2RU: '8 июня 2019',
+        funSunPageAfishaHotel7Artist2RU: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3RU: '4 июля 2019',
+        funSunPageAfishaHotel7Artist3RU: 'Пропаганда',
+        
+        funSunPageAfishaHotel7Date4RU: '3 августа 2019',
+        funSunPageAfishaHotel7Artist4RU: 'Белый орёл',
+        
+        funSunPageAfishaHotel7Date5RU: '27 августа 2019',
+        funSunPageAfishaHotel7Artist5RU: 'Корни',
+        
+        funSunPageAfishaHotel7Date6RU: '26 сентября 2019',
+        funSunPageAfishaHotel7Artist6RU: 'Estradarada',
+        
+        
+        //BY ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1BY: '9 мая 2019',
+        funSunPageAfishaHotel7Artist1BY: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2BY: '8 июня 2019',
+        funSunPageAfishaHotel7Artist2BY: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3BY: '4 июля 2019',
+        funSunPageAfishaHotel7Artist3BY: 'Пропаганда',
+        
+        funSunPageAfishaHotel7Date4BY: '3 августа 2019',
+        funSunPageAfishaHotel7Artist4BY: 'Белый орёл',
+        
+        funSunPageAfishaHotel7Date5BY: '27 августа 2019',
+        funSunPageAfishaHotel7Artist5BY: 'Корни',
+        
+        funSunPageAfishaHotel7Date6BY: '26 сентября 2019',
+        funSunPageAfishaHotel7Artist6BY: 'Estradarada',
+        
+        
+        //UA ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1UA: '9 мая 2019',
+        funSunPageAfishaHotel7Artist1UA: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2UA: '8 июня 2019',
+        funSunPageAfishaHotel7Artist2UA: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3UA: '4 июля 2019',
+        funSunPageAfishaHotel7Artist3UA: 'Пропаганда',
+        
+        funSunPageAfishaHotel7Date4UA: '3 августа 2019',
+        funSunPageAfishaHotel7Artist4UA: 'Белый орёл',
+        
+        funSunPageAfishaHotel7Date5UA: '27 августа 2019',
+        funSunPageAfishaHotel7Artist5UA: 'Корни',
+        
+        funSunPageAfishaHotel7Date6UA: '26 сентября 2019',
+        funSunPageAfishaHotel7Artist6UA: 'Estradarada',
+        
+        
+        //EE ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1EE: '9 мая 2019',
+        funSunPageAfishaHotel7Artist1EE: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2EE: '8 juuni 2019',
+        funSunPageAfishaHotel7Artist2EE: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3EE: '4 juuli 2019',
+        funSunPageAfishaHotel7Artist3EE: 'Propaganda',
+        
+        funSunPageAfishaHotel7Date4EE: '3 august 2019',
+        funSunPageAfishaHotel7Artist4EE: 'White Eagle',
+        
+        funSunPageAfishaHotel7Date5EE: '27 august 2019',
+        funSunPageAfishaHotel7Artist5EE: 'Korni',
+        
+        funSunPageAfishaHotel7Date6EE: '26 september 2019',
+        funSunPageAfishaHotel7Artist6EE: 'Estradarada',
+        
+        
+        //LT ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1LT: '2019 gegužės 9',
+        funSunPageAfishaHotel7Artist1LT: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2LT: '2019 birželio 8',
+        funSunPageAfishaHotel7Artist2LT: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3LT: '2019 birželio 4',
+        funSunPageAfishaHotel7Artist3LT: 'Propaganda',
+        
+        funSunPageAfishaHotel7Date4LT: '2019 rugpjūčio 3',
+        funSunPageAfishaHotel7Artist4LT: 'Baltasis erelis',
+        
+        funSunPageAfishaHotel7Date5LT: '2019 rugpjūčio 27',
+        funSunPageAfishaHotel7Artist5LT: 'Korni',
+        
+        funSunPageAfishaHotel7Date6LT: '2019 rugsėjo 26',
+        funSunPageAfishaHotel7Artist6LT: 'Estradarada',
+        
+        
+        //LV ОТЕЛЬ 7
+        funSunPageAfishaHotel7Date1LV: '2019.gada 8. jūnijā',
+        funSunPageAfishaHotel7Artist1LV: 'Rumbero’s',
+        
+        funSunPageAfishaHotel7Date2LV: '2019.gada 8. jūnijā',
+        funSunPageAfishaHotel7Artist2LV: 'VIRUS!',
+        
+        funSunPageAfishaHotel7Date3LV: '2019. gada 4. jūlijā',
+        funSunPageAfishaHotel7Artist3LV: 'Propaganda',
+        
+        funSunPageAfishaHotel7Date4LV: '2019. gada 3. augustā',
+        funSunPageAfishaHotel7Artist4LV: 'Belij orel',
+        
+        funSunPageAfishaHotel7Date5LV: '2019. gada 27. augustā',
+        funSunPageAfishaHotel7Artist5LV: 'Korni',
+        
+        funSunPageAfishaHotel7Date6LV: '2019. gada 26. septembrī',
+        funSunPageAfishaHotel7Artist6LV: 'Estradarada',
+    }
+})
+
+const funSunPageAfishaSport = new Vue ({
+    el: '#funSunPageAfishaSport',
+    data: {
+        funSunPageAfishaSportTitleRU: 'Спортивная программа с модными фитнес-инструкторами!',
+        funSunPageAfishaSportTitleBY: 'Спортивная программа с модными фитнес-инструкторами!',
+        funSunPageAfishaSportTitleUA: 'Спортивная программа с модными фитнес-инструкторами!',
+        funSunPageAfishaSportTitleEE: 'Proffesionaalsete treenerite meistriklassid!',
+        funSunPageAfishaSportTitleLT: 'Sporto programa su fitness instruktoriai!',
+        funSunPageAfishaSportTitleLV: 'Sporta programma ar slaveniem fitnesa instruktoriem!',
+        
+        funSunPageAfishaSportTextRU: 'C 7 мая по 28 сентября мастер-классы от профессиональных wellness и fitness инструкторов в отелях FUN&SUN',
+        funSunPageAfishaSportTextBY: 'C 7 мая по 28 сентября мастер-классы от профессиональных wellness и fitness инструкторов в отелях FUN&SUN',
+        funSunPageAfishaSportTextUA: 'C 7 мая по 28 сентября мастер-классы от профессиональных wellness и fitness инструкторов в отелях FUN&SUN',
+        funSunPageAfishaSportTextEE: '7 mai kuni 28 september professionaalsete fitness&amp;wellness treenerite meistriklassid FUN&SUN hotellides',
+        funSunPageAfishaSportTextLT: 'Nuo gegužės 7 iki rugsėjo 28 d. profesionalūs užsiėmimai su wellness ir fitness instruktoriais FUN&SUN viešbučiuose',
+        funSunPageAfishaSportTextLV: 'No 7. maijā līdz 28. septembrīm profesionālas meistarklases no labākajiem Wellness un Fitness instruktoriem FUN&SUN viesnīcās',
+        
+        funSunPageAfishaSportCountry1RU: 'в Турции',
+        funSunPageAfishaSportCountry1BY: 'в Турции',
+        funSunPageAfishaSportCountry1UA: 'в Турции',
+        funSunPageAfishaSportCountry1EE: 'в Турции',
+        funSunPageAfishaSportCountry1LT: 'Turkijoje',
+        funSunPageAfishaSportCountry1LV: 'Turcijā',
+        
+        funSunPageAfishaSportCountry2RU: 'на Кипре',
+        funSunPageAfishaSportCountry2BY: 'на Кипре',
+        funSunPageAfishaSportCountry2UA: 'на Кипре',
+        funSunPageAfishaSportCountry2EE: 'на Кипре',
+        funSunPageAfishaSportCountry2LT: 'ir Kipre',
+        funSunPageAfishaSportCountry2LV: 'un Kiprā',
+        
+        
+        
+        funSunPageAfishaSportCountry1Flag: 'https://agent.tui.ru/getmedia/138b02aa-dd59-48e6-905d-4d8c0d594cb2/flag1',
+        funSunPageAfishaSportCountry2Flag: 'https://agent.tui.ru/getmedia/2866620e-5452-46ee-930b-8481506e1fbf/flag1Copy',
+    }
+})
+
+

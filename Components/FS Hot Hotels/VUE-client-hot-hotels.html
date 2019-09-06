@@ -16,23 +16,73 @@
         <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 
             <!-- SLIDE START ================================================================== -->
-            <div class="swiper-slide hotel-card__slide swiper-slide-active" style="width: 390.667px;" v-for="hotel in hotels">
+            <div class="swiper-slide hotel-card__slide swiper-slide-active" style="width: 390.667px;">
                 <div class="hottours-card">
                    <img 
-                   v-bind:src="hotel.image" 
+                   src="https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=5bc1d530-5e06-4495-aae2-34e4acb454d6" 
                    class="hottours-card__photo">
                     <div class="hottours-card__content">
                         <div class="hottours-card__titles">
-                            <h4 class="hottours-card__title">{{ hotel.place }}</h4>
-                            <p class="hottours-card__subtitle">{{ hotel.name}}</p>
+                            <h4 class="hottours-card__title">Турция, Кемер, Гейнюк</h4>
+                            <p class="hottours-card__subtitle">FUN&SUN Comfort Beach Resort 5*</p>
                         </div>
                         <div class="hottours-card__description">
                             <p class="hottours-card__oldprice">
-                                <span><span>{{ hotel.oldPrice }}&nbsp;<span class="currency">₽</span></span></span></p>
-                            <p class="hottours-card__price"><span>от&nbsp;<span>{{ hotel.newPrice}}&nbsp;<span class="currency">₽</span></span></span></p>
-                            <p class="hottours-card__conditions">{{ hotel.conditions }}</p>
+                                <span><span>88 508 &nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__price"><span>от&nbsp;<span>74 048 &nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__conditions">на двоих, 6 ночей </p>
                             <a 
-                            v-bind:href="hotel.link" 
+                            href="https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/" 
+                            class="hottours-card__button">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE END ================================================================== -->
+            
+            <!-- SLIDE START ================================================================== -->
+            <div class="swiper-slide hotel-card__slide swiper-slide-active" style="width: 390.667px;" >
+                <div class="hottours-card">
+                   <img 
+                   src="https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=f2a7cde6-9bcb-4918-9339-94a3accf0129" 
+                   class="hottours-card__photo">
+                    <div class="hottours-card__content">
+                        <div class="hottours-card__titles">
+                            <h4 class="hottours-card__title">Турция, Кемер, Гейнюк</h4>
+                            <p class="hottours-card__subtitle">FUN&SUN Miarosa Ghazal Resort 5</p>
+                        </div>
+                        <div class="hottours-card__description">
+                            <p class="hottours-card__oldprice">
+                                <span><span>100 364 &nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__price"><span>от&nbsp;<span>94 476  &nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__conditions">на двоих, 7 ночей</p>
+                            <a 
+                            href="https://www.tui.ru/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/" 
+                            class="hottours-card__button">Забронировать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SLIDE END ================================================================== -->
+            
+            <!-- SLIDE START ================================================================== -->
+            <div class="swiper-slide hotel-card__slide swiper-slide-active" style="width: 390.667px;" v-for="hotel in hotels">
+                <div class="hottours-card">
+                   <img 
+                   src="https://www.tui.ru/CmsPages/GetPhoto.aspx?fileguid=17fe8be5-b956-4307-b7e6-2d23e4645d5c" 
+                   class="hottours-card__photo">
+                    <div class="hottours-card__content">
+                        <div class="hottours-card__titles">
+                            <h4 class="hottours-card__title">Турция, Кемер, Финике</h4>
+                            <p class="hottours-card__subtitle">FUN&SUN Club Di Finica </p>
+                        </div>
+                        <div class="hottours-card__description">
+                            <p class="hottours-card__oldprice">
+                                <span><span>88 569&nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__price"><span>от&nbsp;<span>72 246 &nbsp;<span class="currency">₽</span></span></span></p>
+                            <p class="hottours-card__conditions">на двоих, 7 ночей</p>
+                            <a 
+                            href="https://www.tui.ru/hotel/europe-turkey-kemer-finike-tui__fun__sun__club__di__finica/" 
                             class="hottours-card__button">Забронировать</a>
                         </div>
                     </div>
@@ -46,5 +96,3 @@
 
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
-<script src="https://admin.tui.ru/getmedia/97aa4971-f470-4fb9-a4c9-5c8f05cfd502/VUE-FS-client-hot-hotels"></script>
