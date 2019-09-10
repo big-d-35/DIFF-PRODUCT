@@ -660,79 +660,7 @@
 </style>
 <title></title>
 <div class="row-all">
-    <!-- ВЕРХНЕЕ МЕНЮ TOP START =========================================================== -->
-
-    <div class="menu-top" id="home-page-diff-menu-top">
-        <div class="container">
-            <div class="row">
-                <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
-                <div class="col-5 but-menu-mobile">
-                    &nbsp;
-                </div>
-
-                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
-
-                <div class="col-md-10 col-10 mobile_agent">
-                    <div id="exit_menu">
-                        X
-                    </div>
-                    <div class="row menu-label">
-                        <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameEE}}</a>
-                        <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameEE}}</a>
-                        <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameEE}}</a>
-                        <a class="label-menu" v-bind:href=" menuItemShopLink " target="_blank">{{menuItemShopNameEE}}</a>
-                        <div class="label-menu" style="position: relative;cursor: pointer">
-                            <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameEE}}</a>
-                            <div class="label-menu-2">
-                                <div class="concept-link">
-                                    <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
-                                    <div>
-                                        <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
-                                            {{menuItemFunSunNameEE}}</a>
-                                    </div>
-                                </div>
-                                <div class="concept-link">
-                                    <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
-                                    <div>
-                                        <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
-                                            {{menuItemDayNightNameEE}}</a>
-                                    </div>
-                                </div>
-                                <div class="concept-link">
-                                    <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
-                                    <div>
-                                        <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
-                                            {{menuItemToucanNameEE}}</a>
-                                    </div>
-                                </div>
-                                <div class="concept-link">
-                                    <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
-
-                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameEE1}}<br />
-                                                {{menuItemConceptsAboutNameEE2}}</b></a></div>
-                                </div>
-                            </div>
-                        </div><a class="label-menu" v-bind:href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
-                        <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkEE " target="_blank">{{menuItemLoginNameEE}}</a>
-                    </div>
-                </div>
-
-                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
-
-                <div class="col-md-10">
-                    <div class="row menu-telephone">
-                        <div class="col-md-8 col-7">
-                            <p class="telephone-title">{{menuPhoneTitleEE}}</p>
-                            <p class="telephone-number">{{menuPhonePhoneEE}}</p>
-                        </div>
-                        <a v-bind:href=" menuTouristSiteLinkEE " style="color: black">{{menuTouristSiteNameEE}}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
+   
 
     <div class="row-all">
 
@@ -760,7 +688,7 @@
         <div class="container" id="fun-sun-page-menu">
             <div class="row">
                 <div class="buttons-slider button-slider-mobile col-md-12">
-                    <a class="col-md-2 col-12 button-slider " id="tb" v-bind:href="funSunPageMenuItemLinkAgent1" target="_blank">
+                    <a class="col-md-2 col-12 button-slider " id="tb" v-bind:href="funSunPageMenuItemLinkClient1" target="_blank">
                         <p>{{funSunPageMenuItemEE1}}</p>
                     </a>
 
@@ -768,19 +696,19 @@
                         <p>{{funSunPageMenuItemEE2}}</p>
                     </a>
 
-                    <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkAgent3" target="_blank">
+                    <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient3" target="_blank">
                         <p>{{funSunPageMenuItemEE3}}</p>
                     </a>
 
-                    <a class="button-slider col-md-2 col-12 button-slider-active" v-bind:href="funSunPageMenuItemLinkAgent4" target="_blank">
+                    <a class="button-slider col-md-2 col-12 button-slider-active" v-bind:href="funSunPageMenuItemLinkClient4" target="_blank">
                         <p>{{funSunPageMenuItemEE4}}</p>
                     </a>
 
-                    <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkAgent5" target="_blank">
+                    <a class="button-slider col-md-2 col-12" v-bind:href="funSunPageMenuItemLinkClient5" target="_blank">
                         <p>{{funSunPageMenuItemEE5}}</p>
                     </a>
 
-                    <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkAgent6EE" target="_blank">
+                    <a class="button-slider col-md-3 col-12" v-bind:href="funSunPageMenuItemLinkClient6EE" target="_blank">
                         <p>{{funSunPageMenuItemEE6}}</p>
                     </a>
                 </div>
@@ -995,7 +923,7 @@
                                     <div class="row price">
                                         <!--<div class="col-md-7 price-num"><p>от <b>25 338</b> на одного</p><p>на 7 ночей</p></div>-->
                                         <div class="col-md-5">
-                                            <p class="tour_a"><a v-bind:href=" funSunPageAllTurkeyHotel.hotelLink ">{{ funSunPageAllTurkeyHotel.takeTourEE }}</a></p>
+                                            <p class="tour_a"><a v-bind:href=" funSunPageAllTurkeyHotel.hotelLinkClient ">{{ funSunPageAllTurkeyHotel.takeTourEE }}</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1035,7 +963,7 @@
                                     <div class="row price">
                                         <!--<div class="col-md-7 price-num"><p>от <b>34 895</b> на одного</p><p>на 7 ночей</p></div>-->
                                         <div class="col-md-5">
-                                            <p class="tour_a"><a v-bind:href=" funSunPageAllCyprusHotel.hotelLink ">{{ funSunPageAllCyprusHotel.takeTourEE }}</a></p>
+                                            <p class="tour_a"><a v-bind:href=" funSunPageAllCyprusHotel.hotelLinkClient ">{{ funSunPageAllCyprusHotel.takeTourEE }}</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -1134,48 +1062,57 @@
     add_files(vueLinks, 'script');
 </script>
 
-<script src="https://www.tui.ru/getmedia/6039e8fe-a0c4-4347-a1cd-3f0c350089ea/slider-Mobile" type="text/javascript">
-</script>
 <script src="https://www.youtube.com/iframe_api" type="text/javascript">
-</script>
+  </script><script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" type="text/javascript">
+  </script>
+  <!--<script src="https://www.tui.ru/getmedia/6b176d88-6bc0-48fa-aa88-4143bafe5ce4/carousel/" type="text/javascript">
+  </script>--><!-- <script src="https://www.tui.ru/getmedia/9214205f-646e-4ff8-8b2d-613f1852e8ec/js/" type="text/javascript"></script> -->
+  <script src="https://www.tui.ru/getmedia/204066fd-7fc3-4009-a67f-5e5c14412ce7/scroll/" type="text/javascript">
+  </script>
+    <!-- <script src="https://www.tui.ru/getmedia/e14c79a9-1af1-4201-bd14-8567d5fbc516/lightslider/" type="text/javascript"></script> -->
+    <script type="text/javascript">
+        (function() {
+           var new_script = document.createElement('script');
+           new_script.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js";
+           document.head.appendChild(new_script);
+           new_script.onload = function() {
+             var new_script = document.createElement('script');
+             new_script.src = "https://www.tui.ru/getmedia/e14c79a9-1af1-4201-bd14-8567d5fbc516/lightslider/";
+             document.head.appendChild(new_script);
+             new_script.onload = function() {
+               var new_script = document.createElement('script');
+               new_script.src = "https://www.tui.ru/getmedia/9214205f-646e-4ff8-8b2d-613f1852e8ec/js/";
+               document.head.appendChild(new_script);
+               $(document).ready(function() {
+                 $('#autoWidth').lightSlider({
+                   autoWidth:true,
+                   loop:true,
+                   onSliderLoad: function() {
+                       $('#autoWidth').removeClass('cS-hidden');
+                   } 
+                 });  
 
+                  //$('.sliderBigPhotos').bxSlider();
 
-<script src="https://www.tui.ru/getmedia/204066fd-7fc3-4009-a67f-5e5c14412ce7/scroll/" type="text/javascript">
-</script>
-<script src="https://www.tui.ru/getmedia/e14c79a9-1af1-4201-bd14-8567d5fbc516/lightslider/" type="text/javascript">
-</script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#autoWidth').lightSlider({
-            autoWidth: true,
-            loop: true,
-            onSliderLoad: function() {
-                $('#autoWidth').removeClass('cS-hidden');
-            }
-        });
-        jQuery('.player.videoIn.pictureVideo img').click(function() {
-            jQuery('.player.videoIn.pictureVideo').html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ecAcSMIp3Kc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><\/iframe>');
-        });
-    });
-</script>
-<!--<script src="https://www.tui.ru/getmedia/6b176d88-6bc0-48fa-aa88-4143bafe5ce4/carousel/" type="text/javascript">
-</script> Сладер для блоков ======== -->
+                          $(".about-concept").click(function() {
+                             $('html,body').animate({scrollTop: $(".left-right-blocks").offset().top-30},'slow');
+                          });
+                          $(".entertainment-for-children").click(function() {
+                             $('html,body').animate({scrollTop: $(".main-logo").offset().top-30},'slow');
+                          });
+              
+              jQuery('.player.videoIn.pictureVideo img').click(function(){
+               jQuery('.player.videoIn.pictureVideo').html('<iframe width="100%" height="100%" src="https://www.youtube.com/embed/ecAcSMIp3Kc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><\/iframe>');
+              });
+             });
+           }
+         }
+        }())
+  </script>
 
+<div></div>
 <script type="text/javascript">
-    //height:0 for sliders with empty slides
-    jQuery('.hotels-club-country .tamplate .col-md-3.myslide.col-slider-3').each(function() {
-        if (!jQuery(this).is(':visible')) {
-            if (jQuery(this).parents('.tamplate').find('.col-md-3.myslide.col-slider-3').length == 1) {
-                jQuery(this).parents('.tamplate').attr('style', 'height:0');
-            }
-        }
-    });
-</script>
-<script type="text/javascript">
-    function smoothScrolling(element) {
-        document.querySelector(element).scrollIntoView({
-            block: "start",
-            behavior: "smooth"
-        });
+  function smoothScrolling(element) {
+      document.querySelector(element).scrollIntoView({block: "start", behavior: "smooth"});
     }
 </script>

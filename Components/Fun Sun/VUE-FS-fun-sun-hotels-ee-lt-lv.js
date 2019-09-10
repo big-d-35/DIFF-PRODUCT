@@ -1,13 +1,14 @@
 //ОТЕЛИ СПИСОК FUN SUN TURKEY EE LT LV
 const funSunPageAllTurkeyHotel = 
-      (background, hotelLink, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV ) => 
-        ({background, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV});
+      (background, hotelLink, hotelLinkClient, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV ) => 
+        ({background, hotelLink, hotelLinkClient, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV});
 
 const funSunPageAllTurkeyHotels = [
     //1 ОТЕЛЬ
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/e112b2c4-35a6-43bb-b43f-e788025b543e/new_hotel_04_04);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach',
+    '/hotel/europe-turkey-alanya-incekum-tui__fun__sun__miarosa__incekum__beach/',    
     //EE    
     'Türgi, Alanya(Incekum)', 
     'FUN&SUN Miarosa Incekum Beach 5*', 
@@ -45,6 +46,7 @@ const funSunPageAllTurkeyHotels = [
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/1775cfc9-5312-4a34-86a2-6093a73b5bf8/global_photo_comfort);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort',
+    '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__comfort__beach__resort/',     
     //EE
     'Türgi, Kemer (Göynuk)', 
     'FUN&SUN Comfort Beach Resort 5*', 
@@ -82,6 +84,7 @@ const funSunPageAllTurkeyHotels = [
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/ac816ac1-3c20-4a5f-a712-862c2ec73b37/photo-8-2);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/belek/Belek/TUI-FUN-SUN-River-Resort-Belek',
+    '/hotel/europe-turkey-belek-belek-tui__fun__sun__river__resort__belek/',    
     //EE
     'Türgi, Belek', 
     'FUN&SUN River Resort Belek 5*', 
@@ -119,6 +122,7 @@ const funSunPageAllTurkeyHotels = [
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/d23f7504-8e8e-4757-b2ae-421600d11b95/photo-10);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S',
+    '/hotel/europe-turkey-side-kizilot-tui__fun__sun__club__serra__palace/',    
     //EE
     'Тürgi, Side (Kizilot)', 
     'FUN&SUN Club Serra Palace 5*', 
@@ -156,6 +160,7 @@ const funSunPageAllTurkeyHotels = [
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/22840909-3e68-42ad-8e6a-ec6ffae85d0e/photo-11);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort',
+    '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',    
     //EE
     'Türgi, Kemer (Göynuk)', 
     'FUN&SUN Miarosa Ghazal Resort 5*', 
@@ -193,6 +198,7 @@ const funSunPageAllTurkeyHotels = [
     funSunPageAllTurkeyHotel(
     'background: url(https://www.tui.ru/getmedia/c53735b0-0177-41f5-bad2-e0b80d967d6d/photo-12);background-position: center;background-size: cover',
     '/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek',
+    '/hotel/europe-turkey-belek-belek-tui__fun__sun__club__belek/',    
     //EE
     'Тürgi, Belek', 
     'FUN&SUN Club Belek 5*', 
@@ -239,14 +245,15 @@ const funSunPageAllTurkeyHotelsBlock = new Vue({
 
 //ОТЕЛИ СПИСОК FUN SUN CYPRUS EE LT LV
 const funSunPageAllCyprusHotel = 
-      (background, hotelLink, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV ) => 
-        ({background, hotelLink, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV});
+      (background, hotelLink, hotelLinkClient, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV ) => 
+        ({background, hotelLink, hotelLinkClient, countryEE, hotelNameEE, hotelItem1EE, hotelItem2EE, hotelItem3EE, hotelItem4EE, hotelItem5EE, hotelItem6EE, takeTourEE, countryLT, hotelNameLT, hotelItem1LT, hotelItem2LT, hotelItem3LT, hotelItem4LT, hotelItem5LT, hotelItem6LT, takeTourLT, countryLV, hotelNameLV, hotelItem1LV, hotelItem2LV, hotelItem3LV, hotelItem4LV, hotelItem5LV, hotelItem6LV, takeTourLV});
 
 const funSunPageAllCyprusHotels = [
     //1 ОТЕЛЬ
     funSunPageAllCyprusHotel(
     'background: url(https://www.tui.ru/getmedia/9df19944-804d-4c56-9667-c545a0b902e0/%d1%84%d0%be%d1%82%d0%be-13);background-position: center;background-size: cover',
     '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark/',
+    '/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/',    
     //EE
     'Küpros, Ayia Napa', 
     'FUN&SUN Panthea Waterpark 4*', 
@@ -283,7 +290,8 @@ const funSunPageAllCyprusHotels = [
     //2 ОТЕЛЬ
     funSunPageAllCyprusHotel(
     'background: url(https://www.tui.ru/getmedia/b4929e8f-5478-472e-860d-66c05edd9ed8/f_Pool-2_f_1);background-position: center;background-size: cover', 
-    '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites', 
+    '/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites',
+    '/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/',     
     //EE
     'Küpros, Protaras', 
     'FUN&SUN Vangelis Hotel & Suite', 

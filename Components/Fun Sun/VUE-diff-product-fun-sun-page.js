@@ -162,6 +162,7 @@ const funSunPageMenuTitleHotels = new Vue ({
         funSunPageMenuAdvantagiesTitleEE: 'FUN&SUN hotellide eelised',
         funSunPageMenuAdvantagiesTitleLT: 'FUN&SUN koncepcijos privalumai',
         funSunPageMenuAdvantagiesTitleLV: 'Viesnīcu priekšrocības ar FUN&SUN koncepciju',
+        
     }
 });
 
@@ -758,7 +759,7 @@ const funSunPageFooter = new Vue ({
 });
 
 
-//СТРАНИЦА АФИША КОНЦЕРТЫ И МАСТЕРКЛАССЫ FUN SUN
+//СТРАНИЦА АФИША КОНЦЕРТЫ И МАСТЕРКЛАССЫ FUN SUN ===========================
 const funSunPageAfishaName = new Vue({
     el: '#funSunPageAfishaName',
     data: {
@@ -1774,3 +1775,278 @@ const funSunPageAfishaSport = new Vue ({
 })
 
 
+
+//СТРАНИЦА ДЛЯ ДЕТЕЙ FUN SUN =======================
+
+
+const funSunForChildrenMainInfo = new Vue ({
+    el:'#funSunForChildrenMainInfo',
+    data: {
+        
+        funSunForChildrenMainInfoLogo: 'https://www.tui.ru/getmedia/599fc8fa-8b25-484b-b09f-dc541a1360ab/logo',
+        
+        funSunForChildrenMainInfoTitleRU: 'Развлечения для детей и подростков в отелях FUN&SUN',
+        funSunForChildrenMainInfoTitleBY: 'Развлечения для детей и подростков в отелях FUN&SUN',
+        funSunForChildrenMainInfoTitleUA: 'Развлечения для детей и подростков в отелях FUN&SUN',
+        funSunForChildrenMainInfoTitleEE: 'Meelelahutus lastele ja teismelistele FUN&SUN hotellides',
+        funSunForChildrenMainInfoTitleLT: '',
+        funSunForChildrenMainInfoTitleLV: 'Izklaides bērniem un pusaudžiem FUN&SUN viesnīcās',
+        
+        funSunForChildrenMainInfoTextRU: 'Отдых с детьми - в удовольствие! Выбирайте отели с Детским Клубом Тукан - и Вам не понадобится каждый день продумывать досуг для вашего ребенка. Мы изучили пожелания наших маленьких туристов и их родителей и разработали детские программы под разный возраст и интересы. Настольные игры, спортивные состязания, научные эксперименты и творческие мастерские - детей невозможно будет забрать из клуба! И даже "колючие" подростки отложат в сторону телефоны и по достоинству оценят наш Teens Hangout.',
+        funSunForChildrenMainInfoTextBY: 'Отдых с детьми - в удовольствие! Выбирайте отели с Детским Клубом Тукан - и Вам не понадобится каждый день продумывать досуг для вашего ребенка. Мы изучили пожелания наших маленьких туристов и их родителей и разработали детские программы под разный возраст и интересы. Настольные игры, спортивные состязания, научные эксперименты и творческие мастерские - детей невозможно будет забрать из клуба! И даже "колючие" подростки отложат в сторону телефоны и по достоинству оценят наш Teens Hangout.',
+        funSunForChildrenMainInfoTextUA: 'Отдых с детьми - в удовольствие! Выбирайте отели с Детским Клубом Тукан - и Вам не понадобится каждый день продумывать досуг для вашего ребенка. Мы изучили пожелания наших маленьких туристов и их родителей и разработали детские программы под разный возраст и интересы. Настольные игры, спортивные состязания, научные эксперименты и творческие мастерские - детей невозможно будет забрать из клуба! И даже "колючие" подростки отложат в сторону телефоны и по достоинству оценят наш Teens Hangout.',
+        funSunForChildrenMainInfoTextEE: 'Nautige lastega puhkust! Valides Toucan klubiga hotelli, te ei pea muretsema lapse meelelahutuse ja vaba aja veetmise pärast. Uurisime oma väikeste turistide ja nende vanemate soove ning töötasime välja lasteprogramme erinevatele vanustele ja huvidele. Lauamängud, spordimängud, teaduslikud eksperimendid, loomingulised mängud - kaasahaaratav meelelahutus lastele! Ning isegi "rahulolematu" teismelised panevad telefone kõrvale et nautida Teens Hangout meelelahutusi.',
+        funSunForChildrenMainInfoTextLT: '',
+        funSunForChildrenMainInfoTextLV: 'Kā izbaudīt atpūtu - kopā ar bērniem? Izvēlieties viesnīcas ar bērnu klubu TUI Тoucan un Jums nebūs katru dienu jādomā, kā izklaidēt savus bērnus. Mēs esam izpētījuši mūsu mazo tūristu un viņu vecāku vēlmes un izstrādājuši programmas atbilstoši bērnu vecumam un interesēm. Galda spēles, sacensības, zinātniski eksperimenti un radošās darbnīcas – bērnus nebūs iespējams dabūt laukā no kluba. Pat “spītīgi” pusaudži atliks malā telefonus, un novērtēs mūsu Teens Hangout.',
+    }
+})
+
+//FOR CHILDREN TOUCAN
+const funSunForChildrenToucan = (background, titleRU, textRU, titleBY, textBY, titleUA, textUA, titleEE, textEE, titleLT, textLT, titleLV, textLV) => ({background, titleRU, textRU, titleBY, textBY, titleUA, textUA, titleEE, textEE, titleLT, textLT, titleLV, textLV});
+
+const funSunForChildrenToucans = [
+    
+    funSunForChildrenToucan('background: url(https://www.tui.ru/getmedia/5cc1f04e-596f-4943-99e3-a9c1fff28ea0/first-slider-1) top center;', 'Тукан Baby (0 - 4)',  'Мы знаем, что нужно каждой маме для спокойного отдыха и позаботились о самом необходимом. По вашему запросу мы бесплатно предоставим детскую коляску, стерилизатор, ванночку и горшок.', 'Тукан Baby (0 - 4)',  'Мы знаем, что нужно каждой маме для спокойного отдыха и позаботились о самом необходимом. По вашему запросу мы бесплатно предоставим детскую коляску, стерилизатор, ванночку и горшок.', 'Тукан Baby (0 - 4)',  'Мы знаем, что нужно каждой маме для спокойного отдыха и позаботились о самом необходимом. По вашему запросу мы бесплатно предоставим детскую коляску, стерилизатор, ванночку и горшок.','Toucan Baby (0 - 4)','Teenused väiksematele külalistele ja nende vanematele: beebivarustus, ema nurk, pesumasin, lastemenüü, mänguruum Toucan Kids toas.','','','Toucan Baby (0 - 4)','Мēs zinām, kas nepieciešams katrai māmiņai, lai varētu atpūsties un esam parūpējušies par pašu nepieciešamāko. Pēc pieprasījuma mēs bezmaksas piešķirsim ratiņus, sterilizatoru, vanniņu un podiņu.'),
+    
+    funSunForChildrenToucan('background: url(https://www.tui.ru/getmedia/5e8f5871-c3e8-441b-88a5-5f42fdc090f6/first-slider-2) top center', 'Tукан Kids (4 - 7)',  'Веселимся и развиваемся! Детей ждут игры в бассейне, спортивные занятия, творческие уроки и мультфильмы.', 'Tукан Kids (4 - 7)',  'Веселимся и развиваемся! Детей ждут игры в бассейне, спортивные занятия, творческие уроки и мультфильмы.', 'Tукан Kids (4 - 7)',  'Веселимся и развиваемся! Детей ждут игры в бассейне, спортивные занятия, творческие уроки и мультфильмы.','Toucan Kids (4 - 7)','Lapsi ootavad mängud basseinis, sportlikud ja loomingulised mängud ning multifimid.','','','Toucan Kids (4 - 7)','Spēlējamies un attīstāmies! Bērnus gaida spēles baseinā, sporta nodarbības, radošās darbnīcas un multfilmas.'),
+    
+    funSunForChildrenToucan('background: url(https://www.tui.ru/getmedia/5c383544-4ec3-4b19-adfe-36a5237c5300/first-slider-3) top center', 'Tукан Junior (8 - 12)',  'Мир такой большой и интересный - игрушки подождут! Специально для юных первооткрывателей - научные эксперименты, хитроумные квесты и занятия в спортивной Академии Тукана.', 'Tукан Junior (8 - 12)',  'Мир такой большой и интересный - игрушки подождут! Специально для юных первооткрывателей - научные эксперименты, хитроумные квесты и занятия в спортивной Академии Тукана.', 'Tукан Junior (8 - 12)',  'Мир такой большой и интересный - игрушки подождут! Специально для юных первооткрывателей - научные эксперименты, хитроумные квесты и занятия в спортивной Академии Тукана.','Toucan Junior (8 - 12)','Maaailm on nii suur ja huvitav! Teaduslikud eksperimendid, loomingulised mängud ja sportlikud tegevused Toucan akadeemias.','','','Toucan Junior (8 - 12)','Pasaule ir tik liela un interesanta – rotaļlietas pagaidīs! Speciāli jaunajiem atklājējiem - zinātniskie eksperimenti, viltīgie kvesti un nodarbības Toucan sporta akadēmijā.'),
+    
+    funSunForChildrenToucan('background: url(https://www.tui.ru/getmedia/048952c0-6089-4f2e-9458-e072b242657f/first-slider-4?2) top center', 'Teens Hangout (12+)',  'Новинка сезона! Уголок для подростков, оформленный в современном стиле. Полон сил и энергии? Включайся в спортивные игры! Нет настроения для активных игр? Прикройся маской и угадай, кто "Мафия"! Период работы: с 1 июня по 1 сентября.', 'Teens Hangout (12+)',  'Новинка сезона! Уголок для подростков, оформленный в современном стиле. Полон сил и энергии? Включайся в спортивные игры! Нет настроения для активных игр? Прикройся маской и угадай, кто "Мафия"! Период работы: с 1 июня по 1 сентября.', 'Teens Hangout (12+)',  'Новинка сезона! Уголок для подростков, оформленный в современном стиле. Полон сил и энергии? Включайся в спортивные игры! Нет настроения для активных игр? Прикройся маской и угадай, кто "Мафия"! Период работы: с 1 июня по 1 сентября.','Teens Hangout (12+)','Kaasaegne programm teismelistele. Palju energiat? Osale spordimängudes! Ei meeldi aktiivsed mängud? Mängi koos uute sõpradega "Maafiat"! Tööperiood: 1 juuni kuni 1 september.','','','Teens Hangout (12+)','Sezonas jaunums! Mūsdienīgi noformēts stūrītis pusaudžiem. Pilns spēka un enerģijas? Ņem dalību sporta spēlēs! Nav noskaņojuma aktīvām spēlēm? Paslēpies aiz maskas un uzmini, kurš ir "Mafija"! Darba laiks no 1 jūnija līdz 1 septembrīm.'),
+    
+]
+
+const funSunForChildrenToucanBlock = new Vue({
+    el: '#funSunForChildrenToucan',
+    data:{
+        funSunForChildrenToucans: funSunForChildrenToucans,
+        funSunForChildrenToucan: funSunForChildrenToucan
+        
+    }
+});
+
+//FOR CHILDREN 
+const funSunForChildrenTCBaby = new Vue ({
+    el: '#funSunForChildrenTCBaby',
+    data: {
+        funSunForChildrenTCBabyPic: 'https://www.tui.ru/getmedia/c8f4ef0b-d87b-41f2-b747-50eab12b0575/left-right-pics-1',
+        
+        funSunForChildrenTCBabyTitleRU: 'С заботой о самых маленьких - Тукан Baby',
+        funSunForChildrenTCBabyTitleBY: 'С заботой о самых маленьких - Тукан Baby',
+        funSunForChildrenTCBabyTitleUA: 'С заботой о самых маленьких - Тукан Baby',
+        funSunForChildrenTCBabyTitleEE: 'Hoolime kõige väiksematest - Toucan Baby',
+        funSunForChildrenTCBabyTitleLT: '',
+        funSunForChildrenTCBabyTitleLV: 'Ar rūpēm par pašiem mazākājiem - Toucan Baby',
+        
+        funSunForChildrenTCBabyText1RU: 'Собираетесь на отдых с малышом? Мы продумали все, чтобы и Вам, и Вашему малышу было комфортно. В каждом отеле круглосуточно доступен уголок матери, оборудованный блендером, микроволновкой, чайником и стерилизатором для бутылочек.',
+        funSunForChildrenTCBabyText1BY: 'Собираетесь на отдых с малышом? Мы продумали все, чтобы и Вам, и Вашему малышу было комфортно. В каждом отеле круглосуточно доступен уголок матери, оборудованный блендером, микроволновкой, чайником и стерилизатором для бутылочек.',
+        funSunForChildrenTCBabyText1UA: 'Собираетесь на отдых с малышом? Мы продумали все, чтобы и Вам, и Вашему малышу было комфортно. В каждом отеле круглосуточно доступен уголок матери, оборудованный блендером, микроволновкой, чайником и стерилизатором для бутылочек.',
+        funSunForChildrenTCBabyText1EE: 'Soovite minna puhkusele imikuga? Mõtlesime kõik läbi nii, et teile ja teie lapsele oleks mugav. Igas hotellis ööpäevaringselt on saadaval ema nurk, mis on varustatud mikrolaineahi, steriliseerija, segisti ja veekeetjaga.',
+        funSunForChildrenTCBabyText1LT: '',
+        funSunForChildrenTCBabyText1LV: 'Gatavojaties atpūsties kopā ar mazuli? Mēs esam visu rūpīgi pārdomājuši, lai Jums un Jūsu mazulim būtu ērti. Katrā viesnīcā diennakti ir pieejams māmiņu stūrītis, kurā atrodas blenderis, mikroviļņu krāsns, tējkanna un sterilizators pudelītēm.',
+        
+        funSunForChildrenTCBabyText2RU: 'По запросу мы бесплатно предоставим Вам коляску, ванночку, горшок и детское сиденье на унитаз. На территории вы найдете множество тихих дорожек, которые отлично подойдут для прогулок с коляской. А если малыш испачкается - в детском клубе есть стиральная машинка. Не волнуйтесь, Ваш отдых пройдет отлично!',
+        funSunForChildrenTCBabyText2BY: 'По запросу мы бесплатно предоставим Вам коляску, ванночку, горшок и детское сиденье на унитаз. На территории вы найдете множество тихих дорожек, которые отлично подойдут для прогулок с коляской. А если малыш испачкается - в детском клубе есть стиральная машинка. Не волнуйтесь, Ваш отдых пройдет отлично!',
+        funSunForChildrenTCBabyText2UA: 'По запросу мы бесплатно предоставим Вам коляску, ванночку, горшок и детское сиденье на унитаз. На территории вы найдете множество тихих дорожек, которые отлично подойдут для прогулок с коляской. А если малыш испачкается - в детском клубе есть стиральная машинка. Не волнуйтесь, Ваш отдых пройдет отлично!',
+        funSunForChildrenTCBabyText2EE: 'Soovi korral tasuta pakume teile lastevankri, lastepoti ja WC lasteistet. Hotelli territooriumil on palju vaikseid kohti, mis suurepäraselt sobivad vankriga jalitamiseks. Samuti lasteklubis on pesumasin. Ärge muretsege, teie puhkus saab olema muretu ning suurepärane!',
+        funSunForChildrenTCBabyText2LT: '',
+        funSunForChildrenTCBabyText2LV: 'Pēc pieprasījuma mēs bezmaksas Jums iedosim ratiņus, vanniņu, podiņu un bērnu sēdeklīti uz tualetes poda. Teritorijā Jūs atradīsiet daudz klusu celiņu, kas noderēs pastaigai ar ratiņiem. Ja bērns sasmērēsies – bērnu klubā ir veļas mazgājamā mašīna. Neuztraucieties, Jūsu atpūtu nekas nespēs sabojāt!',
+        
+        
+    }
+})
+
+const funSunForChildrenTCTravel = new Vue ({
+    el: '#funSunForChildrenTCTravel',
+    data: {
+        funSunForChildrenTCTravelPic: 'https://www.tui.ru/getmedia/80f1f108-4c07-41a6-85a1-2466437252b8/left-right-pics-2?2',
+        
+        funSunForChildrenTCTravelTitleRU: 'Тукан Путешественник',
+        funSunForChildrenTCTravelTitleBY: 'Тукан Путешественник',
+        funSunForChildrenTCTravelTitleUA: 'Тукан Путешественник',
+        funSunForChildrenTCTravelTitleEE: 'Toucan Seikleja',
+        funSunForChildrenTCTravelTitleLT: '',
+        funSunForChildrenTCTravelTitleLV: 'Toucan ceļotājs',
+        
+        funSunForChildrenTCTravelText1RU: 'Этим летом Тукан отправляется в кругосветное путешествие и приглашает с собой всех гостей с 4 до 12 лет. Каждый день маленькие непоседы будут получать письмо о том, в какой стране их ждут приключения сегодня.',
+        funSunForChildrenTCTravelText1BY: 'Этим летом Тукан отправляется в кругосветное путешествие и приглашает с собой всех гостей с 4 до 12 лет. Каждый день маленькие непоседы будут получать письмо о том, в какой стране их ждут приключения сегодня.',
+        funSunForChildrenTCTravelText1UA: 'Этим летом Тукан отправляется в кругосветное путешествие и приглашает с собой всех гостей с 4 до 12 лет. Каждый день маленькие непоседы будут получать письмо о том, в какой стране их ждут приключения сегодня.',
+        funSunForChildrenTCTravelText1EE: 'Sellel suvel Toucan kutsub kõiki 4-12 aastaseid turiste maailmaresile! Iga päev noored seiklejad hakkavad saama kirju, mis riigis ootavad neid seiklused täna.',
+        funSunForChildrenTCTravelText1LT: '',
+        funSunForChildrenTCTravelText1LV: 'Šovasar Toucan dosies ceļojumā apkārt pasaulei un aicinās sev līdz visus viesus vecumā no 4 līdz 12 gadiem. Katru dienu mazie nemiera gari saņems vēstuli ar ziņu par to, kurā zemē viņus šodien gaida piedzīvojumi.',
+        
+        funSunForChildrenTCTravelText2RU: 'При первой регистрации в клубе юные путешественники получат паспорт, в который собирают печати за участие в активностях. Вместе с Туканом дети пройдут хитроумные квесты, приготовят коктейли, запустят в небо своего собственного змея - и это лишь малая часть того, что мы приготовили для Вашего ребенка.',
+        funSunForChildrenTCTravelText2BY: 'При первой регистрации в клубе юные путешественники получат паспорт, в который собирают печати за участие в активностях. Вместе с Туканом дети пройдут хитроумные квесты, приготовят коктейли, запустят в небо своего собственного змея - и это лишь малая часть того, что мы приготовили для Вашего ребенка.',
+        funSunForChildrenTCTravelText2UA: 'При первой регистрации в клубе юные путешественники получат паспорт, в который собирают печати за участие в активностях. Вместе с Туканом дети пройдут хитроумные квесты, приготовят коктейли, запустят в небо своего собственного змея - и это лишь малая часть того, что мы приготовили для Вашего ребенка.',
+        funSunForChildrenTCTravelText2EE: 'Saabumisel lapsed saavad noore ränduri passi, millesse nad koguvad tegevustes osalemise eest templeid. Koos Toucaniga lapsed võtavad osa spordi ja loomingulistes mängudes, meisterdavad oma tuulelohe ja palju muud.',
+        funSunForChildrenTCTravelText2LT: '',
+        funSunForChildrenTCTravelText2LV: 'Pirmo reizi reģistrējoties klubā, jaunie ceļotāji saņems pasi, kurā sakrās zīmodziņus par dalību aktivitātēs. Kopā ar Toucan bērni izies viltīgus kvestus, gatavos kokteiļus, laidīs gaisā pašu gatavotus pūķus – un tā ir tikai maza daļiņa no tā, ko mēs esam sagatavojuši Jūsu bērnam.',
+        
+    }
+})
+
+const funSunForChildrenTCAcademy = new Vue ({
+    el: '#funSunForChildrenTCAcademy',
+    data: {
+        funSunForChildrenTCAcademyPic: 'https://www.tui.ru/getmedia/456bf283-8d2f-4f2c-be72-44952af21c06/left-right-pics-3?2',
+        
+        funSunForChildrenTCAcademyTitleRU: 'Академия Тукана',
+        funSunForChildrenTCAcademyTitleBY: 'Академия Тукана',
+        funSunForChildrenTCAcademyTitleUA: 'Академия Тукана',
+        funSunForChildrenTCAcademyTitleEE: 'Toucan Akadeemia',
+        funSunForChildrenTCAcademyTitleLT: '',
+        funSunForChildrenTCAcademyTitleLV: 'Toucan akadēmija',
+        
+        funSunForChildrenTCAcademyText1RU: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCAcademyText2RU: '- Академия футбола',
+        funSunForChildrenTCAcademyText3RU: '- Академия плавания',
+        funSunForChildrenTCAcademyText4RU: '- Танцевальная академия',
+        funSunForChildrenTCAcademyText5RU: 'И, кто знает, может быть домой Ваш ребенок вернется с новым хобби.',
+        
+        funSunForChildrenTCAcademyText1BY: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCAcademyText2BY: '- Академия футбола',
+        funSunForChildrenTCAcademyText3BY: '- Академия плавания',
+        funSunForChildrenTCAcademyText4BY: '- Танцевальная академия',
+        funSunForChildrenTCAcademyText5BY: 'И, кто знает, может быть домой Ваш ребенок вернется с новым хобби.',
+        
+        funSunForChildrenTCAcademyText1UA: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCAcademyText2UA: '- Академия футбола',
+        funSunForChildrenTCAcademyText3UA: '- Академия плавания',
+        funSunForChildrenTCAcademyText4UA: '- Танцевальная академия',
+        funSunForChildrenTCAcademyText5UA: 'И, кто знает, может быть домой Ваш ребенок вернется с новым хобби.',
+        
+        funSunForChildrenTCAcademyText1EE: 'Selleks, et puhkus oleks erksam, on Toucan Akadeemia. Kus lapsed saavad uusi teadmisi ja oskusi:',
+        funSunForChildrenTCAcademyText2EE: '- Jalgpalliakadeemia',
+        funSunForChildrenTCAcademyText3EE: '- Ujumisakadeemia',
+        funSunForChildrenTCAcademyText4EE: '- Tantsuakadeemia',
+        funSunForChildrenTCAcademyText5EE: 'Ja kes teab, äkki teie laps leiab uue hobi.',
+        
+        funSunForChildrenTCAcademyText1LT: '',
+        funSunForChildrenTCAcademyText2LT: '',
+        funSunForChildrenTCAcademyText3LT: '',
+        funSunForChildrenTCAcademyText4LT: '',
+        funSunForChildrenTCAcademyText5LT: '',
+        
+        funSunForChildrenTCAcademyText1LV: 'Lai atpūta būtu krāšņa, mēs nodibinājām Toucan akadēmiju, kur bērni ar spēļu palīdzību iemācīsies jaunas lietas:',
+        funSunForChildrenTCAcademyText2LV: '- Futbola akadēmija',
+        funSunForChildrenTCAcademyText3LV: '- Peldēšanas akadēmija',
+        funSunForChildrenTCAcademyText4LV: '- Dēju akadēmija',
+        funSunForChildrenTCAcademyText5LV: 'Kas zina, varbūt mājās Jūsu bērns atgriezīsies jau ar jaunu hobiju.',
+        
+    }
+})
+
+const funSunForChildrenTCEvening = new Vue ({
+    el: '#funSunForChildrenTCEvening',
+    data: {
+        funSunForChildrenTCEveningPic: 'https://www.tui.ru/getmedia/bb91ef44-970d-4045-a1a6-422c6742231c/left-right-pics-4?2',
+        
+        funSunForChildrenTCEveningTitleRU: 'Вечерняя программа',
+        funSunForChildrenTCEveningTitleBY: 'Вечерняя программа',
+        funSunForChildrenTCEveningTitleUA: 'Вечерняя программа',
+        funSunForChildrenTCEveningTitleEE: 'Õhtune programm',
+        funSunForChildrenTCEveningTitleLT: '',
+        funSunForChildrenTCEveningTitleLV: 'Vakara programma',
+        
+        funSunForChildrenTCEveningText1RU: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCEveningText2RU: '- Мини диско/ Тукан тусейшен',
+        funSunForChildrenTCEveningText3RU: '- Детское сумо/караоке',
+        funSunForChildrenTCEveningText4RU: '- Кинопоказы на открытом воздухе',
+        funSunForChildrenTCEveningText5RU: '- Тематические фестивали для всей семьи',
+        
+        funSunForChildrenTCEveningText1BY: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCEveningText2BY: '- Мини диско/ Тукан тусейшен',
+        funSunForChildrenTCEveningText3BY: '- Детское сумо/караоке',
+        funSunForChildrenTCEveningText4BY: '- Кинопоказы на открытом воздухе',
+        funSunForChildrenTCEveningText5BY: '- Тематические фестивали для всей семьи',
+        
+        funSunForChildrenTCEveningText1UA: 'Чтобы отдых прошел ярко, мы создали академию Тукана, где дети смогут научиться новому в игровой форме:',
+        funSunForChildrenTCEveningText2UA: '- Мини диско/ Тукан тусейшен',
+        funSunForChildrenTCEveningText3UA: '- Детское сумо/караоке',
+        funSunForChildrenTCEveningText4UA: '- Кинопоказы на открытом воздухе',
+        funSunForChildrenTCEveningText5UA: '- Тематические фестивали для всей семьи',
+        
+        funSunForChildrenTCEveningText1EE: 'Õhtul ootab lapsi lõbusad üritused:',
+        funSunForChildrenTCEveningText2EE: '- Mini-disko/ Toucan Party',
+        funSunForChildrenTCEveningText3EE: '- Laste sumo/karaoke',
+        funSunForChildrenTCEveningText4EE: '- Kino vaatamine vabas õhus',
+        funSunForChildrenTCEveningText5EE: '- Temaatilised festivalid kogu perele',
+        
+        funSunForChildrenTCEveningText1LT: '',
+        funSunForChildrenTCEveningText2LT: '',
+        funSunForChildrenTCEveningText3LT: '',
+        funSunForChildrenTCEveningText4LT: '',
+        funSunForChildrenTCEveningText5LT: '',
+        
+        funSunForChildrenTCEveningText1LV: 'Garlaikoties nesanāks pat vakarā! Jūsu bērnus gaida jautri pasākumi:',
+        funSunForChildrenTCEveningText2LV: '- Mini-disko/ Toucan ballīte',
+        funSunForChildrenTCEveningText3LV: '- Bērnu sumo /karaoke',
+        funSunForChildrenTCEveningText4LV: '- Kinoizrādes zem klajas debess',
+        funSunForChildrenTCEveningText5LV: '- Tematiskie festivāli visai ģimenei',
+        
+        
+        
+    }
+})
+
+
+//БУФЕТ
+const funSunForChildrenBufet = new Vue ({
+    el:'#funSunForChildrenBufet',
+    data: {
+        funSunForChildrenBufetTitleRU: 'Буфет Тукан',
+        funSunForChildrenBufetTitleBY: 'Буфет Тукан',
+        funSunForChildrenBufetTitleUA: 'Буфет Тукан',
+        funSunForChildrenBufetTitleEE: 'Toucan buffet',
+        funSunForChildrenBufetTitleLT: '',
+        funSunForChildrenBufetTitleLV: 'Toucan bufete',
+        
+        funSunForChildrenBufetTextRU: 'Ваши детки привередливы в еде? Не переживайте, каждый найдет что-то на свой вкус. В сезоне-2019 мы сделали буфет Тукана еще более полезным и вкусным!',
+        funSunForChildrenBufetTextBY: 'Ваши детки привередливы в еде? Не переживайте, каждый найдет что-то на свой вкус. В сезоне-2019 мы сделали буфет Тукана еще более полезным и вкусным!',
+        funSunForChildrenBufetTextUA: 'Ваши детки привередливы в еде? Не переживайте, каждый найдет что-то на свой вкус. В сезоне-2019 мы сделали буфет Тукана еще более полезным и вкусным!',
+        funSunForChildrenBufetTextEE: '2019 hooaja biffet on veelgi tervislikum ja maitsvam! Me hoolime teie lapse heaolu eest!',
+        funSunForChildrenBufetTextLT: '',
+        funSunForChildrenBufetTextLV: 'Jūsu bērni ir izvēlīgi ēdiena ziņā? Nepārdzīvojiet, katrs atradīs kaut ko savai gaumei. 2019. gada sezonā mēs Toucan bufetes galdu esam padarījuši vēl veselīgāku un garšīgāku!',
+        
+    }
+})
+
+
+//FOR CHILDREN БУФЕТ SLIDER
+const funSunForChildrenBufetItem = (background, titleRU, titleBY, titleUA, titleEE, titleLT, titleLV) => ({background, titleRU, titleBY, titleUA, titleEE, titleLT, titleLV});
+
+const funSunForChildrenBufetItems = [
+    
+    funSunForChildrenBufetItem('background: url(https://www.tui.ru/getmedia/2bd2805f-d6be-4f0e-8d41-e193fbc0203f/bufet-slider-1) top center;', 'Каши на завтрак', 'Каши на завтрак', 'Каши на завтрак', 'Hommikul puder','','Brokastu putras'),
+    
+    funSunForChildrenBufetItem('background: url(https://www.tui.ru/getmedia/b44de57d-ca48-4816-a8dd-9cef0cbb5df2/bufet-slider-2?2) top center', 'Детская зона в ресторане', 'Детская зона в ресторане', 'Детская зона в ресторане', 'Lasteala restoranis','','Bērnu zona restorānā'),
+    
+    funSunForChildrenBufetItem('background: url(https://www.tui.ru/getmedia/180e9e63-e79f-44db-bb10-fede808a1c91/bufet-slider-3) top center', 'Мороженое', 'Мороженое', 'Мороженое', 'Jäätis','','Saldējums'),
+    
+    funSunForChildrenBufetItem('background: url(https://www.tui.ru/getmedia/8b2aae79-1f4a-4702-8a90-e04276be9969/bufet-slider-4) top center', 'Уголок мамы', 'Уголок мамы', 'Уголок мамы', 'Ema nurk','','Mātes stūrītis'),
+    
+]
+
+const funSunForChildrenBufetItemBlock = new Vue({
+    el: '#funSunForChildrenBufetItem',
+    data:{
+        funSunForChildrenBufetItems: funSunForChildrenBufetItems,
+        funSunForChildrenBufetItem: funSunForChildrenBufetItem
+        
+    }
+});
+
+
+
+const funSunForChildrenBufetPics = new Vue ({
+    el: '#funSunForChildrenBufetPic',
+    data: {
+        funSunForChildrenBufetPic1 : 'background: url(https://www.tui.ru/getmedia/b8272a2e-efae-4f1f-aee3-e2a512542fdc/square-slider-1?3) top center',
+    
+        funSunForChildrenBufetPic2 : 'background: url(https://www.tui.ru/getmedia/6b0139bb-b439-4984-b862-1f21c5b57b5f/square-slider-2?3) top center',
+        
+        funSunForChildrenBufetPic3 : 'background: url(https://www.tui.ru/getmedia/32dd06f2-00b5-4125-985b-3d4b38a5870c/square-slider-3?3) top center', 
+        
+        funSunForChildrenBufetPic4 : 'background: url(https://www.tui.ru/getmedia/80db905a-5c0d-45bd-993a-da22bc4587c7/square-slider-4?3) top center',
+    }
+})
