@@ -2050,3 +2050,97 @@ const funSunForChildrenBufetPics = new Vue ({
         funSunForChildrenBufetPic4 : 'background: url(https://www.tui.ru/getmedia/80db905a-5c0d-45bd-993a-da22bc4587c7/square-slider-4?3) top center',
     }
 })
+
+
+
+//СТРАНИЦА ПРОГРАММА РАЗВЛЕЧЕНИЙ FUN SUN
+
+
+const funSunProgrammPage = new Vue ({
+    el: '#funSunProgrammPage',
+    data: {
+        title : 'Семейный отдых FUN&SUN',
+        subTitle : 'Расписание развлечений в клубе Тукан'
+    }
+})
+
+//SLIDER РАЗВЛЕЧЕНИЙ MENU
+const funSunProgrammPageAllEntMenu = new Vue ({
+    el:'#funSunProgrammPageAllEntMenu',
+    data: {
+        menuItem1RU: 'Все',
+        menuItem2RU: 'Академии Тукан',
+        menuItem3RU: 'Творческие и игровые активности',
+        menuItem4RU: 'Спортивные активности',
+        menuItem5RU: 'Вечерние шоу',
+    }
+})
+
+
+ 
+      
+      
+const funSunProgrammPageAllEntSliderItem1 = (background, titleRU) => ({background, titleRU});
+
+const funSunProgrammPageAllEntSliderItems1 = [
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover', 'Академия плавания'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover', 'Танцевальная академия'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover', 'Футбольная Академия'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover','Сбор путешественников. Письмо от Тукана'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover','Тематические квесты и соревнования'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover','Творческая мастерская Тукана'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover','Научные эксперименты'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover','Сюжетно-ролевые игры'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover','Аквагрим'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover','Тукан коктейль'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover','Пляжный волейбол'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover','Аква аэробика'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover','Детская йога, танцевальная аэробика, гимнастика'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover','Игры в бассейне'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover','Мини гольф'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover','Стрельба из лука'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/642cab39-6ec5-4494-8cc0-b260f095f007/tab3-7);background-position: center;background-size: cover','Подвижные игры и эстафеты'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38b17bf7-4d9a-494d-9124-e9f104a466b6/tab3-8);background-position: center;background-size: cover','Дартс'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bce94a6d-7fdb-4539-abc0-b52e2e3f532e/tab4-1);background-position: center;background-size: cover','Мини диско'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bc8dc507-5c9f-49c5-be00-e4e964c238cc/tab4-2);background-position: center;background-size: cover','Tукан Тусейшн'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/4cc9b050-d671-42ce-80fb-2f79c6b3dc8b/tab4-3);background-position: center;background-size: cover','Тематические фестивали для всей семьи'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/2ce25f71-3f23-486d-8738-afbd40678111/tab4-4);background-position: center;background-size: cover','Кинопоказы на открытом воздухе'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/eab60a0a-36d9-4950-a620-c1c5b4b9de24/tab4-5);background-position: center;background-size: cover','Кидс караоке'),
+    
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/d01a755a-dab4-4cb2-8da5-27d8ddeebe41/tab4-6);background-position: center;background-size: cover','Детское Сумо'),
+    
+    
+    
+]
+
+const funSunProgrammPageAllEntSliderBlock1 = new Vue({
+    el: '#s1b1',
+    data:{
+        funSunProgrammPageAllEntSliderItems1: funSunProgrammPageAllEntSliderItems1,
+        funSunProgrammPageAllEntSliderItem1: funSunProgrammPageAllEntSliderItem1
+        
+    }
+});      
