@@ -9,12 +9,12 @@
     template_script.src = "https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine";
     document.head.appendChild(template_script);
     template_script.onload = function() {
-        on_page(render("#table-template", ".block-table", table_fs))
+        on_page(render("#table-template", ".block-table", table_fs_ee))
     }
     var videoId = 'OxTcJn6SZkA';
 </script>
 
-</script>
+
 <link href="https://www.tui.ru/getmedia/d55fbf08-49b9-4516-8034-c14a0a99df6c/agent-all" rel="stylesheet" type="text/css" />
 <link href="https://www.tui.ru/getmedia/c51e2c41-667b-4ebd-8ad9-484a6efbd767/all" rel="stylesheet" type="text/css" />
 <meta content="width=device-width,initial-scale=1" name="viewport" />
@@ -263,7 +263,7 @@
                 </tr>
                 {{/if}}
           <tr>
-              <td><a href="{{href_agent_ru}}">{{name_hotel}}</a></td>
+              <td><a href="{{href_agent_ee}}">{{name_hotel}}</a></td>
               <td>{{data_hotel}}</td>
           </tr>
         {{/each}}
