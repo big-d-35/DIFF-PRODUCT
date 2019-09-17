@@ -132,6 +132,7 @@
 	  hotel: [
 	    
 	    {
+            country_hotel: "Türgi",
 	    	country_Turkey: "TUR",
 	    	name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*", 
 	    	href_tui_ee: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/", 
@@ -196,6 +197,7 @@
 	  ],
 	  hotel: [
 	    {
+            country_hotel: "Turkija",
 	    	country_Turkey: "TUR",
 	    	name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*", 
 	    	href_tui_lt: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/", 
@@ -259,6 +261,7 @@
 	  ],
 	  hotel: [
 	    {
+            country_hotel: "Turcija",
 	    	country_Turkey: "TUR",
 	    	name_hotel: "FUN&SUN Miarosa Ghazal Resort 5*", 
 	    	href_tui_lv: "/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/", 
@@ -499,7 +502,7 @@
     //LT
     var table_tc_lt = {
 		title_page_origin: "Poilsis viešbučiuose su Mini Toucan vaikų klubu",
-		description_page_origin: "",
+		description_page_origin: "<p>Viešbučiai su vaikų klubu Mini Toucan leiks puikiai praleisti laiką tiek vaikams, tiek jų tėveliams.</p><p><b>Vaikų klubas Mini Toucan - kas tai?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Koncepcija "Tukanas - keliautojas" ― nuotykiai skirtingose šalyse</li> <li>Programa įvairaus amžiaus vaikams: Toucan Kids 4-7 m. ir Toucan Junior 8-12 m.</li> <li>Vaikų klubas veikia 6 dienas per savaitę, nuo 10-00 iki 12-30, nuo 14-30 iki 17-00.</li> <li>Vakare ― vaikų diskoteka</li> </ul>",
 		h_1: "Poilsis su vaikais prie jūros Mini Toucan vaikų klube",
 		title: "Viešbučiai su Mini Toucan vaikų klubu",
 		description: "Vaikų klubo Toucan uždarymo data viešbučiuose",

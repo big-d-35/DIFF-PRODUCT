@@ -12,650 +12,365 @@
 <link href="https://www.tui.ru/getmedia/eec19a87-cf5a-40c7-8442-09183e60e372/all" rel="stylesheet" />
 <link href="dist/css/font-tui/font-tui.css" rel="stylesheet" type="text/css" />
 <meta content="width=device-width,initial-scale=1" name="viewport" />
-<style type="text/css">
-    body {
-        font-family: "TUI-reg", sans-serif !important;
-    }
+<style type="text/css">.top-slider {
+                position: relative;
+                background: white;
+                padding: 0;
+            }
 
-    .desk .gey_p {
-        display: none;
-    }
+            .sliders-hotels {
+                min-height: 10px !important;
+                margin-top: 1em;
+            }
 
-    .gey_p {
-        padding-left: 15px;
-    }
+            .slider-content {
+                min-height: auto !important;
+                margin: 2% 2% 0;
+            }
 
-    .top-slider {
-        position: relative;
-        background: white;
-        padding: 0;
-    }
+            .sl .slider-content {
+                min-height: 336px !important;
+            }
 
-    .sliders-hotels {
-        min-height: 10px !important;
-        margin-top: 1em;
-    }
+            .lSPager {
+                display: none;
+            }
 
-    .sliders-hotels h4 {
-        padding-left: 15px;
-    }
 
-    .slider-content {
-        min-height: auto !important;
-        margin: 2% 2% 0;
-        height: 52px;
-    }
+                .lSSlideOuter img {
+                    width: auto;
+                    height: 380px;
+                }
 
+
+            .lSAction > .lSPrev {
+                left: 15%;
+            }
+
+            .lSAction > .lSNext {
+                right: 15%;
+            }
+
+            .lSAction > .lSNext, .lSAction > .lSPrev {
+                color: #5887a8;
+                font-size: 30px;
+                margin: 5px;
+                padding: 12px;
+                background: #fff;
+                display: inline-block;
+                cursor: pointer;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                height: 56px;
+                width: 56px;
+                -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+                box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
+            }
+
+            .lSAction > .lSNext, .lSAction > .lSPrev {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .lSAction > .lSNext:before {
+                    content: " >";
+                }
+
+                .lSAction > .lSPrev:before {
+                    content: "< ";
+                }
+      
+      
+      .price-num > p > b::after {
+                content: " грн";
+              }
+              
+  .icons-footer{
+    margin-bottom: 1em;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .top-slider .lSPrev, .top-slider .lSNext{
+  top:36% !important;
+  padding: 16px 12px 12px 12px;
+  }
+  .container .button-slider p{
+  margin-bottom:0;
+  }
+  .button-slider{
+  height:62px;
+  }
+
+.button-slider-active {
+        -webkit-box-shadow: inset 0 -4px 0 0 #C3E8FB!important;
+        -moz-box-shadow: inset 0 -4px 0 0 #C3E8FB!important;
+        box-shadow: inset 0 -4px 0 0 #C3E8FB!important;
+        background-color: #C3E8FB!important;
+    }
     .slider-content ul li {
-        color: #0c2c5c !important;
-    }
-
-    .slider_2 .slider-content {
-        height: auto;
-    }
-
-    .lSPager {
-        display: none;
-    }
-
-    .lSAction>.lSPrev {
-        left: 15%;
-    }
-
-    .lSAction>.lSNext {
-        right: 15%;
-    }
-
-    .lSAction>.lSNext,
-    .lSAction>.lSPrev {
-        color: #5887a8;
-        font-size: 30px;
-        margin: 5px;
-        padding: 12px;
-        background: #fff;
-        display: inline-block;
-        cursor: pointer;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        height: 56px;
-        width: 56px;
-        -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
-        box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
-    }
-
-    .lSAction>.lSNext,
-    .lSAction>.lSPrev {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lSAction>.lSNext:before {
-        content: " >";
-        font-weight: 100;
-        font-size: 1.3em;
-    }
-
-    .lSAction>.lSPrev:before {
-        content: "< ";
-        font-weight: 100;
-        font-size: 1.3em;
-    }
-
-    .tamplate,
-    #mobile {
-        display: none;
-        margin: 0 auto;
-    }
-
-    .tamplate .block-circle {
-        display: none;
-    }
-
-    @media screen and (max-width: 759px) {
-
-        .tamplate,
-        #mobile {
-            display: block;
-        }
-
-        .sliders-hotels {
-            margin-top: 0;
-        }
-
-        .info-footer {
-            padding: 0;
-        }
-
-        .row-f {
-            padding: 15px;
-        }
-
-        .footer-informations .col-12>h3 {
-            text-align: left;
-        }
-
-        .soc {
-            padding: 0;
-        }
-
-        .soc .icons-footer {
-            justify-content: flex-start;
-        }
-
-        .tit {
-            margin: 1.5em 0 0.5em;
-        }
-    }
-
-    .price-num {
-        display: block;
-    }
-
-    #s1b3 .tit {
-        display: none;
-    }
-
-    /* fixes */
-    h4 {
-        font-size: 0.9rem !important;
-    }
-
-    h2.margin-need {
-        margin-top: -30px !important
-    }
-
-    .vecherom .buttons-navigations {
-        display: none !important;
-    }
-
-    .button-slider {
-        height: 52px !important;
-    }
-
-    .button-slider p {
-        margin-bottom: 0.5rem;
-    }
-
-    .button-slider-active {
-        background-color: #C3E8FB !important;
-        box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
-    }
-
-    img.main-logo {
-        width: auto;
-        display: inline-block;
-        margin: 60px 20px 60px 0;
-    }
-
-    h1.main {
-        position: relative;
-        top: 35px;
-        display: inline-block;
-        margin: 80px 10px 20px 15px !important;
-        text-transform: uppercase;
-        font-size: 1.5em !important;
-        font-weight: bold !important;
-    }
-
-    #s4b1 .tit {
-        margin-top: 5%;
-    }
-
-    @media screen and (max-width: 1200px) {
-        h1.main {
-            margin: -35px 10px 20px 0px !important;
-            top: 0;
-        }
-    }
-
-    @media screen and (max-width: 767px) {
-        h2.margin-need {
-            margin-top: 0 !important;
-        }
-    }
-
-    @media screen and (max-width: 759px) {
-        #s4b1 .tit {
-            margin: 1.5em 0 0.5em;
-        }
-    }
-
-    #s1b1 .tit,
-    #s1b2 .tit,
-    #s1b3 .tit,
-    #s1b4 .tit,
-    #s1b5 .tit {
-        display: none;
-    }
-
-    .icons-footer {
-        margin-bottom: 1em;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-
-    h2 {
-        text-transform: uppercase;
-        font-size: 1.3em !important;
-    }
-
-    .top-dn {
-        background: none !important;
-    }
-
-    .slider div {
-        cursor: default !important;
-    }
-
-    .slider a {
-        cursor: pointer !important;
-    }
-
-    .block_3 {
-        margin-bottom: 0 !important
-    }
-</style>
-<style type="text/css">
-    .top-slider {
-        position: relative;
-        background: white;
-        padding: 0;
-    }
-
-    .sliders-hotels {
-        min-height: 10px !important;
-        margin-top: 1em;
-    }
-
-    .slider-content {
-        min-height: auto !important;
-        margin: 2% 2% 0;
-    }
-
-    .sl .slider-content {
-        min-height: 336px !important;
-    }
-
-    .lSPager {
-        display: none;
-    }
-
-    .lSAction>.lSPrev {
-        left: 15%;
-    }
-
-    .lSAction>.lSNext {
-        right: 15%;
-    }
-
-    .lSAction>.lSNext,
-    .lSAction>.lSPrev {
-        color: #5887a8;
-        font-size: 30px;
-        margin: 5px;
-        padding: 12px;
-        background: #fff;
-        display: inline-block;
-        cursor: pointer;
-        -webkit-border-radius: 50%;
-        border-radius: 50%;
-        height: 56px;
-        width: 56px;
-        -webkit-box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
-        box-shadow: 0 0 10px rgba(88, 135, 168, 0.8);
-    }
-
-    .lSAction>.lSNext,
-    .lSAction>.lSPrev {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .lSAction>.lSNext:before {
-        content: " >";
-    }
-
-    .lSAction>.lSPrev:before {
-        content: "< ";
-    }
-
-    .icons-footer {
-        margin-bottom: 1em;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-
-    /*
-      .bx-wrapper{
-      width: 100%;
-      position: relative;
-      left: 2px;
-      border: none;
-      background: none;
-      max-width: 1119px !important;
-      margin: 30px auto 50px auto;
-      }
-      */
-    .top-slider .lSPrev,
-    .top-slider .lSNext {
-        top: 36% !important;
-        padding: 16px 12px 12px 12px;
-    }
-
-    .container .button-slider p {
-        margin-bottom: 0;
-    }
-
-    .button-slider {
-        height: 62px;
-    }
-
-    .whiteCaptions,
-    .squarePhoto {
-        display: block !important;
-        margin-top: 30px;
-    }
-
-    .whiteCaptions .sliders-hotels {
-        height: 381px;
-        border-radius: 2px;
-        border: 2px #eeeeee solid;
-    }
-
-    .whiteCaptions .sliders-hotels .info-img {
-        height: 175px;
-        background: #fff;
-    }
-
-    .whiteCaptions .sliders-hotels .info-img h4 {
-        text-transform: none;
-        text-align: left;
-        margin: 4px 0 10px 20px;
-        font-size: 17px;
-    }
-
-    .whiteCaptions .sliders-hotels .info-img p.text {
-        font-size: 14px;
-        text-transform: none;
-        text-align: left;
-        margin: -25px 11px 10px 20px;
-        color: #737373;
-        line-height: 1.1;
-    }
-
-    h2.main {
-        margin: 80px 10px 20px 15px !important;
-        text-transform: uppercase;
-    }
-
-    img.main-logo {
-        width: auto;
-        display: inline-block;
-        margin: 60px 20px 60px 15px;
-    }
-
-    .left-right-blocks {
-        overflow: hidden;
-        min-height: 100px;
-        max-width: 1160px;
-        width: 100%;
-        margin: 60px auto;
-        padding: 0px 20px;
-    }
-
-    .left-right-blocks .left {
-        width: 49%;
-        float: left;
-        min-height: 50px;
-    }
-
-    .left-right-blocks .right {
-        width: 49%;
-        float: right;
-        min-height: 50px;
-    }
-
-    .left-right-blocks h2 {
-        margin: 0 0 20px 0 !important;
-        padding: 0;
-        text-transform: uppercase;
-        font-size: 18px !important;
-    }
-
-    .left-right-blocks p {
-        font-size: 16px;
-        line-height: 1.15;
-    }
-
-    .left-right-blocks img {
-        width: 100%;
-        height: auto;
-    }
-
-    .blueCaptions .info-img {
-        height: 78px;
-    }
-
-    .blueCaptions .info-img h4 {
-        text-align: left;
-        margin: 0 0 0 20px;
-        font-size: 18px;
-        font-weight: normal !important;
-    }
-
-    .blueCaptions .sliders-hotels {
-        height: 362px;
-    }
-
-    .lSSlideOuter .lSPrev {
-        background: none;
-        background: url('https://www.tui.ru/getmedia/020835db-491c-4bf0-9cb6-c3101cfb37b4/arrow-left') no-repeat top left;
-        width: 50px;
-        height: 50px;
-        opacity: 1;
-    }
-
-    .lSSlideOuter .lSNext {
-        background: none;
-        background: url('https://www.tui.ru/getmedia/fe0619f4-8b74-40c5-854e-9da01964229b/arrow-right') no-repeat top left;
-        width: 50px;
-        height: 50px;
-        opacity: 1;
-    }
-
-    .lSAction>.lSPrev:before,
-    .lSAction>.lSNext:before {
-        content: "";
-    }
-
-    .squarePhoto .sliders-hotels {
-        height: 275px;
-    }
-
-    .download-block {
-        margin: -20px 0 60px 0;
-        background: #e2f3fd;
-        margin-right: -6px;
-        color: #2a8ec2;
-        padding: 23px 0;
-        text-align: center;
-        font-size: 19px;
-    }
-
-    .slider-content ul li {
-        margin: -2px 0;
-    }
-
-    .container.text-content.video-bar {
-        width: 100%;
-        max-width: 1119px;
-        height: 630px;
-    }
-
-    .player.videoIn.pictureVideo {
-        width: 100%;
-        height: 100%;
-        background-image: url(https://www.tui.ru/getmedia/13a76a24-c162-43b7-b521-df3e1f095ee7/video);
-        cursor: pointer;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .player.videoIn.pictureVideo img {
-        width: 156px;
-        opacity: 0.65;
-        border-style: none;
-    }
-
-    .player.videoIn.pictureVideo img:hover {
-        opacity: 0.8;
-    }
-
-    @media screen and (max-width: 340px) {
-        .left-right-blocks {
-            max-width: 360px;
-            padding-right: 0;
-            padding-left: 15px;
-        }
-    }
-
-    @media screen and (min-width: 1150px) {
-        .container.text-content.video-bar {
-            padding: 0;
-        }
-    }
-
-    @media screen and (max-width: 759px) {
-        .button-slider-mobile {
-            margin-top: 276px !important;
-        }
-    }
-
-    @media screen and (max-width: 792px) {
-        .container.text-content.download-bar {
-            max-width: 350px;
-        }
-
-        .container.text-content.video-bar {
-            max-width: 350px;
-            height: 180px;
-        }
-    }
-
-    @media screen and (min-width: 792px) {
-
-        .whiteCaptions .leftButton,
-        .whiteCaptions .rightButton {
-            display: block;
-        }
-
-        .whiteCaptions .leftButton,
-        .whiteCaptions .rightButton {
-            display: none;
-        }
-
-        .whiteCaptions .myslide.col-slider-4 {
-            padding-left: 12px;
-            padding-right: 12px;
-            width: 286px;
-        }
-
-        .squarePhoto .myslide.col-slider-4 {
-            width: 284px;
-            margin-left: 0px;
-            padding-right: 4px;
-            padding-left: 12px;
-        }
-
-        .whiteCaptions .myslide.col-slider-4 {
-            padding-left: 12px;
-            padding-right: 12px;
-            width: 286px;
-        }
-    }
-
-    @media screen and (max-width: 793px) {
-        .left-right-blocks {
-            max-width: 360px;
-            margin-top: 0px;
-            margin-bottom: 0px;
-        }
-
-        .left-right-blocks .left,
-        .left-right-blocks .right {
-            float: none;
-            width: 100%;
-            margin: 10px 0 25px 0;
-        }
-
-        .left-right-blocks h2 {
-            margin: 0 0 10px 0 !important;
-        }
-
-        .bx-wrapper {
-            margin-bottom: 30px;
-        }
-
-        .download-block {
-            font-size: 14px;
-            padding: 23px 20px;
-            margin: 10px 0 30px 0;
-        }
-    }
-
-    @media screen and (max-width: 1200px) {
-        h2.main {
-            margin: -35px 10px 20px 15px !important;
-        }
-
-        img.main-logo {
-            margin-top: 35px;
-        }
-
-        .player.videoIn.pictureVideo img {
-            width: 20%;
-        }
-    }
-
-    @media screen and (min-width: 793px) {
-        .container.text-content.download-bar {
-            position: relative;
-            left: 3px;
-            max-width: 1146px;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        .container.text-content.video-bar {
-            position: relative;
-            left: 3px;
-        }
-
-        .player.videoIn.pictureVideo {
-            height: 630px;
-        }
-    }
-
+     color: #0c2c5c!important;
+    }
+  .whiteCaptions, .squarePhoto{
+  display:block !important;
+  margin-top: 30px;
+  }
+  .whiteCaptions .sliders-hotels{
+  height:381px;
+  border-radius: 2px;
+  border: 2px #eeeeee solid;
+  }
+  .whiteCaptions .sliders-hotels .info-img{
+  height:175px;
+  background: #fff;
+  }
+  .whiteCaptions .sliders-hotels .info-img h4{
+  text-transform: none;
+  text-align: left;
+  margin: 4px 0 10px 20px;
+  font-size: 17px;
+  }
+  .whiteCaptions .sliders-hotels .info-img p.text{  
+  font-size: 14px;
+  text-transform: none;
+  text-align: left;
+  margin: -25px 11px 10px 20px;
+  color: #737373;
+  line-height: 1.1;  
+  }
+  h2.main{
+  margin:80px 10px 20px 15px !important;
+  text-transform: uppercase;
+  }
+  img.main-logo{
+  width: auto;
+  display: inline-block;
+  margin: 60px 20px 60px 15px;
+  }
+  .left-right-blocks{
+  overflow:hidden;
+  min-height: 100px;
+  max-width: 1160px;
+  width: 100%;
+  margin: 60px auto;
+  padding: 0px 20px; 
+  }
+  .left-right-blocks .left{
+  width:49%;
+  float:left;
+  min-height:50px;  
+  }
+  .left-right-blocks .right{
+  width:49%;
+  float:right;
+  min-height:50px;  
+  }
+  .left-right-blocks h2{
+  margin: 0 0 20px 0 !important;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 18px !important; 
+  }
+  .left-right-blocks p{  
+  font-size: 16px;
+  line-height: 1.15;    
+  }
+  .left-right-blocks img{  
+  width:100%;
+  height:auto;
+  }
+  .blueCaptions .info-img{
+  height:78px;  
+  }  
+  .blueCaptions .info-img h4{
+  text-align: left;
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  font-weight: normal !important;
+  }  
+  .blueCaptions .sliders-hotels{
+  height:362px;
+  }
+
+  .row-all .lSPrev{
+  background: none;
+  background: url('https://www.tui.ru/getmedia/020835db-491c-4bf0-9cb6-c3101cfb37b4/arrow-left') no-repeat top left;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  }
+  .row-all .lSNext{
+  background: none;
+  background: url('https://www.tui.ru/getmedia/fe0619f4-8b74-40c5-854e-9da01964229b/arrow-right') no-repeat top left;
+  width: 50px;
+  height: 50px;
+  opacity: 1;
+  }
+  .lSAction > .lSPrev:before, .lSAction > .lSNext:before{
+  content: "";
+  }
+  .squarePhoto .sliders-hotels{
+  height: 275px;
+  }
+  .download-block{
+  margin: -20px 0 60px 0; 
+  background: #e2f3fd; 
+  margin-right: -6px; 
+  color: #2a8ec2; 
+  padding: 23px 0; 
+  text-align: center; 
+  font-size: 19px;
+  }
+  .slider-content ul li{
+  margin:-2px 0;
+  }
+  .container.text-content.video-bar{
+  width:100%;
+  max-width:1119px;
+  height:630px;
+  } 
+  .player.videoIn.pictureVideo{
+  width:100%;
+  height:100%;
+  background-image:url(https://www.tui.ru/getmedia/13a76a24-c162-43b7-b521-df3e1f095ee7/video);
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  }
+  .player.videoIn.pictureVideo img{
+  width:156px;
+  opacity:0.65;
+  border-style:none;
+  }
+  .player.videoIn.pictureVideo img:hover{
+  opacity:0.8;
+  }
+  @media screen and (max-width: 340px){  
+  .left-right-blocks{
+   max-width:360px;
+   padding-right:0;
+   padding-left:15px;
+  }
+  }
+  @media screen and (min-width: 1150px){  
+  .container.text-content.video-bar{
+   padding:0;
+  }
+  }
+  @media screen and (max-width: 759px){
+  .button-slider-mobile {
+   margin-top: 276px!important;
+  }
+  }
+  @media screen and (max-width: 792px){
+  .container.text-content.download-bar{
+   max-width: 350px;
+  }
+  .container.text-content.video-bar{
+   max-width: 350px;
+   height:180px;
+  }
+  }
+  @media screen and (min-width: 792px){
+  .whiteCaptions .leftButton, .whiteCaptions .rightButton{
+   display:block; 
+  }
+  .whiteCaptions .leftButton, .whiteCaptions .rightButton{
+   display:none; 
+  }   
+  .whiteCaptions .myslide.col-slider-4{
+   padding-left:12px;
+   padding-right:12px;
+   width: 286px;
+  }
+  .squarePhoto .myslide.col-slider-4{
+   width: 284px;
+   margin-left: 0px;
+   padding-right: 4px;
+   padding-left: 12px;
+   }    
+  .whiteCaptions .myslide.col-slider-4{
+   padding-left:12px;
+   padding-right:12px;
+   width: 286px;
+  }
+  }
+  @media screen and (max-width: 793px){
+  .left-right-blocks{ 
+   max-width: 360px;
+   margin-top:0px;
+   margin-bottom:0px;
+  }
+  .left-right-blocks .left, .left-right-blocks .right{
+   float:none;
+   width:100%;
+   margin:10px 0 25px 0;
+  }
+  .left-right-blocks h2{
+   margin: 0 0 10px 0 !important;    
+  }
+  .bx-wrapper{
+   margin-bottom:30px;
+  }
+  .download-block{
+   font-size: 14px;
+   padding: 23px 20px;
+   margin: 10px 0 30px 0;
+  }
+  }
+  @media screen and (max-width: 1200px){  
+  h2.main{
+   margin:-35px 10px 20px 15px !important;
+  }
+  img.main-logo{
+   margin-top:35px;
+  }
+  .player.videoIn.pictureVideo img{
+   width: 20%;
+  }
+  }
+  @media screen and (min-width: 793px){  
+  .container.text-content.download-bar{
+   position:relative;
+   left:3px;
+   max-width:1146px;
+  }
+  }
+  @media screen and (min-width: 1200px){  
+  .container.text-content.video-bar{
+   position:relative;
+   left:3px;
+  } 
+  .player.videoIn.pictureVideo{
+   height:630px;
+  }
+  }
+     .footer-row img{
+         width: auto !important;
+     }
+     .icons-footer svg{
+         width: 35px !important; 
+         height: 35px !important;
+     }
+     .slider div{
+         cursor: default !important;
+     }
+     .slider a{
+         cursor: pointer !important;
+     }  
+     .block_3{margin-bottom:0!important}
     a {
+        color: #0c2c5c !important;
         text-decoration: none;
-        color: #092a5e;
     }
 </style>
 <title></title>

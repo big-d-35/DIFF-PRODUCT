@@ -2071,8 +2071,8 @@ const funSunProgrammPage = new Vue ({
         titleEE : 'Ģimenes atpūta FUN&SUN',
         subTitleEE : 'Izklaides grafiks Toucan klubā',
         
-        titleLT : 'Jaunimo poilsis su DAY&NIGHT Connected',
-        subTitleLT : 'Izklaides grafiks Toucan klubā',
+        titleLV : 'Ģimenes atpūta FUN&SUN',
+        subTitleLV : 'Izklaides grafiks Toucan klubā',
     }
 })
 
