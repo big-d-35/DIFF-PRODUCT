@@ -113,7 +113,7 @@
 	    	href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark", 
 	    	href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
             href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark",
-	    	data_hotel: "31.10.2019"}
+	    	data_hotel: "3.11.2019"}
 	  ]
 	};
 
@@ -170,7 +170,7 @@
 	    	href_agent_ee: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach", 
 	    	data_hotel: "15.10.2019"},
 	    {
-	    	country_hotel: "Кипр",
+	    	country_hotel: "Küpros",
 	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_ee: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/", 
 	    	href_agent_ee: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
@@ -179,7 +179,7 @@
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_ee: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
 	    	href_agent_ee: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark", 
-	    	data_hotel: "31.10.2019"}
+	    	data_hotel: "3.11.2019"}
 	  ]
 	};
 
@@ -243,7 +243,7 @@
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_lt: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
 	    	href_agent_lt: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark", 
-	    	data_hotel: "31.10.2019"}
+	    	data_hotel: "3.11.2019"}
 	  ]
 	};
 
@@ -307,7 +307,7 @@
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_lv: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
 	    	href_agent_lv: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/TUI-FUN-SUN-Panthea-Waterpark", 
-	    	data_hotel: "31.10.2019"}
+	    	data_hotel: "3.11.2019"}
 	  ]
 	};
 
@@ -502,7 +502,7 @@
     //LT
     var table_tc_lt = {
 		title_page_origin: "Poilsis viešbučiuose su Mini Toucan vaikų klubu",
-		description_page_origin: "<p>Viešbučiai su vaikų klubu Mini Toucan leiks puikiai praleisti laiką tiek vaikams, tiek jų tėveliams.</p><p><b>Vaikų klubas Mini Toucan - kas tai?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Koncepcija "Tukanas - keliautojas" ― nuotykiai skirtingose šalyse</li> <li>Programa įvairaus amžiaus vaikams: Toucan Kids 4-7 m. ir Toucan Junior 8-12 m.</li> <li>Vaikų klubas veikia 6 dienas per savaitę, nuo 10-00 iki 12-30, nuo 14-30 iki 17-00.</li> <li>Vakare ― vaikų diskoteka</li> </ul>",
+		description_page_origin: "<p>Viešbučiai su vaikų klubu Mini Toucan leiks puikiai praleisti laiką tiek vaikams, tiek jų tėveliams.</p><p><b>Vaikų klubas Mini Toucan - kas tai?</b><br></p><ul class=\"dopInfo\" style=\"margin-left:30px;list-style-type: disc!important\"> <li>Koncepcija 'Tukanas - keliautojas' ― nuotykiai skirtingose šalyse</li> <li>Programa įvairaus amžiaus vaikams: Toucan Kids 4-7 m. ir Toucan Junior 8-12 m.</li> <li>Vaikų klubas veikia 6 dienas per savaitę, nuo 10-00 iki 12-30, nuo 14-30 iki 17-00.</li> <li>Vakare ― vaikų diskoteka</li> </ul>",
 		h_1: "Poilsis su vaikais prie jūros Mini Toucan vaikų klube",
 		title: "Viešbučiai su Mini Toucan vaikų klubu",
 		description: "Vaikų klubo Toucan uždarymo data viešbučiuose",
