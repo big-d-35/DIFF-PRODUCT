@@ -104,7 +104,7 @@
 	    	href_agent_ru: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
 	    	href_agent_ua: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
             href_agent_by: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites",
-	    	data_hotel: "31.10.2019"},
+	    	data_hotel: "3.11.2019"},
 	    {
 	    	name_hotel: " FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_ru: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
@@ -174,7 +174,7 @@
 	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_ee: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/", 
 	    	href_agent_ee: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
-	    	data_hotel: "31.10.2019"},
+	    	data_hotel: "3.11.2019"},
 	    {
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_ee: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
@@ -238,7 +238,7 @@
 	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_lt: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/", 
 	    	href_agent_lt: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
-	    	data_hotel: "31.10.2019"},
+	    	data_hotel: "3.11.2019"},
 	    {
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_lt: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
@@ -302,7 +302,7 @@
 	    	name_hotel: "FUN&SUN Vangelis Hotel & Suite 4*",  
 	    	href_tui_lv: "/hotel/europe-cyprus-protaras-protaras__city-fun__sun__vangelis__hotel__suites/", 
 	    	href_agent_lv: "/Tours/Europe/Cyprus/Protaras/Protaras-city/vangelis-hotel-suites", 
-	    	data_hotel: "31.10.2019"},
+	    	data_hotel: "3.11.2019"},
 	    {
 	    	name_hotel: "FUN&SUN Panthea Waterpark 4*",  
 	    	href_tui_lv: "/hotel/europe-cyprus-ayia__napa-ayia__napa-fun__sun__panthea__waterpark/", 
@@ -440,7 +440,26 @@
 	    	href_agent_ru: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom", 
 	    	href_agent_ua: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom", 
             href_agent_by: "/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom",    
-	    	data_hotel: "20.09.2019"}
+	    	data_hotel: "20.09.2019"},
+           {
+            country_hotel: "ОАЭ",
+            name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
+	    	href_tui_ru: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
+	    	href_tui_ua: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/",
+            href_tui_by: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/",    
+	    	href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
+	    	href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
+            href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort",    
+	    	data_hotel: "Открыт с 20.10.2019"},
+          {
+            name_hotel: "Al Hamra Residence 5*", 
+	    	href_tui_ru: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
+	    	href_tui_ua: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/",
+            href_tui_by: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/",    
+	    	href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
+	    	href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
+            href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence",    
+	    	data_hotel: "Открыт с 20.10.2019"}
 	    	
 	  ]
 	};
@@ -494,7 +513,19 @@
 	    	name_hotel: "Don Juan Tossa 4*", 
 	    	href_tui_ee: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/", 
 	    	href_agent_ee: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa",    
-	    	data_hotel: "30.09.2019"}
+	    	data_hotel: "30.09.2019"},
+          {
+	    	country_hotel: "OAE",
+	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
+	    	href_tui_ee: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
+	    	href_agent_ee: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    {
+	    	name_hotel: "Al Hamra Residence 5*", 
+	    	href_tui_ee: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
+	    	href_agent_ee: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    	
 	    	
 	  ]
 	};
@@ -548,7 +579,19 @@
 	    	name_hotel: "Don Juan Tossa 4*", 
 	    	href_tui_lt: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/", 
 	    	href_agent_lt: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa", 
-	    	data_hotel: "30.09.2019"}
+	    	data_hotel: "30.09.2019"},
+          {
+	    	country_hotel: "OAE",
+	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
+	    	href_tui_lt: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
+	    	href_agent_lt: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    {
+	    	name_hotel: "Al Hamra Residence 5*", 
+	    	href_tui_lt: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
+	    	href_agent_lt: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    	
 	    	
 	  ]
 	};
@@ -603,7 +646,19 @@
 	    	name_hotel: "Don Juan Tossa 4*", 
 	    	href_tui_lv: "/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/", 
 	    	href_agent_lv: "/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa", 
-	    	data_hotel: "30.09.2019"}
+	    	data_hotel: "30.09.2019"},
+          {
+	    	country_hotel: "OAE",
+	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
+	    	href_tui_lv: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
+	    	href_agent_lv: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    {
+	    	name_hotel: "Al Hamra Residence 5*", 
+	    	href_tui_lv: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
+	    	href_agent_lv: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
+	    	data_hotel: "Open date 20.10.2019"},
+	    	
 	    	
 	  ]
 	};

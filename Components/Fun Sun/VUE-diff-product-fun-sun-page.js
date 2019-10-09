@@ -754,8 +754,8 @@ const funSunPageFooter = new Vue ({
         funSunPageFooterMailTitleEE : 'tallinn@tuibaltics.eu',
         funSunPageFooterMailLinkEE : 'mailto:tallinn@tuibaltics.eu',
         
-        funSunPageFooterMailTitleLT : 'book@tuibaltics.eu',
-        funSunPageFooterMailLinkLT : 'mailto:book@tuibaltics.eu',
+        funSunPageFooterMailTitleLT : 'rezervacijos@tuibaltics.eu',
+        funSunPageFooterMailLinkLT : 'mailto:rezervacijos@tuibaltics.eu',
         
         funSunPageFooterMailTitleLV : 'book@tuibaltics.eu',
         funSunPageFooterMailLinkLT : 'mailto:book@tuibaltics.eu',
@@ -2082,9 +2082,8 @@ const funSunProgrammPage = new Vue ({
         titleUA : 'Семейный отдых FUN&SUN',
         subTitleUA : 'Расписание развлечений в клубе Тукан',
         
-        //Не верно у эстонии
-        titleEE : 'Ģimenes atpūta FUN&SUN',
-        subTitleEE : 'Izklaides grafiks Toucan klubā',
+        titleEE : 'Perepuhkus FUN&SUN',
+        subTitleEE : 'Meelelahutuse ajakava klubis Toucan',
         
         titleLT : 'Šeimos poilsis FUN&SUN viešbučiuose',
         subTitleLT : 'Pramogų tvarkaraštis Mini Toucan vaikų klube',
@@ -2116,12 +2115,11 @@ const funSunProgrammPageAllEntMenu = new Vue ({
         menuItem4UA: 'Спортивные активности',
         menuItem5UA: 'Вечерние шоу',
         
-        //Не верно у эстонии
         menuItem1EE: 'Visi',
-        menuItem2EE: 'Toucan akadēmijas',
-        menuItem3EE: 'Radošas un spēļu aktivitātes',
-        menuItem4EE: 'Sporta aktivitātes',
-        menuItem5EE: 'Vakara šovi',
+        menuItem2EE: 'Toucan akadeemia',
+        menuItem3EE: 'Loomingulised ja aktiivsed tegevused',
+        menuItem4EE: 'Sporditegevused',
+        menuItem5EE: 'Õhtune meelelahutus',
         
         menuItem1LT: 'Vizos',
         menuItem2LT: 'Tukano akademija',
@@ -2145,53 +2143,53 @@ const funSunProgrammPageAllEntSliderItem1 = (background, titleRU, titleBY, title
 
 const funSunProgrammPageAllEntSliderItems1 = [
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover', 'Академия плавания', 'Академия плавания', 'Академия плавания', 'Peldēšanas akadēmija','Plaukimo akademija','Peldēšanas akadēmija'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover', 'Академия плавания', 'Академия плавания', 'Академия плавания', 'Ujumisakadeemia','Plaukimo akademija','Peldēšanas akadēmija'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover', 'Танцевальная академия', 'Танцевальная академия', 'Танцевальная академия','Deju akadēmija','Šokių pamokos','Deju akadēmija'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover', 'Танцевальная академия', 'Танцевальная академия', 'Танцевальная академия','Tantsuakadeemia','Šokių pamokos','Deju akadēmija'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover', 'Футбольная Академия', 'Футбольная Академия', 'Футбольная Академия','Futbola akadēmija','Futbolo akademija','Futbola akadēmija'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover', 'Футбольная Академия', 'Футбольная Академия', 'Футбольная Академия','Jalgpalliakadeemia','Futbolo akademija','Futbola akadēmija'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Ceļotāju pulcēšanās. Vēstule no Toucan','Keliautojų susirinkimas. Tukano laiškas','Ceļotāju pulcēšanās. Vēstule no Toucan'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Reisijate kogunemine. Toucan kiri','Keliautojų susirinkimas. Tukano laiškas','Ceļotāju pulcēšanās. Vēstule no Toucan'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover','Тематические квесты и соревнования','Тематические квесты и соревнования','Тематические квесты и соревнования','Tematiskie kvesti un sacensības','Teminiai galvosūkiai ir žaidimai','Tematiskie kvesti un sacensības'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover','Тематические квесты и соревнования','Тематические квесты и соревнования','Тематические квесты и соревнования','Temaatilised mängud ja võistlused','Teminiai galvosūkiai ir žaidimai','Tematiskie kvesti un sacensības'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover','Творческая мастерская Тукана','Творческая мастерская Тукана','Творческая мастерская Тукана','Toucan radošā darbnīca','Kūrybinės Tukano dirbtuvės','Toucan radošā darbnīca'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover','Творческая мастерская Тукана','Творческая мастерская Тукана','Творческая мастерская Тукана','Toucan loomingulised töötoad','Kūrybinės Tukano dirbtuvės','Toucan radošā darbnīca'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover','Научные эксперименты','Научные эксперименты','Научные эксперименты','Zinātniski eksperimenti','Mokslo eksperimentai','Zinātniski eksperimenti'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover','Научные эксперименты','Научные эксперименты','Научные эксперименты','Teaduslikud eksperimendid','Mokslo eksperimentai','Zinātniski eksperimenti'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Sižeta un lomu spēles','Vaidmenų žaidimai','Sižeta un lomu spēles'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Rollimängud','Vaidmenų žaidimai','Sižeta un lomu spēles'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover','Аквагрим','Аквагрим','Аквагрим','Akvagrims','Akvagrimas','Akvagrims'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover','Аквагрим','Аквагрим','Аквагрим','Näomaalingud','Akvagrimas','Akvagrims'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover','Тукан коктейль','Тукан коктейль','Тукан коктейль','Kokteilis Toucan','Tukano kokteilis','Kokteilis Toucan'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover','Тукан коктейль','Тукан коктейль','Тукан коктейль','Toucan kokteilid','Tukano kokteilis','Kokteilis Toucan'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover','Пляжный волейбол','Пляжный волейбол','Пляжный волейбол','Pludmales volejbols','Paplūdimio tinklinis','Pludmales volejbols'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover','Пляжный волейбол','Пляжный волейбол','Пляжный волейбол','Rannavõrkpall','Paplūdimio tinklinis','Pludmales volejbols'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover','Аква аэробика','Аква аэробика','Аква аэробика','Ūdens aerobika','Vandens aerobika','Ūdens aerobika'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover','Аква аэробика','Аква аэробика','Аква аэробика','Vesiaeroobika','Vandens aerobika','Ūdens aerobika'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Bērnu joga, deju aerobika,vingrošana','Joga vaikams, šokių aerobika, gimnastika','Bērnu joga, deju aerobika,vingrošana'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Laste jooga, tantsuaeroobika, võimlemine','Joga vaikams, šokių aerobika, gimnastika','Bērnu joga, deju aerobika,vingrošana'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover','Игры в бассейне','Игры в бассейне','Игры в бассейне','Spēles baseinā','Žaidimai baseine','Spēles baseinā'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover','Игры в бассейне','Игры в бассейне','Игры в бассейне','Mängud basseinis','Žaidimai baseine','Spēles baseinā'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover','Мини гольф','Мини гольф','Мини гольф','Mini-golfs','Mini golfas','Mini-golfs'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover','Мини гольф','Мини гольф','Мини гольф','Mini-golf','Mini golfas','Mini-golfs'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover','Стрельба из лука','Стрельба из лука','Стрельба из лука','Loka šaušana','Šaudymas iš lanko','Loka šaušana'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover','Стрельба из лука','Стрельба из лука','Стрельба из лука','Vibulaskmine','Šaudymas iš lanko','Loka šaušana'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/642cab39-6ec5-4494-8cc0-b260f095f007/tab3-7);background-position: center;background-size: cover','Подвижные игры и эстафеты','Подвижные игры и эстафеты','Подвижные игры и эстафеты','Kustīgas spēles un stafetes','Žaidimai ir estafetės','Kustīgas spēles un stafetes'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/642cab39-6ec5-4494-8cc0-b260f095f007/tab3-7);background-position: center;background-size: cover','Подвижные игры и эстафеты','Подвижные игры и эстафеты','Подвижные игры и эстафеты','Aktiivsed mängud','Žaidimai ir estafetės','Kustīgas spēles un stafetes'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38b17bf7-4d9a-494d-9124-e9f104a466b6/tab3-8);background-position: center;background-size: cover','Дартс','Дартс','Дартс','Šautriņas','Smiginis','Šautriņas'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/38b17bf7-4d9a-494d-9124-e9f104a466b6/tab3-8);background-position: center;background-size: cover','Дартс','Дартс','Дартс','Noolemäng','Smiginis','Šautriņas'),
     
     funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bce94a6d-7fdb-4539-abc0-b52e2e3f532e/tab4-1);background-position: center;background-size: cover','Мини диско','Мини диско','Мини диско','Mini-disko','Vaikų diskoteka','Mini-disko'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bc8dc507-5c9f-49c5-be00-e4e964c238cc/tab4-2);background-position: center;background-size: cover','Tукан Тусейшн','Tукан Тусейшн','Tукан Тусейшн','','Tukano vakarėlis',''),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/bc8dc507-5c9f-49c5-be00-e4e964c238cc/tab4-2);background-position: center;background-size: cover','Tукан Тусейшн','Tукан Тусейшн','Toucan pidu','','Tukano vakarėlis',''),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/4cc9b050-d671-42ce-80fb-2f79c6b3dc8b/tab4-3);background-position: center;background-size: cover','Тематические фестивали для всей семьи','Тематические фестивали для всей семьи','Тематические фестивали для всей семьи','Tematiskie festivāli visai ģimenei','Teminiai festivaliai visai šeimai','Tematiskie festivāli visai ģimenei'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/4cc9b050-d671-42ce-80fb-2f79c6b3dc8b/tab4-3);background-position: center;background-size: cover','Тематические фестивали для всей семьи','Тематические фестивали для всей семьи','Тематические фестивали для всей семьи','Temaatilised festivalid kogu perele','Teminiai festivaliai visai šeimai','Tematiskie festivāli visai ģimenei'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/2ce25f71-3f23-486d-8738-afbd40678111/tab4-4);background-position: center;background-size: cover','Кинопоказы на открытом воздухе','Кинопоказы на открытом воздухе','Кинопоказы на открытом воздухе','Kinoizrādes zem klajas debess','Kino seansai po atviru dangumi','Kinoizrādes zem klajas debess'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/2ce25f71-3f23-486d-8738-afbd40678111/tab4-4);background-position: center;background-size: cover','Кинопоказы на открытом воздухе','Кинопоказы на открытом воздухе','Кинопоказы на открытом воздухе','Vabaõhufilmid','Kino seansai po atviru dangumi','Kinoizrādes zem klajas debess'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/eab60a0a-36d9-4950-a620-c1c5b4b9de24/tab4-5);background-position: center;background-size: cover','Кидс караоке','Кидс караоке','Кидс караоке','Bērnu karaoke','Karaokė vaikams','Bērnu karaoke'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/eab60a0a-36d9-4950-a620-c1c5b4b9de24/tab4-5);background-position: center;background-size: cover','Кидс караоке','Кидс караоке','Кидс караоке','Laste karaoke','Karaokė vaikams','Bērnu karaoke'),
     
-    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/d01a755a-dab4-4cb2-8da5-27d8ddeebe41/tab4-6);background-position: center;background-size: cover','Детское Сумо','Детское Сумо','Детское Сумо','Bērnu Sumo','Vaikiškas sumo','Bērnu Sumo'),
+    funSunProgrammPageAllEntSliderItem1('background: url(https://www.tui.ru/getmedia/d01a755a-dab4-4cb2-8da5-27d8ddeebe41/tab4-6);background-position: center;background-size: cover','Детское Сумо','Детское Сумо','Детское Сумо','Laste Sumo','Vaikiškas sumo','Bērnu Sumo'),
     
     
     
@@ -2211,11 +2209,11 @@ const funSunProgrammPageAllEntSliderItem2 = (background, titleRU, titleBY, title
 
 const funSunProgrammPageAllEntSliderItems2 = [
     
-    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover', 'Академия плавания', 'Академия плавания', 'Академия плавания','Peldēšanas akadēmija','Plaukimo akademija','Peldēšanas akadēmija'),
+    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/79ecef71-913b-4399-8911-ed61b4d79dd2/tab1-1);background-position: center;background-size: cover', 'Академия плавания', 'Академия плавания', 'Академия плавания','Ujumisakadeemia','Plaukimo akademija','Peldēšanas akadēmija'),
     
-    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover', 'Танцевальная академия', 'Танцевальная академия', 'Танцевальная академия','Deju akadēmija','Šokių pamokos','Deju akadēmija'),
+    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/9d6ab996-65d5-43e4-b972-17d16291c4a3/tab1-2);background-position: center;background-size: cover', 'Танцевальная академия', 'Танцевальная академия', 'Танцевальная академия','Tantsuakadeemia','Šokių pamokos','Deju akadēmija'),
     
-    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover', 'Футбольная Академия', 'Футбольная Академия', 'Футбольная Академия','Futbola akadēmija','Futbolo akademija','Futbola akadēmija'),
+    funSunProgrammPageAllEntSliderItem2('background: url(https://www.tui.ru/getmedia/9a277d44-dd0f-4c53-a180-046333c4257c/tab1-3);background-position: center;background-size: cover', 'Футбольная Академия', 'Футбольная Академия', 'Футбольная Академия','Jalgpalliakadeemia','Futbolo akademija','Futbola akadēmija'),
     
     
     
@@ -2237,19 +2235,19 @@ const funSunProgrammPageAllEntSliderItem3 = (background, titleRU, titleBY, title
 
 const funSunProgrammPageAllEntSliderItems3 = [
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Ceļotāju pulcēšanās. Vēstule no Toucan','Keliautojų susirinkimas. Tukano laiškas','Ceļotāju pulcēšanās. Vēstule no Toucan'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/aee56176-ff4b-4eb4-93ce-e409fe6ad040/tab2-1);background-position: center;background-size: cover','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Сбор путешественников. Письмо от Тукана','Reisijate kogunemine. Toucan kiri','Keliautojų susirinkimas. Tukano laiškas','Ceļotāju pulcēšanās. Vēstule no Toucan'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover','Тематические квесты и соревнования','Тематические квесты и соревнования','Тематические квесты и соревнования','Tematiskie kvesti un sacensības','Teminiai galvosūkiai ir žaidimai','Tematiskie kvesti un sacensības'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/e1556a4e-0b91-40c4-ac34-2e0a25257ed1/tab2-2);background-position: center;background-size: cover','Тематические квесты и соревнования','Тематические квесты и соревнования','Тематические квесты и соревнования','Temaatilised mängud ja võistlused','Teminiai galvosūkiai ir žaidimai','Tematiskie kvesti un sacensības'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover','Творческая мастерская Тукана','Творческая мастерская Тукана','Творческая мастерская Тукана','Toucan radošā darbnīca','Kūrybinės Tukano dirbtuvės','Toucan radošā darbnīca'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/f1478906-fcee-4f97-bd12-6120190df66a/tab2-3);background-position: center;background-size: cover','Творческая мастерская Тукана','Творческая мастерская Тукана','Творческая мастерская Тукана','Toucan loomingulised töötoad','Kūrybinės Tukano dirbtuvės','Toucan radošā darbnīca'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover','Научные эксперименты','Научные эксперименты','Научные эксперименты','Zinātniski eksperimenti','Mokslo eksperimentai','Zinātniski eksperimenti'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/19b71da6-c781-4712-b09d-f85445c67861/tab2-4);background-position: center;background-size: cover','Научные эксперименты','Научные эксперименты','Научные эксперименты','Teaduslikud eksperimendid','Mokslo eksperimentai','Zinātniski eksperimenti'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Sižeta un lomu spēles','Vaidmenų žaidimai','Sižeta un lomu spēles'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/6cf0d64a-ede1-419f-a680-fae4096e1ce6/tab2-5);background-position: center;background-size: cover','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Сюжетно-ролевые игры','Rollimängud','Vaidmenų žaidimai','Sižeta un lomu spēles'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover','Аквагрим','Аквагрим','Аквагрим','Akvagrims','Akvagrimas','Akvagrims'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/bf108f5e-ae09-492c-a34b-c5d5b12af52a/tab2-6);background-position: center;background-size: cover','Аквагрим','Аквагрим','Аквагрим','Näomaalingud','Akvagrimas','Akvagrims'),
     
-    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover','Тукан коктейль','Тукан коктейль','Тукан коктейль','Toucan kokteilis','Tukano kokteilis','Toucan kokteilis'),
+    funSunProgrammPageAllEntSliderItem3('background: url(https://www.tui.ru/getmedia/38608293-6b1c-459e-b7d6-71bcf146f480/tab2-7);background-position: center;background-size: cover','Тукан коктейль','Тукан коктейль','Тукан коктейль','Toucan kokteilid','Tukano kokteilis','Toucan kokteilis'),
     
     
     
@@ -2270,15 +2268,15 @@ const funSunProgrammPageAllEntSliderItem4 = (background, titleRU, titleBY, title
 
 const funSunProgrammPageAllEntSliderItems4 = [
     
-    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover','Пляжный волейбол','Пляжный волейбол','Пляжный волейбол','Pludmales volejbols','Paplūdimio tinklinis','Pludmales volejbols'),
+    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/ee791898-d7de-4e9e-b758-0675fefd58e9/tab3-1);background-position: center;background-size: cover','Пляжный волейбол','Пляжный волейбол','Пляжный волейбол','Rannavõrkpall','Paplūdimio tinklinis','Pludmales volejbols'),
     
-    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover','Аква аэробика','Аква аэробика','Аква аэробика','Ūdens aerobika','Vandens aerobika','Ūdens aerobika'),
+    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/b2b1f234-eaa8-49bf-bb14-dcf75037dea6/tab3-2);background-position: center;background-size: cover','Аква аэробика','Аква аэробика','Аква аэробика','Vesiaeroobika','Vandens aerobika','Ūdens aerobika'),
     
-    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Bērnu joga, deju aerobika, vingrošana','Joga vaikams, šokių aerobika, gimnastika','Bērnu joga, deju aerobika, vingrošana'),
+    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/6937b753-7e09-4b13-9ccc-8db2543d39c1/tab3-3);background-position: center;background-size: cover','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Детская йога, танцевальная аэробика, гимнастика','Laste jooga, tantsuaeroobika, võimlemine','Joga vaikams, šokių aerobika, gimnastika','Bērnu joga, deju aerobika, vingrošana'),
     
-    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover','Игры в бассейне','Игры в бассейне','Игры в бассейне','Spēles baseinā','Žaidimai baseine','Spēles baseinā'),
+    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/e6973f11-f60c-40e9-b8f8-cfb91da7f204/tab3-4);background-position: center;background-size: cover','Игры в бассейне','Игры в бассейне','Игры в бассейне','Mängud basseinis','Žaidimai baseine','Spēles baseinā'),
     
-    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover','Мини гольф','Мини гольф','Мини гольф','Mini-golfs','Mini golfas','Mini-golfs'),
+    funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/7f9ef707-3095-4144-8be6-59d4d03ddf05/tab3-5);background-position: center;background-size: cover','Мини гольф','Мини гольф','Мини гольф','Mini-golf','Mini golfas','Mini-golfs'),
     
     funSunProgrammPageAllEntSliderItem4('background: url(https://www.tui.ru/getmedia/803107f8-90a2-4432-ad23-b32b2f5f48b1/tab3-6);background-position: center;background-size: cover','Стрельба из лука','Стрельба из лука','Стрельба из лука','Loka šaušana','Šaudymas iš lanko','Loka šaušana'),
     

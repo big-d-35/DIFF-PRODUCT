@@ -350,6 +350,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyRU: 'Италия',
         homeToucanBlockPageSpainRU: 'Испания',
         homeToucanBlockPageRussiaRU: 'Россия, Сочи',
+        homeToucanBlockPageOaeRU: 'ОАЭ',
         
         homeDToucanBlockPageLinkTextBY: 'Подробнее',
         homeToucanBlockPageTurkeyBY: 'Турция',
@@ -358,6 +359,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyBY: 'Италия',
         homeToucanBlockPageSpainBY: 'Испания',
         homeToucanBlockPageRussiaBY: 'Россия, Сочи',
+        homeToucanBlockPageOaeBY: 'ОАЭ',
         
         homeToucanBlockPageLinkTextUA: 'Подробнее',
         homeToucanBlockPageTurkeyUA: 'Турция',
@@ -366,6 +368,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyUA: 'Италия',
         homeToucanBlockPageSpainUA: 'Испания',
         homeToucanBlockPageRussiaUA: 'Россия, Сочи',
+        homeToucanBlockPageOaeUA: 'ОАЭ',
         
         homeToucanBlockPageLinkTextEE: 'Täpsemalt',
         homeToucanBlockPageTurkeyEE: 'Türgi',
@@ -374,6 +377,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyEE: '',
         homeToucanBlockPageSpainEE: 'Hispaania',
         homeToucanBlockPageRussiaEE: '',
+        homeToucanBlockPageOaeEE: 'OAE',
         
         homeToucanBlockPageLinkTextLT: 'Plačiau',
         homeToucanBlockPageTurkeyLT: 'Turkija',
@@ -382,6 +386,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyLT: 'Italija',
         homeToucanBlockPageSpainLT: 'Ispanija',
         homeToucanBlockPageRussiaLT: 'Rusija',
+        homeToucanBlockPageOaeLT: 'OAE',
         
         homeToucanBlockPageLinkTextLV: 'Sīkāk',
         homeToucanBlockPageTurkeyLV: 'Turcija',
@@ -390,6 +395,7 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanBlockPageItalyLV: 'Itālija',
         homeToucanBlockPageSpainLV: 'Spānija',
         homeToucanBlockPageRussiaLV: 'Krievija',
+        homeToucanBlockPageOaeLV: 'OAE',
                
         homeToucanHotelLink1: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
         homeToucanHotelLinkClient1: '/hotel/europe-turkey-kemer-goynuk-tui__fun__sun__miarosa__ghazal__resort/',
@@ -436,8 +442,15 @@ const homePageToucanBlockVideoHotels = new Vue ({
         homeToucanHotelName11: 'Don Juan Tossa 4*',
         
         homeToucanHotelLink12: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
-        homeToucanHotelLink12: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
+        homeToucanHotelLinkClient12: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom/',
         homeToucanHotelName12: 'Бархатные сезоны 3*',
         
+        homeToucanHotelLink13: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort',
+        homeToucanHotelLinkClient13: '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/',
+        homeToucanHotelName13: 'Al Hamra Village Golf & Beach Resort 4*',
+        
+        homeToucanHotelLink14: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
+        homeToucanHotelLinkClient14: '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/',
+        homeToucanHotelName14: 'Al Hamra Residence 5*',
     }
 });

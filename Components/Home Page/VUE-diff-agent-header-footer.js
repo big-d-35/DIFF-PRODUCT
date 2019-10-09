@@ -224,8 +224,8 @@ const AgentMenuFooter = new Vue ({
         agentFooterItemMailNameUA: 'diffproduct@tui.ua',
         agentFooterItemMailEE: 'mailto:tallinn@tuibaltics.eu',
         agentFooterItemMailNameEE: 'tallinn@tuibaltics.eu',
-        agentFooterItemMailLT: 'mailto:book@tuibaltics.eu',
-        agentFooterItemMailNameLT: 'book@tuibaltics.eu',
+        agentFooterItemMailLT: 'mailto:rezervacijos@tuibaltics.eu',
+        agentFooterItemMailNameLT: 'rezervacijos@tuibaltics.eu',
         agentFooterItemMailLV: 'mailto:book@tuibaltics.eu',
         agentFooterItemMailNameLV: 'book@tuibaltics.eu',
     }
