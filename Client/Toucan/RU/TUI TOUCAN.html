@@ -530,30 +530,286 @@
         </div>
     </div>
 
-    <div class="container-fluid block_3" id="hotels">
+   <!-- TOUCAN ОТЕЛИ СТАРТ ======================================= --> 
+       
+<div class="container-fluid block_3" id="hotels-toucan">
         <div class="container">
-            <h2>ОТЕЛИ С ДЕТСКИМИ КЛУБАМИ TUI МИНИ ТУКАН</h2>
+            <h2>{{titleRU}}</h2>
+        </div>
+
+        <div class="row">
+            <div class="container sl" id="miniTucoun">
+                <div class="buttons-navigations">
+                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">{{country1RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country2RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country3RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country4RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b7">{{country5RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b8">{{country6RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b10">{{country7RU}}</a><!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
+                </div>
+
+                        
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                <div class="slider slider_2 " id="s2b2">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country1Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkAgent ">{{ country1Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                <div class="slider slider_2 n" id="s2b3">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country2Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkAgent ">{{ country2Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                <div class="slider slider_2 n" id="s2b4">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country3Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country3Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country3Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkAgent ">{{ country3Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                <div class="slider slider_2 n" id="s2b5">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country4Hotel in country4Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country4Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country4Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country4Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkAgent ">{{ country4Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                <div class="slider slider_2 n" id="s2b6">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country5Hotel in country5Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country5Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country5Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country5Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkAgent ">{{ country5Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                <div class="slider slider_2 n" id="s2b7">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country6Hotel in country6Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country6Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country6Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country6Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkAgent ">{{ country6Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                <div class="slider slider_2 n" id="s2b8">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country7Hotel in country7Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country7Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country7Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country7Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country7Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country7Hotel.hotelLinkAgent ">{{ country7Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                <div class="slider slider_2 n" id="s2b10">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country8Hotel in country8Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country8Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country8Hotel.countryNameRU }}</h4>
+
+                                    <p class="gey_p">{{ country8Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelRUItem in country8Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country8Hotel.hotelLinkAgent ">{{ country8Hotel.buttonRU }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                
+            </div>
         </div>
     </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-<!-- PART 2 =====================================================================================-->
-
-
-
-
-
-
-
+    
+   
+  <!-- TOUCAN ОТЕЛИ END ======================================= --> 
 
 
 
@@ -869,14 +1125,7 @@
     <div class="detailed-information"></div>
     <div class="container" style="margin-bottom: 3em;">
         <div style="background:#e1f4fb;padding: 10px 7px;">
-            <div style="margin-top:10px;text-align:center;">
-                <span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/8aeeceef-4d31-433b-ae92-1e6b24a5ec2a/Mini-toucan-ru-2019__" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Турции</a>
-            </div>
-            <!--<div style="margin-top:10px;text-align:center;">
-                <span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/e20a2c16-d84d-4b8d-917a-2ecab6bbb8a7/Toucan-Mini-Eu-RU" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Европе</a>
-            </div>-->
-            <div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://tui.ru/getmedia/365fd0ca-2219-4a7c-9d65-6337bc68f6b8/Sochi-Mini-Toucan-upd" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Сочи</a>
-            </div>
+            <div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://www.tui.ru/getmedia/f6ac0b63-9b0d-49a0-9f84-857bac7bb8b8/progamma-UAE-Toucan-Mini-2020" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в ОАЭ</a></div>
 
         </div>
     </div>
@@ -919,7 +1168,47 @@
         </div>
     </div>
 </div><!-- <script src="dist/js/all.js"></script> -->
+<!-- SCRIPT загрузки VUE  =================================================== -->
+<script>
+    const vueLinks = [
+        'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+        'https://www.tui.ru/getmedia/5996765f-2b1c-450d-b2df-965fa6420615/VUE-Toucan-hot-hotels-ru-by-ua',
+        'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all',
+        
+    ];
 
+    function add_files(arr, type) {
+
+        count = 0;
+
+        function new_file(link) {
+            var script = document.createElement(type);
+            script.src = link;
+            script.async = false;
+            document.head.appendChild(script);
+            if (count < arr.length - 1) {
+                script.onload = function() {
+                    new_file(arr[count]);
+                }
+                script.onerror = function() {
+                    throw new Error(arr[count - 1] + ' loading error');
+                }
+                count++;
+            }
+        }
+
+        function error(text) {
+            throw new Error('the function takes two required arguments');
+        }
+
+        (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+            (arr === undefined) ? error('no link array') :
+            (type === undefined) ? error('no file type') : '';
+        new_file(arr[count]);
+    }
+
+    add_files(vueLinks, 'script');
+</script>
 <script type="text/javascript">
     function smoothScrolling(element) {
         document.querySelector(element).scrollIntoView({

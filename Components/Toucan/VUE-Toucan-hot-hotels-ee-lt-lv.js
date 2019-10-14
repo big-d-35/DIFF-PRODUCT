@@ -15,9 +15,9 @@
 const toucanHotHotels = new Vue ({
     el: '#hotels-toucan',
     data: {
-        titleEE: 'ОТЕЛИ С ДЕТСКИМИ КЛУБАМИ МИНИ ТУКАН',
-        titleLT: 'ОТЕЛИ С ДЕТСКИМИ КЛУБАМИ МИНИ ТУКАН',
-        titleLV: 'ОТЕЛИ С ДЕТСКИМИ КЛУБАМИ МИНИ ТУКАН',
+        titleEE: 'MINI TOUCAN LASTEKLUBID',
+        titleLT: 'MINI TOUCAN VAIKŲ KLUBAI',
+        titleLV: 'BĒRNU KLUBI MINI TOUCAN',
         
         //RU 
         country1EE: 'Турция',
@@ -38,13 +38,13 @@ const toucanHotHotels = new Vue ({
         country7LT: 'ОАЭ',
         
         //LV 
-        country1LV: 'Турция',
-        country2LV: 'Кипр',
+        country1LV: 'TURCIJA',
+        country2LV: 'KIPRA',
         country3LV: 'Черногория',
         country4LV: 'Италия',
-        country5LV: 'Испания',
+        country5LV: 'SPĀNIJA',
         country6LV: 'Россия',
-        country7LV: 'ОАЭ',
+        country7LV: 'OAE',
         
         //HOTELS 1 ТУРЦИЯ
         country1Hotels : [
