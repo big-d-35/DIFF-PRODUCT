@@ -1,104 +1,42 @@
-<meta charset="UTF-8" />
-<title></title>
-<script src="https://www.tui.ru/getmedia/d87eaac3-bfe8-4d28-b122-f5631b032cc1/template_base_diff" type="text/javascript">
-</script>
-<script type="text/javascript">
-    var template_script = document.createElement("script");
-    template_script.src = "https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine";
-    document.head.appendChild(template_script);
-    template_script.onload = function() {
-        on_page(render("#table-template", ".block-table", table_tc))
-    }
-    var videoId = 'TF6Qc5ILjl4';
-</script>
-<script async src="https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all" type="text/javascript">
-</script>
-<link href="https://www.tui.ru/getmedia/c51e2c41-667b-4ebd-8ad9-484a6efbd767/all" rel="stylesheet" type="text/css" />
-<meta content="width=device-width,initial-scale=1" name="viewport" />
+
+<title>MINI TOUCAN</title>
+<!--
+Привет.
+Ниже файл с информацией для ВСЕХ страниц TOUCAN для клиентского и агентского сайте (RU BY UA  EE LT LV)
+
+Для того чтобы изменить информацию достаточно заменить ее в этом файле и обновить файл который лежит на сайте:
+
+tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ JS \ VUE-Toucan-page.js
+
+ИЛИ
+  
+tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ JS \ VUE-Toucan-hot-hotels-ru-by-ua.js
+  
+ВНИМАНИЕ! именно нажать на кнопку заменить, иначе придется менять ссылку на всех страницах.
+
+Обрати внимение на название переменных в файле html, если в конце есть указание к стране (например имя оканчивается myNameRU - значит это перевод на русский, myNameEE - значит это перевод на эстонский и тп)
+
+Также обрати внимание на название ссылок - если оканчивается на Client - значит ссылка на клиент, если Agent - значит ссылка на агенте.
+
+Некоторые страницы в консоли могут ругаться на отсутствие некоторых элементов, это нормально, просто у нас один файл на все страницы и соответственно на некоторых страницах нет элементов с других страниц, поэтому не обращай внимание.
+
+Эта инструкция подходит для всех страниц ДИФФ ПРОДУКТА
+
+Пожалуйста если вносите изменения ставьте в известность меня: 
+aleksandr.rodionov@tui.ru
+
+-->
+   
 <style type="text/css">
-    body {
-        overflow: visible;
-        background-color: white;
-    }
-
-    svg {
-        width: auto !important;
-    }
-
-    .promotion .block-circle {
-        display: flex !important;
-    }
-
-    .top-toucan {
-        background-size: cover !important;
-    }
-
-    .ActionPage-container {
-        min-width: 100% !important;
-    }
-
-    .row-all {
-        background: white !important;
-        color: #092a5e !important;
-    }
-
-    #bx_form_iframe_34 {
-        min-height: 600px;
-    }
-
-    .Header {
-        height: 100% !important;
-    }
-
-    .slide-height_tall {
-        min-height: 260px !important;
-    }
-
-    .sliders-hotels {
-        min-height: 460px;
-    }
-
-    .time-start {
-        display: none;
-    }
-
-    .slide-height_tallone {
-        min-height: 176px !important;
-    }
-
-    .slide-height_talltwo {
-        min-height: 240px !important;
-    }
-
-    .top-informations {
-        width: 60% !important;
-    }
-
-    .footer {
-        width: 100%;
-    }
-
-    .footer-row img {
-        width: auto;
-    }
-
-    .price-num>p>b::after {
-        content: " грн";
-    }
-
-    .icons-social {
-        fill: #00265f;
-        width: 40px !important;
-        height: 40px !important;
-    }
-
     .button-slider-active {
         -webkit-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
         -moz-box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
         box-shadow: inset 0 -4px 0 0 #C3E8FB !important;
         background-color: #C3E8FB !important;
     }
-
+    .hotel__link {
+           color: rgb(8, 42, 94)!important;
+      }
     .slider-content ul li {
         color: #0c2c5c !important;
     }
@@ -106,1051 +44,719 @@
     .text-blue-color {
         color: #0c2c5c !important;
     }
-
-    @media screen and (max-width: 792px) {
-        .top-informations {
-            width: 100% !important;
-        }
+    .slider-hotels {
+        min-height: 600px!important;
     }
-
-    strong {
-        font-weight: bold !important;
-    }
-
-    .price-num {
-        display: block;
+    .oae {
+        background-image: url(https://www.tui.ru/getmedia/3b08c919-3f75-46fc-9f2e-489254b13db4/bckg-oae)!important;
     }
 </style>
-<div class="header"></div>
+<script src="https://www.tui.ru/getmedia/d87eaac3-bfe8-4d28-b122-f5631b032cc1/template_base_diff" type="text/javascript"></script>
+<!-- SCRIPT загрузки VUE  =================================================== -->
+        <script type="text/javascript">
+            const vueLinks = [
+                'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
+                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
+                'https://www.tui.ru/getmedia/1e4c5d01-95d0-41bc-8cbe-6fb7c86692ca/VUE-Toucan-hot-hotels-ru-by-ua',
+        'https://www.tui.ru/getmedia/7ee746b3-e5b2-4489-824c-c9868870ebc0/VUE-Toucan-page',
+                
+                'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all',
 
+            ];
+
+            function add_files(arr, type) {
+
+                count = 0;
+
+                function new_file(link) {
+                    var script = document.createElement(type);
+                    script.src = link;
+                    script.async = false;
+                    document.head.appendChild(script);
+                    if (count < arr.length - 1) {
+                        script.onload = function() {
+                            new_file(arr[count]);
+                        }
+                        script.onerror = function() {
+                            throw new Error(arr[count - 1] + ' loading error');
+                        }
+                        count++;
+                    }
+                }
+
+                function error(text) {
+                    throw new Error('the function takes two required arguments');
+                }
+
+                (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
+                    (arr === undefined) ? error('no link array') :
+                    (type === undefined) ? error('no file type') : '';
+                new_file(arr[count]);
+            }
+
+            add_files(vueLinks, 'script');
+        </script>
 <div class="row-all">
-    <div class="container-fluid top-slider top-toucan">
+    
+
+    <!-- TOUCAN HEADER PART START  ============================= -->
+
+    <div class="container-fluid top-slider top-toucan" id="toucan-header-part">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 left-row">
                     <div class="topLeft row">
-                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" src="https://www.tui.ru/getmedia/eda1b56f-2532-46eb-8626-65425d799edf/TC-logo-mini-vertical" /></div>
+                        <div class="icon-top col-md-2 col-3"><img alt="FN_logo" v-bind:src=" logoLink " /></div>
                     </div>
 
-                    <h2 style="margin-top:0!important">Детский клуб Мини Тукан глазами детей и родителей:</h2>
+                    <h2 style="margin-top:0!important">{{titleUA}}</h2>
 
                     <div class="col-12 die-all">
                         <div class="die row">
                             <div class="circle-logo" style="background: #7ad8f9"><img src="https://www.tui.ru/getmedia/6fba75b5-9bbb-4e6b-b399-48793450c9c8/balloons" /></div>
 
-                            <div class="circle-text col-md-11 d1">Аниматоры, с которыми интересно</div>
+                            <div class="circle-text col-md-11 d1">{{text1UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #23d1c7"><img src="https://www.tui.ru/getmedia/41050458-ae4f-4b13-9ac0-07aef66c0c51/chat" /></div>
 
-                            <div class="circle-text col-md-11 d2">Всё понятно, потому что говорят на русском</div>
+                            <div class="circle-text col-md-11 d2">{{text2UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #fde900"><img src="https://www.tui.ru/getmedia/16965f15-97a8-4096-9f64-4b2757b885b1/eat" /></div>
 
-                            <div class="circle-text col-md-11 d3">Детское меню в буфете &laquo;Тукан&raquo;</div>
+                            <div class="circle-text col-md-11 d3">{{text3UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #febd00"><img src="https://www.tui.ru/getmedia/c4094300-05e0-46f5-9b31-cd54cee92900/disco" /></div>
 
-                            <div class="circle-text col-md-11 d4">Мини-дискотека под любимые хиты</div>
+                            <div class="circle-text col-md-11 d4">{{text4UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #b954af"><img src="https://www.tui.ru/getmedia/e7c4e9b2-14f3-4c4d-ae60-26105ca16ace/tv" /></div>
 
-                            <div class="circle-text col-md-11 d6">Умные игры, которые развивают</div>
+                            <div class="circle-text col-md-11 d6">{{text5UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #b19fd3"><img src="https://www.tui.ru/getmedia/3cbdcadb-5f69-413d-99c7-a8ae9048c07d/cinema" /></div>
 
-                            <div class="circle-text col-md-11 d7">Любимые мультфильмы со смыслом</div>
+                            <div class="circle-text col-md-11 d7">{{text6UA}}</div>
                         </div>
 
                         <div class="die row">
                             <div class="circle-logo" style="background: #afdf00"><img src="https://www.tui.ru/getmedia/9d5c77fc-36f2-48e7-b759-01d68acd0dfe/playground" /></div>
 
-                            <div class="circle-text col-md-11 d8">Современная игровая площадка</div>
+                            <div class="circle-text col-md-11 d8">{{text7UA}}</div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-6 top-right row">
                     <div class="col-md-6 col-6 video">
-                        <div id="player"></div>
+                        <div id="player">&nbsp;</div>
 
-                        <div class="play video-toucan"><img src="https://www.tui.ru/getmedia/8f5429a2-487b-4807-bec3-bec1a2088a67/play" /></div>
+                        <div class="play video-toucan"><img v-bind:src=" videoLink " /></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+
+    <!-- TOUCAN HEADER PART START  ============================= -->
+    
+    
+    <!-- MENU START ===================================================== -->
+
+    <div class="container" id="toucan-menu">
         <div class="row">
             <div class="buttons-slider button-slider-mobile col-md-12">
-                <div class="col-md-2 col-12 button-slider button-slider-active" id="tb" onclick="smoothScrolling('#advantagesHotels')">
-                    <p>Это Мини Тукан</p>
-                </div>
+                <a class="col-md-2 col-12 button-slider button-slider-active" id="tb" href="#advantagesHotels">
+                    <p>{{menu1UA}}</p>
+                </a>
 
-                <div class="button-slider col-md-1 col-12" onclick="smoothScrolling('#fishka')">
-                    <p>Фишки</p>
-                </div>
+                <a class="button-slider col-md-1 col-12" href="#fishka">
+                    <p>{{menu2UA}}</p>
+                </a>
 
-                <div class="button-slider col-md-2 col-12" onclick="smoothScrolling('#hotels')">
-                    <p>Отели</p>
-                </div>
+                <a class="button-slider col-md-2 col-12" href="#hotels">
+                    <p>{{menu3UA}}</p>
+                </a>
 
-                <div class="button-slider col-md-3 col-12" onclick="window.open('https://www.tui.ua/concepts/tui-toucan/entertainment-program/')">
-                    <p>Программа развлечений</p>
-                </div>
+                <a class="button-slider col-md-3 col-12" href="/concepts/tui-toucan/entertainment-program/" target="_blank">
+                    <p>{{menu4UA}}</p>
+                </a>
+
+                <a class="col-md-3 col-12 button-slider" v-bind:href=" menu5LinkUA " target="_blank">
+                    <p>{{menu5UA}}</p>
+                </a>
             </div>
         </div>
     </div>
+    <!-- MENU END ===================================================== -->
+    
+<!-- ТАБЛИЦА ОТЕЛЕЙ START ======================= -->
 
     <div class="container text-content" id="advantagesHotels">
         <script id="table-template" type="text/x-handlebars-template">
             <h2>{{{title_page_origin}}}</h2>
-			<p>{{{description_page_origin}}}</p>
-			<table class="contentTable">
-			     <tbody>
-			             <tr>
-			                 <td style="width:50%"><b>{{title}}</b></td>
-			                 <td><b>{{description}}</b></td>
-			             </tr>
-			     {{#each hotel}}
-			         {{#if country_hotel}}
-			             <tr>
-			                 <td style="text-align: center" colspan="2">{{country_hotel}}</td>
-			             </tr>
-			             {{/if}}
-			       <tr>
-			           <td><a href="{{href_tui_ua}}">{{name_hotel}}</a></td>
-			           <td>{{data_hotel}}</td>
-			       </tr>
-			     {{/each}}
-			   </tbody>
-			 </table>
-			</script>
-        <div class="block-table"></div>
-        <!-- <table class="contentTable">
-    <tbody>
-        <tr>
-            <td><strong>Отели с Клубами TUI Мини Тукан</strong></td>
-            <td><strong>Дата открытия клубов Тукан в отелях</strong></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;"><b>Турция</b></td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1562900400000&amp;directionCountryTo=18803&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=30162&amp;TourType=4">Kilikya Resort Camyuva 5*</a></td>
-            <td rowspan="2">01.05.2019</td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-turkey-alanya-incekum-pegasos__club/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1562900400000&amp;directionCountryTo=18803&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=29619&amp;TourType=4">Pegasos Club 4*</a>, <a href="http://www.tui.ua/hotel/europe-turkey-alanya-incekum-pegasos__resort/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1562900400000&amp;directionCountryTo=18803&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=29621&amp;TourType=4">Pegasos Resort 5*</a>, <a href="http://www.tui.ua/hotel/europe-turkey-alanya-incekum-pegasos__royal/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1562900400000&amp;directionCountryTo=18803&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=29622&amp;TourType=4">Pegasos Royal 5*</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;"><b>Кипр</b></td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1560546000000&amp;directionCountryTo=18772&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=20028&amp;TourType=4">Christofinia 4*</a></td>
-            <td>01.05.2019</td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1560546000000&amp;directionCountryTo=18772&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=28123&amp;TourType=4">St Raphael Resort 5*</a></td>
-            <td>15.05.2019</td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;"><b>Черногория</b></td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1560546000000&amp;directionCountryTo=18772&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=32057&amp;TourType=4">Aleksandar 4*</a></td>
-            <td rowspan="2">01.06.2019</td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1560546000000&amp;directionCountryTo=18772&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=32072&amp;TourType=4">Castellastva 4*</a></td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;"><b>Италия</b></td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/europe-italy-calabria-pizzo-garden__resort__calabria__(ex__valtur__garden)/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1560546000000&amp;directionCountryTo=18772&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=272329&amp;TourType=4">Garden Resort Calabria (ex. Valtur Garden) 4*</a></td>
-            <td>01.06.2019</td>
-        </tr>
-        <tr>
-            <td colspan="2" style="text-align: center;"><b>ОАЭ</b></td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1555362000000&amp;directionCountryTo=20613&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=215136&amp;TourType=2">Al Hamra Village Golf &amp; Beach Resort 4*</a></td>
-            <td>Открыт</td>
-        </tr>
-        <tr>
-            <td><a href="http://www.tui.ua/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/?HotelAttribute=1000720&amp;adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1555362000000&amp;directionCountryTo=20613&amp;directionFrom=235144&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;hotelId=315346&amp;TourType=2">Al Hamra Residence 5*</a></td>
-            <td>Открыт</td>
-        </tr>
-    </tbody>
-</table> -->
+           <p>{{{description_page_origin}}}</p>
+                    <table class="contentTable">
+                         <tbody>
+                                 <tr>
+                                     <td style="width:50%"><b>{{title}}</b></td>
+                                     <td><b>{{description}}</b></td>
+                                 </tr>
+                         {{#each hotel}}
+                             {{#if country_hotel}}
+                                 <tr>
+                                     <td style="text-align: center" colspan="2">{{country_hotel}}</td>
+                                 </tr>
+                                 {{/if}}
+                           <tr>
+                               <td><a href="{{href_tui_ua}}">{{name_hotel}}</a></td>
+                               <td>{{data_hotel}}</td>
+                           </tr>
+                         {{/each}}
+                       </tbody>
+                     </table>
+                     {{#each table_description}}
+                       {{#if desc_link}}
+                           <a href="{{desc_link}}">{{desc_info}}</a>
+                       {{else}}
+                           <div class="description_table_{{count}}">{{desc_info}}</div>
+                       {{/if}}
+                     {{/each}}
+      </script>
+        <div class="block-table">&nbsp;</div>
     </div>
 
-    <div>
+    <!-- ТАБЛИЦА ОТЕЛЕЙ END ======================= -->
+  <!-- TOUCAN MAIN PAGE START ================================== -->
+
+    <div id="toucan-main-page">
         <div class="container" id="fishka">
-            <h2>КЛЮЧЕВЫЕ МОМЕНТЫ</h2>
+            <h2>{{titleUA}}</h2>
         </div>
-    </div>
 
-    <div class="container hotels-club-country sl">
-        <div class="buttons-navigations"><a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">Веселимся с Туканом</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом --> <a class="button-navigatin" data-block=".slider_1" href="#s1b2">В ресторане</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ В ресторане --> <a class="button-navigatin" data-block=".slider_1" href="#s1b3">Территория детства</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
-        </div>
-        <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом -->
+        <div class="container hotels-club-country sl">
+            <div class="buttons-navigations">
+                <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{menu1UA}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом -->
+                <a class="button-navigatin" data-block=".slider_1" href="#s1b2">{{menu2UA}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ В ресторане -->
+                <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{menu3UA}}</a> <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
+            </div>
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Веселимся с Туканом -->
 
         <div class="slider slider_1" id="s1b1">
-            <div class="row-slider" data-col="3">
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/408ffea0-5e1f-4c91-a12d-a40ca3ac3c7f/T1);background-position: center;background-size: cover"></div>
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider1item in keySlider1items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider1item.background ">&nbsp;</div>
 
-                        <div class="slider-content">
-                            <h4>Тукан&ndash;Путешественник</h4>
+                            <div class="slider-content">
+                                <h4>{{keySlider1item.nameUA}}</h4>
 
-                            <p class="gey_p text-blue-color">Вас неоднократно озадачивало внезапное &ldquo;маам, паап, а почему...?&rdquo; и вы хотите хотя бы в отпуске размышлять только над одним - &ldquo;почему так хорошо...&rdquo;? Тогда вам точно поможет наш Тукан, вместе с ним дети будут изучать устройство мира. Малыш получит настоящий TUI Мини Тукан загранпаспорт и отправится в чудесное путешествие по планете в поисках новых приключений и знаний.</p>
+                                <p class="gey_p text-blue-color">{{keySlider1item.textUA}}</p>
+                            </div>
                         </div>
                     </div>
+
+
+
                 </div>
+            </div>
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ В РЕСТОРАНЕ -->
 
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/9ac47302-573f-4c73-8f3e-3b0df6eff70e/T2);background-position: center;background-size: cover"></div>
+            <div class="slider slider_1 n" id="s1b2">
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider2item in keySlider2items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider2item.background ">&nbsp;</div>
 
-                        <div class="slider-content">
-                            <h4>Увлекательная вечерняя программа!</h4>
+                            <div class="slider-content">
+                                <h4>{{keySlider2item.nameUA}}</h4>
 
-                            <p class="gey_p text-blue-color"></p>
-
-                            <ul style="min-height: inherit;">
-                                <li>Заводное мини-диско</li>
-                                <li>Просмотр интересных новых мультфильмов</li>
-                                <li>Вечеринка Тукана</li>
-                            </ul>
-
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/86f251ae-067d-459d-a438-3ad36083658e/shutterstock_315127931-min);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Магия кино</h4>
-
-                            <p class="gey_p text-blue-color">Каждый вечер для тех, кто уже готов спать, читаем красивую восточную сказку.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/491137fa-480b-4b12-b8d2-ebf19448abbe/T4);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Подвижные игры</h4>
-
-                            <p class="gey_p text-blue-color">Выплескиваем энергию в играх! Сюжетно-ролевые игры: &laquo;Поварята&raquo;, &laquo;Через джунгли на лиане&raquo;, &laquo;Поиск сокровищ&raquo;.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/3f3ec809-f4de-4504-ac3f-345510238441/T5_1);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Подарки от Тукана</h4>
-
-                            <p class="gey_p text-blue-color">Подарки любят все, а мы любим наших клиентов. Поэтому при первом визите в клуб TUI Мини Тукан наши маленькие гости получают подарок &ndash; футболку с фирменной символикой Тукана. Теперь мы одна команда!</p>
+                                <p class="gey_p text-blue-color">{{keySlider2item.textUA}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
+            <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
 
-        <div class="slider slider_1 n" id="s1b2">
-            <div class="row-slider" data-col="3">
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/1c624da1-49f4-431f-a73b-17380f205648/T7);background-position: center;background-size: cover"></div>
+            <div class="slider slider_1 n" id="s1b3">
+                <div class="row-slider" data-col="3">
+                    <div class="col-md-4 myslide col-slider-3" v-for="keySlider3item in keySlider3items">
+                        <div class="sliders-hotels" >
+                            <div class="imgSlider" v-bind:style=" keySlider3item.background ">&nbsp;</div>
 
-                        <div class="slider-content">
-                            <h4>Детское меню</h4>
+                            <div class="slider-content">
+                                <h4>{{keySlider3item.nameUA}}</h4>
 
-                            <p class="gey_p text-blue-color">Да, для наших маленьких - и очень самостоятельных &ndash; путешественников есть детское меню* (не во всех отелях). Яркая детская мебель, небьющаяся посуда и большой выбор блюд: от супов до десертов. Малыш может самостоятельно составить себе меню и пообедать в кругу друзей. А, как известно, в компании с аппетитом едят даже большие привереды! * Наличие детского меню в конкретном отеле смотрите в описании на странице нужного вам отеля с Клубом Тукан.</p>
+                                <p class="gey_p text-blue-color">{{keySlider3item.textUA}}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <!--           <div class="col-md-4 myslide col-slider-3">
-            <div class="sliders-hotels">
-              <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/035a0a3b-e040-477d-9f03-f5b764922964/T8);background-position: center;background-size: cover"></div>
-              <div class="slider-content">
-                <h4>Все для детей и их мам</h4>
-                <p class="gey_p text-blue-color">Детские стульчики, микроволновка для подогрева детских бутылочек &ndash; мы позаботились об этом. Вам осталась забота о ваших детях.</p>
-              </div>
-            </div>
-          </div> -->
-            </div>
-        </div>
-        <!-- КЛЮЧЕВЫЕ МОМЕНТЫ Территория детства -->
 
-        <div class="slider slider_1 n" id="s1b3">
-            <div class="row-slider" data-col="3">
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/d1df5210-7b9c-4c3b-bb1f-d59d57ad1dce/T9);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Открытые площадки для игр</h4>
-
-                            <p class="gey_p text-blue-color">Здесь запрещена фраза &laquo;туда нельзя&raquo; &ndash; везде можно! Игровые площадки на открытом воздухе манят качелями-каруселями-горками, зелёные лужайки словно специально созданы для игр. Все ярко, весело и безопасно!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/ac46be1b-d7f2-4b9c-be0c-2e789948fba5/T10);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Детские бассейны</h4>
-
-                            <p class="gey_p text-blue-color">Какой же отдых без игр на воде? А за безопасность и развлечения будут отвечать наши профессиональные аниматоры.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-3">
-                    <div class="sliders-hotels">
-                        <div class="imgSlider" style="background: url(https://www.tui.ru/getmedia/c6d2a9fa-4436-45bc-8466-1a537c380248/T11_3);background-position: center;background-size: cover"></div>
-
-                        <div class="slider-content">
-                            <h4>Клубные комнаты</h4>
-
-                            <p class="gey_p text-blue-color">Сама атмосфера комнат клуба настраивает на веселье и любознательность: яркая, удобная мебель, наборы для творчества и настольные игры, широкие экраны с захватывающими мультиками.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row-ski">
-        <!--<div class="tucan-andorra">
-<div class="container toucan-ski" id="ski-andorra">
-<div class="icon-toucan">
-<div class="col-md-3 col-5"><img alt="" src="https://www.tui.ru/getmedia/e3f6980f-1aaf-46eb-9595-c5eab0b6afe4/TC-ski-chool-logo_web-min/" /></div>
-</div>
-
-<div class="col-md-4">
-<h2>Тукан Ski<br />
-в Андорре!</h2>
-</div>
-</div>
-
-<div>
-<div class="container">
-<h2>Тукан Ski научит вашего ребёнка кататься на лыжах!</h2>
-</div>
-</div>
-
-<div class="container">
-<p style="color: #082a5e">С 29.12.2018 по 08.03.2019 в Андорре (в зоне катания Грандвалира) работает горнолыжная школа для детей &ndash; эксклюзивно для путешественников TUI. Обучать вашего ребёнка будут лучшие профессионалы в лучшем для этого месте &ndash; горнолыжном курорте Сольдеу.</p>
-</div>
-
-<div class="container">
-<div class="row">
-<div class="col-md-6"><img alt="" src="https://www.tui.ru/getmedia/62e5f338-c8b0-4c53-a5d5-4132f66081fa/shutterstock_86881663-min/" /></div>
-
-<div class="col-md-6">
-<p style="margin: 0"><b>Тукан Ski это:</b></p>
-
-<ul>
-  <li>Обучение технике горнолыжного спорта детей от 6 до 17 лет</li>
-  <li>Русскоговорящий инструктор</li>
-  <li>Максимальное кол-во участников в группе 6 человек</li>
-  <li>Время  занятий  с  10:00-13:00 без перерыва на обед.</li>
-  <li style="list-style: none"><strong>Акция  до 31.12</strong></li>
-  <li>Стоимость (дети 6-11 лет) = 392 евро</li>
-  <li>Стоимость (дети 12-17 лет) = 451 евро</li>
-</ul>
-
-<p style="margin: 0.5em 0 0"><b>Стоимость включает:</b></p>
-
-<ul>
-  <li>Ски-пасс</li>
-  <li>Групповые горнолыжные занятия на 5 дней (по 3 часа каждый день)</li>
-</ul>
-
-<div class="row price">
-<div class="col-md-5">
-<p class="tour_a"><a href="/search/?adults=2&amp;children=0&amp;dateDelta=0&amp;dateFrom=1546052400000&amp;directionCountryTo=18757&amp;directionFrom=274286&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=departure-date">Выбрать отель</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>-->
-
-        <!--OAЭ-->
-        <!--
-<div class="container oae" id="ski-oae">
-<h2>Семейный отдых в Эмиратах</h2>
-
-<div class="icons-oae">
-<div class="col-md-2"><img alt="" src="https://www.tui.ru/getmedia/e7adeb26-ed4e-496a-8fa1-19d59592d0e0/TC-Arabian_web-min/" style="width:100%" /></div>
-</div>
-</div>
-
-<div>
-<div class="container">
-<h2>Клубы МИНИ ТУКАН в Арабских Эмиратах</h2>
-</div>
-</div>
-
-<div class="container hot">
-<p><b>Отели:</b> <a href="/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/?adults=2&amp;children=0&amp;dateDelta=0&amp;dateFrom=1544842800000&amp;directionCountryTo=20613&amp;directionFrom=274286&amp;hotelNameQuery=Al%20Hamra%20Residence&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=315346">Al Hamra Residence 5*</a>, <a href="/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/?adults=2&amp;children=0&amp;dateDelta=0&amp;dateFrom=1544842800000&amp;directionCountryTo=20613&amp;directionFrom=274286&amp;hotelNameQuery=Al%20Hamra%20Village%20Golf%20&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;selected=departure-date&amp;page=0&amp;hotelId=215136">Al Hamra Village 4*</a></p>
-</div>
-
-<div>
-<div class="container">
-<h2>Программа &laquo;ПУТЕШЕСТВИЯ С ТУКАНОМ&raquo;</h2>
-</div>
-</div>
-
-<div class="container">
-<p style="color: #082a5e">Для любознательных и активных ребят разработана новая увлекательная игровая программа &laquo;Путешествия с Туканом&raquo;. Программа выстроена в форме путешествия, которое позволяет детям понять устройство окружающего мира.</p>
-
-<p style="margin: 0"><b>Фишки программы &laquo;Путешествия с Туканом&raquo;:</b></p>
-
-<ul class="dopInfo">
-	<li>Получение загранпаспорта от Тукана.</li>
-	<li>Мастер добрых дел &ndash; тайный помощник Тукана.</li>
-	<li>Игры &ndash;приключения.</li>
-	<li>Чемпионат дворовых игр и большая семейная игра &laquo;Джунгли зовут&raquo;.</li>
-	<li>1000 и 1 сказка &ndash; каждый вечер после веселых танцев, квестов и семейных игр читаем восточную сказку, готовимся ко сну.</li>
-	<li>Театральные субботы.</li>
-</ul>
-</div>
-
-<div class="container">
-<div class="row">
-<div class="col-md-6"><img alt="" src="https://www.tui.ru/getmedia/3de701d3-6c76-4030-bf82-6d970e067908/shutterstock_1070343977-min" /></div>
-
-<div class="col-md-6">
-<p style="margin: 0"><b>Танцы с Туканом &ndash; 4 развлекательные танцевальные программы:</b></p>
-
-<ul class="dopInfo">
-	<li>Арамзамзам ретро&ndash;party.Танцуем под старые добрые детские хиты мини диско.</li>
-	<li>Exclusive мини диско. Таких песенок вы никогда не слышали, специально для Тукана были написаны новые детские хиты. Танцуем!!</li>
-	<li>Тукан Тусейшен. Дискотека как у взрослых! Фейс контроль и дресс код. Взрослым вход запрещен!</li>
-	<li>Tukan Splash Dance - Мини диско в бассейне 1 раз в неделю.</li>
-</ul>
-
-<p style="margin: 0.5em 0 0"><b>Период работы Детских Клубов Тукан в отелях:</b></p>
-
-<ul>
-	<li>Al Hamra Residences, Al Hamra Village: Клуб работает до 15 мая 2019 г.</li>
-</ul>
-
-<p>Есть вопросы? Пишите на почту <a href="mailto:diffproduct@tui.ua" style="color: inherit!important">diffproduct@tui.ua</a> и мы вам оперативно ответим.</p>
-
-<div class="row price">
-<div class="col-md-5">
-<p class="tour_a"><a class="scroled-link" href="#miniTucoun">Выбрать отель</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>-->
-
-        <!--OAЭ END-->
-
-
-        <div class="container oae" id="ski-oae">
-            <h2 style="font-size: 1.9em!important;">Новые отели с Клубом МИНИ ТУКАН в Европе</h2>
-
-            <div class="icons-oae">
-                <div class="col-md-2" style="height: 250px">
                 </div>
             </div>
         </div>
 
+     <div class="row-ski">
 
+            <div class="container oae" id="ski-oae">
+                <h2 style="font-size: 1.9em!important;">{{title2UA}}</h2>
 
-        <div class="container">
-            <p style="color: #082a5e"><br />Этим летом ждем гостей в новые отели с детскими клубами Мини Тукан в Испании и Италии. Для юных путешественников всех возрастов мы приготовили яркую программу и ежедневные развлечения: развивающие игры, мастер-классы и занимательные конкурсы. По вечерам – заводное мини-диско и сюрпризы. Все занятия проводятся на русском языке и ориентированы на детей двух возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет.</p><br /><br />
-
-
-            <div class="container hot">
-                <p><b>Отели с Мини Туканом в Испании: </b> <a href="http://www.tui.ua/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/?adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1561928400000&amp;directionCountryTo=18747&amp;directionFrom=235144&amp;hotelNameQuery=Estival%20Park%20Hotel%20Resort&amp;maxCost=193740&amp;minCost=27289&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;sortType=5&amp;hotelId=34894&amp;TourType=36">Estival Park Hotel Resort 4* </a>(Коста-Дорада) и <a href="http://www.tui.ua/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/?adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1561928400000&amp;directionCountryTo=18747&amp;directionFrom=235144&amp;hotelNameQuery=Don%20Juan%20Tossa&amp;maxCost=193740&amp;minCost=27289&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;sortType=5&amp;hotelId=34652&amp;TourType=36">Don Juan Tossa 4* </a>(Тосса-де-Мар)</p>
+                <div class="icons-oae">
+                    <div class="col-md-2" style="height: 250px">&nbsp;</div>
+                </div>
             </div>
 
-
-            <div class="container hot">
-                <p><b>Отель с Мини Туканом в Италии: </b> <a href="http://www.tui.ua/hotel/europe-italy-calabria-pizzo-garden__resort__calabria__(ex__valtur__garden)/?adults=2&amp;children=0&amp;dateDelta=3&amp;dateFrom=1559768400000&amp;directionCountryTo=18770&amp;directionFrom=235144&amp;hotelNameQuery=Garden%20Resort%20Calabria&amp;maxCost=190097&amp;minCost=24387&amp;newbies=0&amp;nightsFrom=7&amp;nightsTo=14&amp;page=0&amp;selected=arrival&amp;sortType=5&amp;hotelId=272329&amp;TourType=36">Garden Resort Calabria 4*
-                    </a> (Калабрия, Пиццо) <br /></p>
-            </div>
-
-            <br /><br />
-            <ul class="dopInfo">
-                <li>Концепция «Тукан-путешественник» ― увлекательные приключения в разных странах</li>
-                <li>Программа на русском языке для детей двух возрастов: Тукан Kids 4-7 лет и Тукан Junior 8-12 лет</li>
-                <li>Клуб работает 6 дней в неделю, с 10-00 до 12-30, с 14-30 до 17-00.</li>
-                <li>Вечером ― мини-диско</li>
-            </ul>
-        </div>
-
-
-        <div>
             <div class="container">
-                <h2>Программа &laquo;ПУТЕШЕСТВИЯ С ТУКАНОМ&raquo;</h2>
-            </div>
+            <p style="color: #082a5e"><br />
+                {{text2UA}} <a class="hotel__link" v-bind:href=" hotel4LinkClient ">{{hotel4Name}}</a> и <a class="hotel__link" v-bind:href=" hotel5LinkClient ">{{hotel5Name}}</a> {{text2_1UA}}</p>
+            &nbsp;
+
+            
+
+            <p style="margin: 0.5em 0 0"><strong>{{text12UA}}</strong></p>
+            <br>
+            <ul v-for=" text12SpisokItem in text12SpisokItems ">
+                <li>{{ text12SpisokItem.itemUA }}</li>
+
+            </ul>
+            <br>
         </div>
 
+            <!--<div>
+                <div class="container">
+                    <h2>{{title5RU}}</h2>
+                </div>
+            </div>-->
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"><img alt="" v-bind:src=" blockImage1 " /></div>
+
+                    <div class="col-md-6">
+                        
+                        
 
 
 
 
+                        <p style="margin: 0.5em 0 0"><strong>{{text7UA}}</strong></p>
+
+                        <ul>
+                            <li><a v-bind:href=" hotel4LinkClient ">{{hotel4Name}}</a>{{text8UA}}</li>
+                            <li><a v-bind:href=" hotel5LinkClient ">{{hotel5Name}}</a>{{text9UA}}</li>
+                        </ul>
+                        <br>
+                        <p style="margin: 0.5em 0 0"><strong>{{text5UA}}</strong></p>
+                        
+                        <p style="margin: 0.5em 0 0">{{time1}}</p>
+                        <p style="margin: 0.5em 0 0">{{time2}}</p>
+                        <p style="margin: 0.5em 0 0">{{time3}}</p>
+                        <br>
+
+                        <p>{{text10UA}} <a v-bind:href=" mailUALink " style="color: inherit!important">{{mailUA}}</a> {{text11UA}} </p>
+                        <br>
+                        
+                        <div class="row price">
+                            <div class="col-md-5">
+                                <p class="tour_a"><a class="scroled-link" href="#miniTucoun">{{button1UA}}</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- TOUCAN ОТЕЛИ СТАРТ ======================================= -->
+       
+<div class="container-fluid block_3" id="hotels-toucan">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6"><img alt="" src="https://www.tui.ru/getmedia/3de701d3-6c76-4030-bf82-6d970e067908/shutterstock_1070343977-min" /></div>
+            <h2>{{titleUA}}</h2>
+        </div>
 
-                <div class="col-md-6">
-                    <p style="margin: 0"><b>Для любознательных и активных ребят разработана новая увлекательная игровая программа «Путешествия с Туканом». Программа выстроена в форме путешествия, которое позволяет детям понять устройство окружающего мира.
-                        </b></p>
+        <div class="row">
+            <div class="container sl" id="miniTucoun">
+                <div class="buttons-navigations">
+                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">{{country1UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country2UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country3UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country4UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b7">{{country5UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b8">{{country6UA}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b10">{{country7UA}}</a><!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
+                </div>
 
+                        
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                <div class="slider slider_2 " id="s2b2">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country1Hotel in country1Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
 
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country1Hotel.countryNameUA }}</h4>
 
-                    <p style="margin: 0.5em 0 0"><b>Период работы Детских Клубов Тукан в отелях:</b></p>
-                    <p style="margin: 0.5em 0 0"><strong>Италия</strong></p>
-                    <ul>
-                        <li>Garden Resort Calabria (ex. Valtur Garden) 4*: с 1 июня по 30 сентября 2019 года</li>
-                    </ul>
+                                    <p class="gey_p">{{ country1Hotel.hotelName }}</p>
 
-                    <p style="margin: 0.5em 0 0"><strong>Испания</strong></p>
-                    <ul>
-                        <li>Estival Park 4*: с 1 июня по 30 сентября 2019 года</li>
-                        <li>Don Juan Tossa 4* с 1 июня по 30 сентября 2019 года
-                        </li>
-                    </ul>
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country1Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
 
-                    <p>Есть вопросы? Пишите на почту <a href="mailto:diffproduct@tui.ru" style="color: inherit!important">diffproduct@tui.ru</a> и мы вам оперативно ответим.</p><br />
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
 
-                    <div class="row price">
-                        <div class="col-md-5">
-                            <p class="tour_a"><a class="scroled-link" href="#hotels">Выбрать отель</a></p>
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkClient ">{{ country1Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                <div class="slider slider_2 n" id="s2b3">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country2Hotel in country2Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country2Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country2Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country2Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkClient ">{{ country2Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Андорра -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                <div class="slider slider_2 n" id="s2b4">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country3Hotel in country3Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country3Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country3Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country3Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkClient ">{{ country3Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                <div class="slider slider_2 n" id="s2b5">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country4Hotel in country4Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country4Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country4Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country4Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkClient ">{{ country4Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                <div class="slider slider_2 n" id="s2b6">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country5Hotel in country5Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country5Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country5Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country5Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkClient ">{{ country5Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                <div class="slider slider_2 n" id="s2b7">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country6Hotel in country6Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country6Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country6Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country6Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkClient ">{{ country6Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Испания -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                <div class="slider slider_2 n" id="s2b8">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country7Hotel in country7Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country7Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country7Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country7Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country7Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country7Hotel.hotelLinkClient ">{{ country7Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Россия -->
+                
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                <div class="slider slider_2 n" id="s2b10">
+                    <div class="row-slider" data-col="3">
+                        <div class="col-md-4 myslide col-slider-3" v-for=" country8Hotel in country8Hotels">
+                            <div class="sliders-hotels">
+                                <div class="imgSlider" v-bind:style=" country8Hotel.background ">&nbsp;</div>
+
+                                <div class="slider-content slide-height_tall">
+                                    <h4>{{ country8Hotel.countryNameUA }}</h4>
+
+                                    <p class="gey_p">{{ country8Hotel.hotelName }}</p>
+
+                                    <ul >
+                                        <li v-for="aboutHotelUAItem in country8Hotel.aboutHotelUAItems"> {{ aboutHotelUAItem.item }} </li>
+                                        
+                                    </ul>
+                                </div>
+
+                                <div class="row price">
+                                    <div class="col-md-7 price-num">&nbsp;</div>
+
+                                    <div class="col-md-5">
+                                        <p class="tour_a"><a v-bind:href=" country8Hotel.hotelLinkClient ">{{ country8Hotel.buttonUA }}</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ ========== -->
+                
             </div>
         </div>
     </div>
+    
+   
+  <!-- TOUCAN ОТЕЛИ END ======================================= --> 
 
-    <div class="container-fluid block_3" id="hotels">
+    <!-- TOUCAN РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА START ==============================-->
+    <div id="toucan-party-program">
         <div class="container">
-            <h2>ОТЕЛИ С ДЕТСКИМИ КЛУБАМИ TUI МИНИ ТУКАН</h2>
+            <h2 style="text-transform: uppercase;">{{titleUA}}</h2>
         </div>
-    </div>
-</div>
 
-
-
-
-
-
-
-<!-- PART 2 ====================================================================================== -->
-
-
-
-
-
-
-
-
-
-
-<div class="row-all">
-
-    <!-- ЛАЙФХАК -->
-
-    <!--<div class="container sl slider-one marg-container_m">
-<div class="row subscription-block">
-<div class="col-md-8 outline-m">
-<div class="col-md-12" style="overflow: hidden;margin-left:0">
-<div class="slider">
-<div class="row-slider" data-col="1">
-<div class="myslide col-slider-1 slider-md8">
-<div class="img-slider-md8 col-md-12" style="background: url(https://www.tui.ru/getmedia/a20c3f99-1ac6-4f23-aecc-163766ab9611/shutterstock_15218200-min);background-size: cover">
-<h4 style="position: absolute; left: 0px; bottom: 0px; background: rgba(112,230,250,0.7); padding: 5px 25px; text-transform: uppercase; margin: 0!important;">Лайфхак</h4>
-</div>
-
-<div class="content-slider-md8">
-<h2>Какие продукты везти из Турции домой?</h2>
-
-<p>Оливки, сыры и пряности. Купить их можно на местном базаре напрямую у фермеров. Перед покупкой всё можно пробовать.</p>
-&nbsp;
-
-<p class="gey_p"></p>
-</div>
-</div>
-
-<div class="myslide col-slider-1 slider-md8">
-<div class="img-slider-md8 col-md-12" style="background: url(https://www.tui.ru/getmedia/165f9d3f-61cd-4cce-8fb6-6747f0bf0e65/granbazar);background-size: cover">
-<h4 style="position: absolute; left: 0px; bottom: 0px; background: rgba(112,230,250,0.7); padding: 5px 25px; text-transform: uppercase; margin: 0!important;">Лайфхак</h4>
-</div>
-
-<div class="content-slider-md8">
-<h2>В какой день недели лучше заняться шоппингом в Турции?</h2>
-
-<p>У каждого региона в Турции свой базарный день. Узнайте на ресепшен отеля, в какой день открыт базар в том регионе, где вы отдыхаете.</p>
-
-<p class="gey_p"></p>
-</div>
-</div>
-
-<div class="myslide col-slider-1 slider-md8">
-<div class="img-slider-md8 col-md-12" style="background: url(https://www.tui.ru/getmedia/204e0839-0ea2-4ced-9794-1e8308f224aa/shops);background-size: cover">
-<h4 style="position: absolute; left: 0px; bottom: 0px; background: rgba(112,230,250,0.7); padding: 5px 25px; text-transform: uppercase; margin: 0!important;">Лайфхак</h4>
-</div>
-
-<div class="content-slider-md8">
-<h2>Как купить товары по самой выгодной цене в Турции?</h2>
-
-<p>&laquo;Akşam pazarı&raquo; &ndash; время перед закрытием рынка, когда продавцы скидывают цены. Скоропортящиеся продукты могут отдать почти за бесценок.</p>
-&nbsp;
-
-<p class="gey_p"></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>-->
-
-    <div class="container">
-        <h2 style="text-transform: uppercase;">Развлекательная программа</h2>
-    </div>
-
-    <div class="container hotels-club-country sl promotion">
-        <div class="buttons-navigations">
-            <!--<a class="button-navigatin " data-block=".slider_3" href="#s3b1">Программа в ОАЭ для детей 4-12 лет</a>-->
-            <!-- Развлекательная программа Программа в ОАЭ для детей 4-12 лет --> <a class="button-navigatin active-link" data-block=".slider_3" href="#s3b2">Для детей 4-12 лет</a> <!-- Развлекательная программа Программа Для детей 4-12 лет -->
-        </div>
-        <!-- Развлекательная программа Программа в ОАЭ для детей 4-12 лет -->
-
-        <div class="slider slider_3" id="s3b1" style="display: none;">
-            <div class="row-slider" data-col="4">
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/68619849-ad70-4ef5-b03f-78e01c45179b/2323);background-size: cover;">
-                        <div class="info-img">
-                            <h4>День страноведения - Арабское утро. Письмо от Тукана</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">09:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/41b2245e-6c43-4b5a-bdf2-63a2394490f8/yoga-shutterstock_217781227-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Йога с Туканом</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">10:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/6b0e6a16-35b4-49a6-a447-a4f82a72a11b/mini-disco-pool-shutterstock_674549509-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Touсan Splash Dance.<br />
-                                Мини-диско в бассейне</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">10:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/36274e4e-b5f2-4f06-953c-d6d9911333bd/sea-games-shutterstock_737882335-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Морские забавы</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">11:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/8800cdc6-f1d4-416e-896a-4d6ba518083c/traveller-shutterstock_507086806-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Сбор путешественников</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">15:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/8ffc6d2c-1ce8-4f6c-b5a3-fc461610748c/jungle-shutterstock_519576448-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Ролевая игра<br />
-                                &laquo;Кто в джунглях хозяин?&raquo;</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">15:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/f93be32f-495e-4d7b-bbea-ddef58afdcd7/arabesque-shutterstock_224273662-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Мастер-классы с Туканом. &laquo;Арабская арабеска&raquo;</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">17:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/33754e87-e782-423d-ba1e-af2d38cfbf77/aqua-make-up-shutterstock_1155932203-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Сбор путешественников. Аквагрим</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">20:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/2f249bfd-e876-4f2a-9768-27d73c4a1a72/T32);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Туканское мини-диско</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">20:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/f7890295-8ab7-475b-9dd3-f7c4ed4e2e8d/guess-the-melody-shutterstock_167393621-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Игра &laquo;Угадай мелодию&raquo;</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">21:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/f1e0d31f-633b-4785-9022-6f0401b42e8f/1001-fairy-tales-shutterstock_577711708-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>&laquo;1001 и 1 сказка&raquo;. Для малышей 2+ и всех, кто готовится ко сну</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">21:45</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="container hotels-club-country sl promotion">
+            <div class="buttons-navigations">
+                <a class="button-navigatin active-link" data-block=".slider_3" href="#s3b1">{{menu1UA}}</a>
             </div>
-        </div>
-        <!-- Развлекательная программа Программа Для детей 4-12 лет -->
 
-        <div class="slider slider_3" id="s3b2">
-            <div class="row-slider" data-col="4">
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/ec359478-34a7-499d-a958-18e33be583de/T23);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Утренняя зарядка / йога /<br />
-                                тай-чи</h4>
+            <div class="slider slider_3" id="s3b1">
+                <div class="row-slider" data-col="4">
 
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
+                    <div class="col-md-4 myslide col-slider-4" v-for="slider1item in slider1items">
+                        <div class="sliders-hotels hap-programs" v-bind:style=" slider1item.background ">
+                            <div class="info-img">
+                                <h4>{{slider1item.aboutUA}}</h4>
 
-                                <p class="col-md-4">10:00</p>
+
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/8fa60090-1fc6-49a5-8914-c57c7f089754/T24);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Академия плавания</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">10:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/9380d2e8-787c-4bad-b236-c0ee3eefa764/T25);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Поиск сокровищ</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">11:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/2c69d3df-23a9-4fa0-8eb6-084d1d09b2ec/T26);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Олимпийские игры</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">12:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/3bfca7ba-d457-4e0d-b317-71a4bc793794/T27);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Настольные игры<br />
-                                Дженга и Микадо</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">14:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/33809e6a-d633-486a-b288-421a55a9c446/shutterstock_520075894-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>КВЕСТЫ</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">15:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/34a179fc-f3dc-4fd8-bd99-432353a0e92e/shutterstock_489646066-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>НАУЧНЫЕ ЭКСПИРЕМЕНТЫ</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">15:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/bdf4472f-3579-4a1f-a7a5-8ddb568a9f8c/T30);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Академия Футбола</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">16:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/23e8d862-3cb9-460c-adde-e1247aaf6d4c/T32_1);background-size: cover;">
-                        <div class="info-img">
-                            <h4>Дискотека Тукан Тусейшен</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">20:30</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/0aeb7617-2573-4dcf-9dfd-6a2b531b71af/shutterstock_315127931-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>КИНОСЕАНС ПОД ОТКРЫТЫМ НЕБОМ С ПОПКОРНОМ</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">21:00</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 myslide col-slider-4">
-                    <div class="sliders-hotels hap-programs" style="background: url(https://www.tui.ru/getmedia/ebfc0f3e-6a2c-48d7-b5d7-a4398923b337/shutterstock_482563132-min);background-size: cover;">
-                        <div class="info-img">
-                            <h4>ТЕМАТИЧЕСКИЕ ДНИ</h4>
-
-                            <div class="time-start">
-                                <p class="col-md-8">Время начала</p>
-
-                                <p class="col-md-4">21:30</p>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- TOUCAN РАЗВЛЕКАТЕЛЬНАЯ ПРОГРАММА END ==============================-->
 
-    <div class="container" style="margin-bottom: 3em;">
+    <!-- ПРОГРАММА ТУКАН START ============================== -->
+
+    <div class="container download-file-block" style="width: 100%;margin: auto!important" id="toucan-programm">
         <div style="background:#e1f4fb;padding: 10px 7px;">
-            <div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/8aeeceef-4d31-433b-ae92-1e6b24a5ec2a/Mini-toucan-ru-2019__" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Турции</a></div>
-            <!--<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"></span><a href="https://www.tui.ru/getmedia/e20a2c16-d84d-4b8d-917a-2ecab6bbb8a7/Toucan-Mini-Eu-RU" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Европе</a></div>-->
-            <!--<div style="margin-top:10px;text-align:center;"><span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left"><span style="opacity:0">.</span></span><a href="https://www.tui.ru/getmedia/365fd0ca-2219-4a7c-9d65-6337bc68f6b8/rogramma-detskogo-kluba-toucan" style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">Программа детских клубов Мини Тукан в Сочи</a></div>-->
+            <div style="margin-top:10px;text-align:center;">
+                <span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left">
+                    <span style="opacity:0">.</span>
+                </span>
+                <a v-bind:href=" linkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">{{titleUA}}</a>
+            </div>
+
+
         </div>
     </div>
-    <!-- <div class="container">
-<div class="row">
-<h2 style="width: 100%; text-align: center">ПОДПИШИТЕСЬ НА НАС</h2>
 
-<div class="col-md-2 col-6" style="margin:0 auto 1em">
-<div class="row icons-footer"><a href="http://www.instagram.com/tui_toucan"><img src="https://www.tui.ru/getmedia/0bf951d7-5db7-48b0-b6ab-898f6f97cf39/logo-instagram-white-copy" /></a></div>
-</div>
-</div>
-</div> -->
+    <!-- ПРОГРАММА ТУКАН END ============================== -->
 
-    <div class="container-fluid footer-informations">
+
+    <!-- FOOTER START =================================================== -->
+
+    <div class="container-fluid footer-informations" style="margin-top: 7em" id="toucan-footer">
         <div class="row">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>Сайты о концепциях</h3>
-                        <a href="http://www.tui.ua/concepts/home/">Все концепции TUI</a><br />
-                        <a href="http://www.tui.ua/concepts/tui-fun-sun/">TUI FUN&amp;SUN</a><br />
-                        <a href="http://www.tui.ua/concepts/tui-day-night/">TUI DAY&amp;NIGHT Connected</a><br />
-                        <a href="http://www.tui.ua/concepts/tui-toucan/">TUI Тукан</a>
+                        <h3>{{title1UA}}</h3>
+                        <a v-bind:href=" link1 ">{{ linkTitle1UA }}</a><br />
+                        <a v-bind:href=" link2UA ">{{linkTitle2UA}}</a><br />
+                        <a v-bind:href=" link3UA ">{{linkTitle3UA}}</a>
                     </div>
 
                     <div class="col-md-3">
-                        <h3>Контакты</h3>
-                        <a href="tel:044%20401%2008%2008">044 401 08 08</a><br />
-                        <a href="mailto:diffproduct@tui.ua">diffproduct@tui.ua</a>
+                        <h3>{{title2UA}}</h3><br>
+                        <a v-bind:href=" telLinkUA ">{{telUA}}</a><br> <a v-bind:href=" mailLinkUA ">{{mailUA}}</a>
                     </div>
 
                     <div class="col-md-3">
-                        <h3>DAY&amp;NIGHT Connected в социальных сетях</h3>
-                        <style type="text/css">
-                        </style>
-                        <div class="row icons-footer col-10 col-md-12"><a href="https://www.facebook.com/TUIUkraine"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <symbol id="icon-facebook">
-                                        <path d="M26.3636364,0 L2.63636364,0 C1.17977273,0 0,1.17977273 0,2.63636364 L0,26.3636364 C0,27.8202273 1.17977273,29 2.63636364,29 L15.8181818,29 L15.8181818,17.1363636 L11.8636364,17.1363636 L11.8636364,13.1818182 L15.8181818,13.1818182 L15.8181818,11.0582273 C15.8181818,7.03777273 17.777,5.27272727 21.1185909,5.27272727 C22.7188636,5.27272727 23.5651364,5.39136364 23.9658636,5.44540909 L23.9658636,9.22727273 L21.6867273,9.22727273 C20.2683636,9.22727273 19.7727273,9.976 19.7727273,11.4919091 L19.7727273,13.1818182 L23.9302727,13.1818182 L23.3660909,17.1363636 L19.7727273,17.1363636 L19.7727273,29 L26.3636364,29 C27.8202273,29 29,27.8202273 29,26.3636364 L29,2.63636364 C29,1.17977273 27.8189091,0 26.3636364,0 Z" id="Shape"></path>
-                                        <!--patch-->
-                                    </symbol>
-                                </svg> <svg class="icons-social">
-                                    <use xlink:href="#icon-facebook"></use>
-                                </svg></a> <a href="https://www.youtube.com/channel/UC-U-Lwcw8S8pRMd65D7Xa-g"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <symbol id="icon-youtube">
-                                        <path d="M6.79980556,7 C4.70146759,7 3,8.70146759 3,10.7998056 L3,23.3390833 C3,25.4374213 4.70146759,27.1388889 6.79980556,27.1388889 L28.0786898,27.1388889 C30.1770278,27.1388889 31.8783611,25.4374213 31.8783611,23.3390833 L31.8783611,10.7998056 C31.8783611,8.70146759 30.1770278,7 28.0786898,7 L6.79980556,7 Z M15.1567731,22.1761296 L15.1567731,11.9627593 L21.8697361,17.0694444 L15.1567731,22.1761296 Z" id="Shape"></path>
-                                    </symbol>
-                                </svg> <svg class="icons-social" style="margin-top:-8px">
-                                    <use xlink:href="#icon-youtube"></use>
-                                </svg></a> <a href="https://www.instagram.com/tuiukraine.official/"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <symbol id="icon-intagram">
-                                        <path d="M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M0,3 L0,25.9828289 C2.41027941e-15,27.6396832 1.34314575,28.9828289 3,28.9828289 L25.9828289,28.9828289 C27.6396832,28.9828289 28.9828289,27.6396832 28.9828289,25.9828289 L28.9828289,3 C28.9828289,1.34314575 27.6396832,1.167223e-15 25.9828289,0 L3,0 C1.34314575,3.04359188e-16 -2.02906125e-16,1.34314575 0,3 Z M24.1812939,19.2926316 C24.1812939,21.9884868 21.9884868,24.1812939 19.2926316,24.1812939 L9.69019737,24.1812939 C6.99434211,24.1812939 4.80153509,21.9884868 4.80153509,19.2926316 L4.80153509,9.69019737 C4.80153509,6.99434211 6.99434211,4.80153509 9.69019737,4.80153509 L19.2926316,4.80153509 C21.9884868,4.80153509 24.1812939,6.99434211 24.1812939,9.69019737 L24.1812939,19.2926316 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z M19.2926316,6.91039474 L9.69019737,6.91039474 C8.15752193,6.91039474 6.91039474,8.15752193 6.91039474,9.69019737 L6.91039474,19.2926316 C6.91039474,20.825307 8.15752193,22.0724342 9.69019737,22.0724342 L19.2926316,22.0724342 C20.825307,22.0724342 22.0724342,20.825307 22.0724342,19.2926316 L22.0724342,9.69019737 C22.0724342,8.15752193 20.825307,6.91039474 19.2926316,6.91039474 Z M14.4910965,19.4827851 C11.7392763,19.4827851 9.50004386,17.2435526 9.50004386,14.4910965 C9.50004386,11.7392763 11.7392763,9.50004386 14.4910965,9.50004386 C17.2435526,9.50004386 19.4827851,11.7392763 19.4827851,14.4910965 C19.4827851,17.2435526 17.2435526,19.4827851 14.4910965,19.4827851 Z M19.6430482,10.5322149 C18.9918202,10.5322149 18.4620614,10.0024561 18.4620614,9.35122807 C18.4620614,8.7 18.9918202,8.17024123 19.6430482,8.17024123 C20.2942763,8.17024123 20.8240351,8.7 20.8240351,9.35122807 C20.8240351,10.0024561 20.2942763,10.5322149 19.6430482,10.5322149 Z M14.4910965,11.6095395 C12.9024561,11.6095395 11.6089035,12.9024561 11.6089035,14.4910965 C11.6089035,16.0803728 12.9024561,17.3739254 14.4910965,17.3739254 C16.0803728,17.3739254 17.3732895,16.0803728 17.3732895,14.4910965 C17.3732895,12.9024561 16.0803728,11.6095395 14.4910965,11.6095395 Z" id="Shape"></path>
-                                        <!--patch-->
-                                    </symbol>
-                                </svg> <svg class="icons-social">
-                                    <use xlink:href="#icon-intagram"></use>
-                                </svg></a> <a href="https://t.me/tuiteam"><svg style="display: none" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                                    <symbol id="icon-telegram">
-                                        <path d="M3,0 L25.9828925,-4.4408921e-16 C27.6397468,-7.48448398e-16 28.9828925,1.34314575 28.9828925,3 L28.9828925,25.9828925 C28.9828925,27.6397468 27.6397468,28.9828925 25.9828925,28.9828925 L3,28.9828925 C1.34314575,28.9828925 1.97926296e-15,27.6397468 1.77635684e-15,25.9828925 L-4.4408921e-16,3 C-6.46995335e-16,1.34314575 1.34314575,2.08071603e-15 3,1.77635684e-15 Z M22.8212193,6.39780702 L3.43999781,13.9504627 C2.81223684,14.1951184 2.85026754,15.0959627 3.49647149,15.2867522 L8.42144737,16.7410768 L10.2594496,22.5732566 C10.4514474,23.1824474 11.2234452,23.3671316 11.6703377,22.9108268 L14.2166776,20.310875 L19.212818,23.9781667 C19.8242346,24.4269671 20.6949978,24.0935307 20.8502368,23.3511689 L24.1592259,7.5309057 C24.3212697,6.75598246 23.558875,6.11035088 22.8212193,6.39780702 Z" fill-rule="nonzero" id="Combined-Shape"></path>
-                                        <path d="M20.3913246,9.90871491 L11.3888596,17.8695965 C11.299125,17.9489649 11.2420154,18.0587961 11.2286601,18.1778487 L10.8820592,21.2589715 C10.870739,21.3594539 10.7301272,21.3727456 10.7001096,21.2762061 L9.27408553,16.6811689 C9.20877193,16.4707917 9.29392763,16.2428618 9.48109211,16.1267982 L20.1120724,9.53336842 C20.3565373,9.38162719 20.6068531,9.71817982 20.3913246,9.90871491 Z" id="Path"></path>
-                                    </symbol>
-                                </svg> <svg class="icons-social">
-                                    <use xlink:href="#icon-telegram"></use>
-                                </svg></a></div>
+                        <h3>{{title3UA}}</h3>
+
+                        <div class="row icons-footer icons-footer_toucan col-10 col-md-12"><a v-bind:href=" instLink "><img v-bind:src="instLogo" /></a></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- FOOTER END =================================================== -->
 </div>
+
+        
+        <script src="https://www.youtube.com/iframe_api" type="text/javascript">
+        </script>
+        <script type="text/javascript">
+            var videoId = 'TF6Qc5ILjl4';
+        </script>
+        <script src="https://www.tui.ru/getmedia/6313a4ad-c578-45aa-a371-a4a959ccc340/video/" type="text/javascript">
+        </script>
+   
 <script type="text/javascript">
+    var template_script = document.createElement("script");
+    template_script.src = "https://www.tui.ru/getmedia/91751be2-e1fb-443e-b4f4-66aab0b2a7f2/template_engine";
+    document.head.appendChild(template_script);
+    template_script.onload = function() {
+        on_page(render("#table-template", ".block-table", table_tc))
+    }
+
     function smoothScrolling(element) {
         document.querySelector(element).scrollIntoView({
             block: "start",

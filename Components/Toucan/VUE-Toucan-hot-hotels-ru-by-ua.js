@@ -2,7 +2,7 @@
 Привет.
 Ниже файл с информацией для ВСЕХ страниц TOUCAN для клиентского и агентского сайте (RU BY UA )
 
-Для того чтобы изменить информацию достаточно заменить ее в этом файле и обновить файл который лежит на сайте tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ files \ VUE-Toucan-hot-hotels-ru-by-ua.js - ВНИМАНИЕ! именно нажать на кнопку заменить, иначе придется менять ссылку на всех страницах.
+Для того чтобы изменить информацию достаточно заменить ее в этом файле и обновить файл который лежит на сайте tui.ru \ media \ новый сайт \ концепции \ TUI Toucan \ JS \ VUE-Toucan-hot-hotels-ru-by-ua.js - ВНИМАНИЕ! именно нажать на кнопку заменить, иначе придется менять ссылку на всех страницах.
 
 Обрати внимение на название переменных в файле html, если в конце есть указание к стране (например имя оканчивается myNameRU - значит это перевод на русский, myNameEE - значит это перевод на эстонский и тп)
 
@@ -53,6 +53,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Pegasos Club 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/960b240d-2407-4940-8d3e-247396f9eb4a/T12_hotel_Pegasos-Club);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club',
+                hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__club/',
                 
                 //RU
                 countryNameRU: 'Турция, Инджекум',
@@ -97,6 +98,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Pegasos Resort 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/78cdee2e-c69d-435e-ade3-94320e66a3f3/T13_Hotel_PegasosResort);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort',
+                hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__resort/',
                 
                 //RU
                 countryNameRU: 'Турция, Инджекум',
@@ -144,6 +146,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Pegasos Royal 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/9a66b6c3-5dfc-4913-99ae-2d5fa8c4f70f/T14_Hotel_Pegasos-Royal);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal',
+                hotelLinkClient: '/hotel/europe-turkey-alanya-incekum-pegasos__royal/',
                 
                 //RU
                 countryNameRU: 'Турция, Инджекум',
@@ -197,6 +200,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Kilikya Resort Camyuva 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/2e390b7d-5b2a-4434-9933-5c3749992bed/f_Kilikya-Resort-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva',
+                hotelLinkClient: '/hotel/europe-turkey-kemer-camyuva-kilikya__resort__camyuva/',
                 
                 //RU
                 countryNameRU: 'Турция, Кемер',
@@ -245,6 +249,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Andorra Center 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/cd352184-64b1-4c27-aa64-af2f947fd8b8/T17_Hotel_Andorra-Center);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Andorra/grandvalira/Andorra-La-Vella/Andorra-Center',
+                hotelLinkClient: '',
                 
                 //RU
                 countryNameRU: 'Андорра, Грандвалира',
@@ -286,6 +291,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'La Mola 2*',
                 background: 'background: url(https://www.tui.ru/getmedia/200bf094-a279-43ce-9638-2dc53ca0fafd/T18_Hotel_La-Mola);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Andorra/grandvalira/Escaldes/Mola-Park-Atiram',
+                hotelLinkClient: '',
                 
                 //RU
                 countryNameRU: 'Андорра, Грандвалира',
@@ -324,6 +330,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Cosmos Andorra 3*',
                 background: 'background: url(https://www.tui.ru/getmedia/1cd99d92-6811-42e2-977b-f3902aff35f0/T19_Hotel_Cosmos-Andorra);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Andorra/grandvalira/Andorra-La-Vella/Cosmos-Andorra',
+                hotelLinkClient: '',
                 
                 //RU
                 countryNameRU: 'Андорра, Грандвалира',
@@ -369,6 +376,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Christofinia 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/2f97eb45-b78e-4f46-9312-3f6d6216d10c/T20_Hotel_Christofinia);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/',
+                hotelLinkClient: '/hotel/europe-cyprus-ayia__napa-ayia__napa-christofinia/',
                 
                 //RU
                 countryNameRU: 'Кипр, Айя-Напа',
@@ -413,6 +421,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'St. Raphael Resort 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/42d77e04-8b00-4095-890d-7df28ff5b30b/f_St-Raphael-Resort-Aerial-View-007_f_1);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Cyprus/Limasol-Resort/Limasol-City/St-Raphael-Resort',
+                hotelLinkClient: '/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/',
                 
                 //RU
                 countryNameRU: 'Кипр, Лимасол',
@@ -464,6 +473,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Aleksandar 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/13c783b4-c8a7-4673-b3fa-8df70e917c4e/f_Main-Bulding_f_1-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/tours/europe/montenegro/budvanska-rivijera/budva/aleksandar/',
+                hotelLinkClient: '/hotel/europe-montenegro-budvanska__rivijera-budva-aleksandar/',
                 
                 //RU
                 countryNameRU: 'Черногория, Будва',
@@ -505,6 +515,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Castellastva 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/3e5ec649-f74f-417b-a68d-e63f1705f0b3/kastellastva-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/tours/europe/montenegro/budvanska-rivijera/petrovac/castellastva/',
+                hotelLinkClient: '/hotel/europe-montenegro-budvanska__rivijera-petrovac-castellastva/',
                 
                 //RU
                 countryNameRU: 'Черногория, Петровац',
@@ -547,6 +558,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Garden Resort Calabria (ex. Valtur Garden) 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/2bc0a092-4458-4eb9-9f9d-e6b27024967a/italy-hotels-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Italy/Calabria/Pizzo/Valtur-Garden-Calabria',
+                hotelLinkClient: '/hotel/europe-italy-calabria-pizzo-garden__resort__calabria/',
                 
                 //RU
                 countryNameRU: 'Калабрия, Пиццо',
@@ -594,6 +606,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Estival Park Hotel Resort 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/25de3cd0-dd39-452b-83bf-6b68fd9cedc7/estival-park-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-Dorada/La-Pineda/Estival-Park-Hotel-Resort',
+                hotelLinkClient: '/hotel/europe-spain-costa__dorada-la__pineda-estival__park__hotel__resort/',
                 
                 //RU
                 countryNameRU: 'Испания, Салоу',
@@ -635,6 +648,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Don Juan Tossa 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/d163d8fb-7186-4929-96d2-27b24b9a144e/hontana-hossa-min);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Spain/Costa-Brava/Tossa-De-Mar/Hotansa-Tossa',
+                hotelLinkClient: '/hotel/europe-spain-costa__brava-tossa__de__mar-don__juan__tossa/',
                 
                 //RU
                 countryNameRU: 'Испания, Тосса де мар',
@@ -683,6 +697,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Бархатные сезоны 3*',
                 background: 'background: url(https://www.tui.ru/getmedia/2b0182c1-1e96-45ab-bb2e-fca9b7166c64/barhatnie-sezoni-small);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Europe/Russia/Sochi/Imeretinskaya-Bukhta/barhatnye-sezony-gorod-otel-russquiy-dom',
+                hotelLinkClient: '/hotel/europe-russia-sochi-imeretinskaya__bukhta-barhatnye__sezony__gorod__otel__russquiy__dom__(1)/',
                 
                 //RU
                 countryNameRU: 'Россия, Сочи',
@@ -730,6 +745,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Al Hamra Village Golf & Beach Resort 4*',
                 background: 'background: url(https://www.tui.ru/getmedia/7d1ba713-d51b-4603-96d0-532147ae9b8a/T15_Hotel_Al-Hamra-Village-Golf-Beach-Resort-1);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-Beach-Hotels/al-hamra-village-golf-beach-resort',
+                hotelLinkClient: '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/',
                 
                 //RU
                 countryNameRU: 'ОАЭ, Рас Аль Хайма',
@@ -780,6 +796,7 @@ const toucanHotHotels = new Vue ({
                 hotelName : 'Al Hamra Residence 5*',
                 background: 'background: url(https://www.tui.ru/getmedia/d01735ab-c45f-46a4-ba4d-d107366f623c/T16_hotel_Al-Hamra-Residence);background-position: center;background-size: cover',
                 hotelLinkAgent: '/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence',
+                hotelLinkClient: '/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/',
                 
                 //RU
                 countryNameRU: 'ОАЭ, Рас Аль Хайма',
