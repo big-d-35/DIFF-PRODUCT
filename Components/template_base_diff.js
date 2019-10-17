@@ -24,7 +24,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire",
             href_agent_by: "/Tours/Europe/Turkey/kemer/Tekirova/TUI-FUN-SUN-Club-Saphire", 
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Miarosa Ghazal Resort 5*", 
@@ -34,7 +34,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
             href_agent_by: "/Tours/Europe/Turkey/kemer/Goynuk/TUI-FUN-SUN-Miarosa-Ghazal-Resort",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    	{
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN River Resort Belek 5*",  
@@ -44,7 +44,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek",
             href_agent_by: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-River-Resort-Belek", 
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Club Belek 5*",  
@@ -54,7 +54,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
             href_agent_by: "/Tours/Europe/Turkey/belek/belek/TUI-FUN-SUN-Club-Belek",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Club Serra Palace 5*",  
@@ -64,7 +64,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
             href_agent_by: "/Tours/Europe/Turkey/side/Kizilot/TUI-FUN-SUN-Club-Serra-Palace-(ex-Club-Calimera-S",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Comfort Beach Resort 5*",  
@@ -74,7 +74,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Goynuk/TUI-FUN-SUN-Comfort-Beach-Resort",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Club Di Finica 5*",  
@@ -84,7 +84,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Finike/TUI-FUN-SUN-Club-Di-Finica",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    	{
 	    		country_Turkey: "TUR",
 	    	name_hotel: " FUN&SUN Miarosa Incekum Beach 5*",  
@@ -94,7 +94,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/TUI-FUN-SUN-Miarosa-Incekum-Beach",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_hotel: "Кипр",
 	    	name_hotel: " FUN&SUN Vangelis Hotel & Suite 4*",  
@@ -332,7 +332,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
             href_agent_by: "/Tours/Europe/Turkey/Kemer/Camyuva/Kilikya-Resort-Camyuva",
-	    	data_hotel: "15.10.2019"
+	    	data_hotel: "Открыт с мая 2020"
 	    },
 	    {
 	    	country_Turkey: "TUR",
@@ -343,7 +343,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Club",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    	{
 	    	country_Turkey: "TUR",
 	    	name_hotel: "Pegasos Resort 5*", 
@@ -353,7 +353,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Resort",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_Turkey: "TUR",
 	    	name_hotel: "Pegasos Royal 5*", 
@@ -363,7 +363,7 @@
 	    	href_agent_ru: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal", 
 	    	href_agent_ua: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
             href_agent_by: "/Tours/Europe/Turkey/Alanya/Incekum/Pegasos-Royal",
-	    	data_hotel: "15.10.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	country_hotel: "Кипр",
 	    	name_hotel: "Christofinia 4*	", 
@@ -373,7 +373,7 @@
 	    	href_agent_ru: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/", 
 	    	href_agent_ua: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
             href_agent_by: "/Tours/Europe/Cyprus/Ayia-Napa/Ayia-Napa/Christofinia/",
-	    	data_hotel: "30.09.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    {
 	    	name_hotel: "St Raphael Resort 5*", 
 	    	href_tui_ru: "/hotel/europe-cyprus-limasol__resort-limasol__city-st__raphael__resort/", 
@@ -382,7 +382,7 @@
 	    	href_agent_ru: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/", 
 	    	href_agent_ua: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
             href_agent_by: "/Tours/Europe/Cyprus/Limassol-Resort/Limassol-City/St-Raphael-Resort/",
-	    	data_hotel: "30.09.2019"},
+	    	data_hotel: "Открыт с мая 2020"},
 	    	{
 	    	country_hotel: "Черногория",
 	    	name_hotel: "Aleksandar 4*", 
@@ -450,7 +450,7 @@
 	    	href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
 	    	href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
             href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort",    
-	    	data_hotel: "Открыт с 20.10.2019"},
+	    	data_hotel: "Открыт с 21.10.2019"},
           {
             name_hotel: "Al Hamra Residence 5*", 
 	    	href_tui_ru: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
@@ -459,7 +459,7 @@
 	    	href_agent_ru: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
 	    	href_agent_ua: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
             href_agent_by: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence",    
-	    	data_hotel: "Открыт с 20.10.2019"}
+	    	data_hotel: "Открыт с 21.10.2019"}
 	    	
 	  ]
 	};
@@ -519,12 +519,12 @@
 	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
 	    	href_tui_ee: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
 	    	href_agent_ee: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    {
 	    	name_hotel: "Al Hamra Residence 5*", 
 	    	href_tui_ee: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
 	    	href_agent_ee: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    	
 	    	
 	  ]
@@ -585,12 +585,12 @@
 	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
 	    	href_tui_lt: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
 	    	href_agent_lt: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    {
 	    	name_hotel: "Al Hamra Residence 5*", 
 	    	href_tui_lt: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
 	    	href_agent_lt: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    	
 	    	
 	  ]
@@ -652,12 +652,12 @@
 	    	name_hotel: "Al Hamra Village Golf & Beach Resort 4*", 
 	    	href_tui_lv: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__village__golf__beach__resort/", 
 	    	href_agent_lv: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-village-golf-beach-resort", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    {
 	    	name_hotel: "Al Hamra Residence 5*", 
 	    	href_tui_lv: "/hotel/asia-uae-ras__al__khaimah-ras__al__khaimah__beach__hotels-al__hamra__residence/", 
 	    	href_agent_lv: "/Tours/Asia/UAE/Ras-Al-Khaimah/Ras-Al-Khaimah-beach-hotels/al-hamra-residence", 
-	    	data_hotel: "Open date 20.10.2019"},
+	    	data_hotel: "Open date 21.10.2019"},
 	    	
 	    	
 	  ]

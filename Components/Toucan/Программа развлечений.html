@@ -243,52 +243,81 @@ aleksandr.rodionov@tui.ru
         background-image: url(https://www.tui.ru/getmedia/3b08c919-3f75-46fc-9f2e-489254b13db4/bckg-oae)!important;
     }
 </style>
-<!-- SCRIPT загрузки VUE  =================================================== -->
-        <script type="text/javascript">
-            const vueLinks = [
-                'https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js',
-                'https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer',
-                'https://www.tui.ru/getmedia/1e4c5d01-95d0-41bc-8cbe-6fb7c86692ca/VUE-Toucan-hot-hotels-ru-by-ua',
-        'https://www.tui.ru/getmedia/7ee746b3-e5b2-4489-824c-c9868870ebc0/VUE-Toucan-page',
-                
-                'https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all',
 
-            ];
-
-            function add_files(arr, type) {
-
-                count = 0;
-
-                function new_file(link) {
-                    var script = document.createElement(type);
-                    script.src = link;
-                    script.async = false;
-                    document.head.appendChild(script);
-                    if (count < arr.length - 1) {
-                        script.onload = function() {
-                            new_file(arr[count]);
-                        }
-                        script.onerror = function() {
-                            throw new Error(arr[count - 1] + ' loading error');
-                        }
-                        count++;
-                    }
-                }
-
-                function error(text) {
-                    throw new Error('the function takes two required arguments');
-                }
-
-                (arr === undefined || type === undefined) ? error('the function takes two required arguments'):
-                    (arr === undefined) ? error('no link array') :
-                    (type === undefined) ? error('no file type') : '';
-                new_file(arr[count]);
-            }
-
-            add_files(vueLinks, 'script');
-        </script>
 <div class="row-all">
-    
+    <!-- ВЕРХНЕЕ МЕНЮ TOP START ================================================ -->
+
+    <div class="menu-top" id="home-page-diff-menu-top">
+        <div class="container">
+            <div class="row">
+                <a class="col-md-2 col-6 logo-img" href="/"><img v-bind:src=" logoLink "></a>
+                <div class="col-5 but-menu-mobile">
+                    &nbsp;
+                </div>
+
+                <!-- ВЕРХНЕЕ МЕНЮ START =========================================================== -->
+
+                <div class="col-md-10 col-10 mobile_agent">
+                    <div id="exit_menu">
+                        X
+                    </div>
+                    <div class="row menu-label">
+                        <a class="label-menu" v-bind:href=" menuItemFranchaizingLink " target="_blank">{{menuItemFranchaizingNameRU}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemPartnershipLink " target="_blank">{{menuItemPartnershipNameRU}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemAboutLink " target="_blank">{{menuItemAboutNameRU}}</a>
+                        <a class="label-menu" v-bind:href=" menuItemShopLink " target="_blank">{{menuItemShopNameRU}}</a>
+                        <div class="label-menu" style="position: relative;cursor: pointer">
+                            <a v-bind:href=" menuItemConceptsLink " style="color:#092a5e">{{menuItemConceptsNameRU}}</a>
+                            <div class="label-menu-2">
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemFunSunLink "><img alt="FN_logo" v-bind:src=" menuItemFunSunLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemFunSunLink "><b>{{menuItemFunSunName}}</b><br>
+                                            {{menuItemFunSunNameRU}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemDayNightLink "><img alt="FN_logo" v-bind:src=" menuItemDayNightLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemDayNightLink "><b>{{menuItemDayNightName}}</b><br>
+                                            {{menuItemDayNightNameRU}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemToucanLink "><img alt="FN_logo" v-bind:src=" menuItemToucanLogo "></a>
+                                    <div>
+                                        <a v-bind:href=" menuItemToucanLink "><b>{{menuItemToucanName}}</b><br>
+                                            {{menuItemToucanNameRU}}</a>
+                                    </div>
+                                </div>
+                                <div class="concept-link">
+                                    <a v-bind:href=" menuItemConceptsAboutLink "><img alt="Home_logo" :src=" menuItemConceptsAboutLogo " /></a>
+
+                                    <div><a v-bind:href=" menuItemConceptsAboutLink "><b>{{menuItemConceptsAboutNameRU1}}<br />
+                                                {{menuItemConceptsAboutNameRU2}}</b></a></div>
+                                </div>
+                            </div>
+                        </div><a class="label-menu" v-bind:href=" menuItemPremiumLink " target="_blank">{{menuItemPremiumName}}</a>
+                        <a class="label-menu log enter" data-bind="click: LoginClick" v-bind:href=" menuItemLoginNamelinkRU " target="_blank">{{menuItemLoginNameRU}}</a>
+                    </div>
+                </div>
+
+                <!-- ВЕРХНЕЕ МЕНЮ END =========================================================== -->
+
+                <div class="col-md-10">
+                    <div class="row menu-telephone">
+                        <div class="col-md-8 col-7">
+                            <p class="telephone-title">{{menuPhoneTitleRU}}</p>
+                            <p class="telephone-number">{{menuPhonePhoneRU}}</p>
+                        </div>
+                        <a v-bind:href=" menuTouristSiteLinkRU " style="color: black">{{menuTouristSiteNameRU}}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ВЕРХНЕЕ МЕНЮ TOP END ============================= -->
 
    <!-- ToUCAN SLIDER TOP START ============================ -->
     <ul id="autoWidth">
@@ -319,25 +348,25 @@ aleksandr.rodionov@tui.ru
     <div class="container" id="toucan-menu">
         <div class="row">
             <div class="buttons-slider button-slider-mobile col-md-12">
-                <a class="col-md-2 col-12 button-slider " id="tb" href="/concepts/tui-toucan">
-                    <p>{{menu1BY}}</p>
+                <a class="col-md-2 col-12 button-slider " id="tb" href="/concepts/tui-toucan/">
+                    <p>{{menu1RU}}</p>
                 </a>
 
                 <a class="button-slider col-md-1 col-12" href="#fishka">
-                    <p>{{menu2BY}}</p>
+                    <p>{{menu2RU}}</p>
                 </a>
 
                 <a class="button-slider col-md-2 col-12" href="#hotels">
-                    <p>{{menu3BY}}</p>
+                    <p>{{menu3RU}}</p>
                 </a>
 
                 <a class="button-slider col-md-3 col-12 button-slider-active" href="#fishka" target="_blank">
-                    <p>{{menu4BY}}</p>
+                    <p>{{menu4RU}}</p>
                 </a>
 
-                <!--<a class="col-md-3 col-12 button-slider" v-bind:href=" menu5LinkRU " target="_blank">
+                <a class="col-md-3 col-12 button-slider" v-bind:href=" menu5LinkRU " target="_blank">
                     <p>{{menu5RU}}</p>
-                </a>-->
+                </a>
             </div>
         </div>
     </div>
@@ -349,7 +378,7 @@ aleksandr.rodionov@tui.ru
             <div class="col-md-6">
                 <div class="icon-top-mobile col-4"><img alt="DN_logo" v-bind:src=" logoLink " /></div>
 
-                <h2>{{titleBY}}</h2>
+                <h2>{{titleRU}}</h2>
             </div>
 
             
@@ -364,7 +393,7 @@ aleksandr.rodionov@tui.ru
                 <span style="display:inline-block;margin-right:10px;height:32px;width:25px;vertical-align:middle;background:url(https://www.tui.ru/getmedia/da0916cf-da69-4c98-9e87-3096a923581e/pdf-icon) no-repeat top left">
                     <span style="opacity:0">.</span>
                 </span>
-                <a v-bind:href=" linkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">{{titleBY}}</a>
+                <a v-bind:href=" linkRU " style="color:#3b9ccf;text-decoration:underline !important;font-size:14px;font-weight:100;" target="_blank">{{titleRU}}</a>
             </div>
 
 
@@ -376,15 +405,15 @@ aleksandr.rodionov@tui.ru
    <!-- СПОРТИВНЫЕ РАЗВЛЕЧЕНИЯ START =================== -->
    <div id="toucan-ent-programm">
        <div class="container">
-           <h2>{{titleBY}}</h2>
+           <h2>Расписание спортивных занятий и развлечений</h2>
        </div>
 
        <div class="container hotels-club-country" id="earlyBook">
            <div class="buttons-navigations">
-               <!-- <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{menu1BY}}</a>  -->
-               <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b2">{{menu2BY}}</a> 
-               <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{menu3BY}}</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b4">{{menu4BY}}</a> 
-               <a class="button-navigatin" data-block=".slider_1" href="#s1b5">{{menu5BY}}</a>
+               <!-- <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b1">{{menu1RU}}</a>  -->
+               <a class="button-navigatin active-link" data-block=".slider_1" href="#s1b2">{{menu2RU}}</a> 
+               <a class="button-navigatin" data-block=".slider_1" href="#s1b3">{{menu3RU}}</a> <a class="button-navigatin" data-block=".slider_1" href="#s1b4">{{menu4RU}}</a> 
+               <a class="button-navigatin" data-block=".slider_1" href="#s1b5">{{menu5RU}}</a>
            </div>
 
 
@@ -396,7 +425,8 @@ aleksandr.rodionov@tui.ru
                        <div class="imgSlider" v-bind:style=" slider2Slide.background ">&nbsp;</div>
 
                        <div class="slider-content">
-                           <h4>{{slider2Slide.nameBY}}</h4>
+                           <h4>{{slider2Slide.nameRU}}</h4>
+                           
                        </div>
                        
                    </div>
@@ -413,7 +443,7 @@ aleksandr.rodionov@tui.ru
                        <div class="imgSlider" v-bind:style=" slider3Slide.background ">&nbsp;</div>
 
                        <div class="slider-content">
-                           <h4>{{slider3Slide.nameBY}}</h4>
+                           <h4>{{slider3Slide.nameRU}}</h4>
                        </div>
                    </div>
                </div>
@@ -428,7 +458,7 @@ aleksandr.rodionov@tui.ru
                        <div class="imgSlider" v-bind:style=" slider4Slide.background ">&nbsp;</div>
 
                        <div class="slider-content">
-                           <h4>{{slider4Slide.nameBY}}</h4>
+                           <h4>{{slider4Slide.nameRU}}</h4>
                        </div>
                    </div>
                </div>
@@ -443,7 +473,7 @@ aleksandr.rodionov@tui.ru
                        <div class="imgSlider" v-bind:style=" slider5Slide.background ">&nbsp;</div>
 
                        <div class="slider-content">
-                           <h4>{{slider5Slide.nameBY}}</h4>
+                           <h4>{{slider5Slide.nameRU}}</h4>
                        </div>
                    </div>
                </div>
@@ -458,19 +488,19 @@ aleksandr.rodionov@tui.ru
        
 <div class="container-fluid block_3" id="hotels-toucan">
         <div class="container">
-            <h2>{{titleBY}}</h2>
+            <h2>{{titleRU}}</h2>
         </div>
 
         <div class="row">
             <div class="container sl" id="miniTucoun">
                 <div class="buttons-navigations">
-                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">{{country1BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country2BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country3BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country4BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b7">{{country5BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b8">{{country6BY}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
-                    <a class="button-navigatin" data-block=".slider_2" href="#s2b10">{{country7BY}}</a><!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
+                    <a class="button-navigatin active-link" data-block=".slider_2" href="#s2b2">{{country1RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Турция -->
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b4">{{country2RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Кипр --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b5">{{country3RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Черногория --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b6">{{country4RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b7">{{country5RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b8">{{country6RU}}</a> <!-- ВЫБЕРИ СВОЙ ОТЕЛЬ Италия --> 
+                    <a class="button-navigatin" data-block=".slider_2" href="#s2b10">{{country7RU}}</a><!-- ВЫБЕРИ СВОЙ ОТЕЛЬ ОАЭ -->
                 </div>
 
                         
@@ -482,12 +512,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country1Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country1Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country1Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country1Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country1Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country1Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -496,7 +526,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkClient ">{{ country1Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country1Hotel.hotelLinkAgent ">{{ country1Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -514,12 +544,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country2Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country2Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country2Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country2Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country2Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country2Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -528,7 +558,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkClient ">{{ country2Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country2Hotel.hotelLinkAgent ">{{ country2Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -545,12 +575,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country3Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country3Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country3Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country3Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country3Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country3Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -559,7 +589,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkClient ">{{ country3Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country3Hotel.hotelLinkAgent ">{{ country3Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -577,12 +607,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country4Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country4Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country4Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country4Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country4Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country4Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -591,7 +621,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkClient ">{{ country4Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country4Hotel.hotelLinkAgent ">{{ country4Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -608,12 +638,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country5Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country5Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country5Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country5Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country5Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country5Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -622,7 +652,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkClient ">{{ country5Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country5Hotel.hotelLinkAgent ">{{ country5Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -639,12 +669,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country6Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country6Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country6Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country6Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country6Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country6Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -653,7 +683,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkClient ">{{ country6Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country6Hotel.hotelLinkAgent ">{{ country6Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -672,12 +702,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country7Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country7Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country7Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country7Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country7Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country7Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -686,7 +716,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country7Hotel.hotelLinkClient ">{{ country7Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country7Hotel.hotelLinkAgent ">{{ country7Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -703,12 +733,12 @@ aleksandr.rodionov@tui.ru
                                 <div class="imgSlider" v-bind:style=" country8Hotel.background ">&nbsp;</div>
 
                                 <div class="slider-content slide-height_tall">
-                                    <h4>{{ country8Hotel.countryNameBY }}</h4>
+                                    <h4>{{ country8Hotel.countryNameRU }}</h4>
 
                                     <p class="gey_p">{{ country8Hotel.hotelName }}</p>
 
                                     <ul >
-                                        <li v-for="aboutHotelBYItem in country8Hotel.aboutHotelBYItems"> {{ aboutHotelBYItem.item }} </li>
+                                        <li v-for="aboutHotelRUItem in country8Hotel.aboutHotelRUItems"> {{ aboutHotelRUItem.item }} </li>
                                         
                                     </ul>
                                 </div>
@@ -717,7 +747,7 @@ aleksandr.rodionov@tui.ru
                                     <div class="col-md-7 price-num">&nbsp;</div>
 
                                     <div class="col-md-5">
-                                        <p class="tour_a"><a v-bind:href=" country8Hotel.hotelLinkClient ">{{ country8Hotel.buttonBY }}</a></p>
+                                        <p class="tour_a"><a v-bind:href=" country8Hotel.hotelLinkAgent ">{{ country8Hotel.buttonRU }}</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -743,19 +773,19 @@ aleksandr.rodionov@tui.ru
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <h3>{{title1BY}}</h3>
-                        <a v-bind:href=" link1 ">{{ linkTitle1BY }}</a><br />
-                        <a v-bind:href=" link2BY ">{{linkTitle2BY}}</a><br />
-                        <a v-bind:href=" link3BY ">{{linkTitle3BY}}</a>
+                        <h3>{{title1RU}}</h3>
+                        <a v-bind:href=" link1 ">{{ linkTitle1RU }}</a><br />
+                        <a v-bind:href=" link2RU ">{{linkTitle2RU}}</a><br />
+                        <a v-bind:href=" link3RU ">{{linkTitle3RU}}</a>
                     </div>
 
                     <div class="col-md-3">
-                        <h3>{{title2BY}}</h3><br>
-                        <a v-bind:href=" telLinkUA ">{{telBY}}</a><br> <a v-bind:href=" mailLinkBY ">{{mailBY}}</a>
+                        <h3>{{title2RU}}</h3><br>
+                        <a v-bind:href=" telLinkRU ">{{telRU}}</a><br> <a v-bind:href=" mailRU ">{{mailRU}}</a>
                     </div>
 
                     <div class="col-md-3">
-                        <h3>{{title3BY}}</h3>
+                        <h3>{{title3RU}}</h3>
 
                         <div class="row icons-footer icons-footer_toucan col-10 col-md-12"><a v-bind:href=" instLink "><img v-bind:src="instLogo" /></a></div>
                     </div>
@@ -765,7 +795,13 @@ aleksandr.rodionov@tui.ru
     </div>
     <!-- FOOTER END =================================================== -->
 </div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+<script src="https://www.tui.ru/getmedia/f6a084a1-de7e-43c7-be13-0d9b8756c9e6/VUE-diff-agent-header-footer"></script>
+<script src="https://www.tui.ru/getmedia/1e4c5d01-95d0-41bc-8cbe-6fb7c86692ca/VUE-Toucan-hot-hotels-ru-by-ua"></script>
+<script src="VUE-Toucan-page.js"></script>
+<script src="https://www.tui.ru/getmedia/6e64783b-d6d6-4b51-ab25-d8d1ec72e234/all"></script>
 
+                
 <script type="text/javascript">
     function mobileSlider() {
 
